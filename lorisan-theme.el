@@ -34,7 +34,7 @@
 
 ;;; Code:
 
-(deftheme Lorisan "Lorisan, a dark theme for Emacs24+")
+(deftheme lorisan "Lorisan, a dark theme for Emacs24+")
 
 (let ((class '((class color) (min-colors 89)))
       (alt-background "#222") ;;atm start
@@ -179,7 +179,7 @@
       )
       
   (custom-theme-set-faces
-   'Lorisan
+   'lorisan
 
    ;; standard faces
    `(default ((,class (:foreground ,grey-light :background ,background))))
@@ -392,17 +392,17 @@
    `(font-lock-fic-face ((,class (:background ,red :foreground ,red-darkest :weight bold))))
    
    ;; flycheck
-   `(flycheck-error ((,class (:background ,red-darkest :underline (:style line :color ,red)))))
+   `(flycheck-error ((,class (:background ,red-darkest :underline (:style line :color ,red-bright)))))
    `(flycheck-warning ((,class (:background ,yellow-darkest :underline (:style line :color ,yellow)))))
-   `(flycheck-info ((,class (:background ,blue-darkest :underline (:style line :color ,blue)))))
-   `(flycheck-fringe-error ((,class (:background ,red :foreground ,red-darkest))))
+   `(flycheck-info ((,class (:background ,blue-darkest :underline (:style line :color ,blue-bright)))))
+   `(flycheck-fringe-error ((,class (:background ,red-bright :foreground ,red-darkest))))
    `(flycheck-fringe-warning ((,class (:background ,amber :foreground ,yellow-darkest))))
-   `(flycheck-fringe-info ((,class (:background ,blue :foreground ,blue-darkest))))
+   `(flycheck-fringe-info ((,class (:background ,blue-bright :foreground ,blue-darkest))))
    
    ;; flymake
    `(flymake-warnline ((,class (:underline ,yellow :background ,background))))
-   `(flymake-errline ((,class (:underline ,red :background ,background))))
-   `(flymake-infoline ((,class (:underline ,blue :background ,background))))
+   `(flymake-errline ((,class (:underline ,red-bright :background ,background))))
+   `(flymake-infoline ((,class (:underline ,blue-bright :background ,background))))
 
    ;; git-gutter
    `(git-gutter:modified ((,class (:foreground ,blue-bright :weight bold))))
@@ -735,7 +735,7 @@
    `(web-mode-doctype-face ((,class (:inherit font-lock-builtin-face))))
    )
   (custom-theme-set-variables
-   'Lorisan
+   'lorisan
 
    ;; pos-tip
    `(pos-tip-foreground-color ,grey-light)
@@ -755,6 +755,6 @@
 ;; no-byte-compile: t
 ;; End:
 
-(provide-theme 'Lorisan);
+(provide-theme 'lorisan);
 
 ;;; lorisan-theme.el ends here
