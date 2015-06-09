@@ -232,7 +232,7 @@
    `(font-lock-constant-face ((,class (:foreground ,coquelicot-darkerlight))))
    `(font-lock-doc-face ((,class (:foreground ,brown-light))))
    `(font-lock-doc-string-face ((,class (:foreground ,red))))
-   `(font-lock-function-name-face ((,class (:foreground ,cyan))))
+   `(font-lock-function-name-face ((,class (:foreground ,cyan-bright))))
    `(font-lock-keyword-face ((,class (:foreground ,amber))))
    `(font-lock-negation-char-face ((,class (:foreground ,red-bright))))
    `(font-lock-preprocessor-face ((,class (:foreground ,cerise))))
@@ -240,7 +240,7 @@
    `(font-lock-regexp-grouping-construct ((,class (:foreground ,violet-bright))))
    `(font-lock-string-face ((,class (:foreground ,pink))))
    `(font-lock-type-face ((,class (:foreground ,cerise-bright))))
-   `(font-lock-variable-name-face ((,class (:foreground ,magenta))))
+   `(font-lock-variable-name-face ((,class (:foreground ,magenta-bright))))
    `(font-lock-warning-face ((,class (:weight bold :foreground ,red-bright))))
 
    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
