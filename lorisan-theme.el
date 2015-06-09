@@ -1,10 +1,10 @@
-;;; hubisan-theme.el --- Grand Shell color theme for Emacs > 24
+;;; lorisan-theme.el --- Lorisan color theme for Emacs > 24
 
-;; Copyright 2014, Steckerhalter
+;; Copyright 2014, Hubisan
 
-;; Author: steckerhalter
-;; Keywords: color theme grand shell faces
-;; URL: https://github.com/steckerhalter/grandshell-theme
+;; Author: Hubisan
+;; Keywords: color theme coquelicot faces
+;; URL: 
 
 ;; This file is not part of GNU Emacs.
 
@@ -26,9 +26,7 @@
 ;;; Commentary:
 
 ;; Dark color theme for Emacs with intensive colors. The theme
-;; structure has been borrowed from color-theme-sanityinc-solarized
-;; URL: https://github.com/purcell/color-theme-sanityinc-solarized by
-;; Steve Purcell.
+;; structure has been borrowed grandshell theme by Steckerhalter
 
 ;;; Requirements:
 
@@ -36,7 +34,7 @@
 
 ;;; Code:
 
-(deftheme hubisan "Grand Shell, a dark theme for Emacs24+")
+(deftheme Lorisan "Lorisan, a dark theme for Emacs24+")
 
 (let ((class '((class color) (min-colors 89)))
       (alt-background "#222") ;;atm start
@@ -181,7 +179,7 @@
       )
       
   (custom-theme-set-faces
-   'hubisan
+   'Lorisan
 
    ;; standard faces
    `(default ((,class (:foreground ,grey-light :background ,background))))
@@ -316,29 +314,29 @@
    `(diff-hl-insert ((,class (:foreground ,green-bright :background ,green-bright))))
 
    ;; dired+
-   `(diredp-compressed-file-suffix ((,class (:foreground ,coquelicot))))
-   `(diredp-date-time ((,class (:foreground ,yellow))))
+   `(diredp-compressed-file-suffix ((,class (:foreground ,turquoise-bright))))
+   `(diredp-date-time ((,class (:foreground ,amber))))
    `(diredp-deletion ((,class (:foreground ,red-bright :weight bold :slant italic))))
-   `(diredp-deletion-file-name ((,class (:foreground ,red-bright :underline t))))
-   `(diredp-dir-heading ((,class (:foreground ,pink :underline t :weight bold))))
-   `(diredp-dir-priv ((,class (:foreground ,magenta :background nil))))
-   `(diredp-exec-priv ((,class (:foreground ,green-bright :background nil))))
+   `(diredp-deletion-file-name ((,class (:foreground ,red-bright :background ,red-dark :underline t))))
+   `(diredp-dir-heading ((,class (:foreground ,pink-bright :underline t :weight bold))))
+   `(diredp-dir-priv ((,class (:foreground ,magenta-bright :background nil))))
+   `(diredp-exec-priv ((,class (:foreground ,pink-bright :background nil))))
    `(diredp-executable-tag ((,class (:foreground ,green-bright :background nil))))
    `(diredp-file-name ((,class (:foreground ,normal))))
-   `(diredp-file-suffix ((,class (:foreground ,cyan))))
+   `(diredp-file-suffix ((,class (:foreground ,blue-bright))))
    `(diredp-flag-mark ((,class (:foreground ,red-bright :weight bold))))
-   `(diredp-flag-mark-line ((,class (:inherit highlight))))
-   `(diredp-ignored-file-name ((,class (:foreground ,dark))))
+   `(diredp-flag-mark-line ((,class (:inherit region))))
+   `(diredp-ignored-file-name ((,class (:foreground ,grey-darker))))
    `(diredp-link-priv ((,class (:background nil :foreground ,pink))))
    `(diredp-mode-line-flagged ((,class (:foreground ,coquelicot))))
-   `(diredp-mode-line-marked ((,class (:foreground ,magenta-bright))))
+   `(diredp-mode-line-marked ((,class (:foreground ,magenta))))
    `(diredp-no-priv ((,class (:foreground ,dark :background nil))))
-   `(diredp-number ((,class (:foreground ,coquelicot))))
+   `(diredp-number ((,class (:foreground ,pink-bright))))
    `(diredp-other-priv ((,class (:background nil :foreground ,coquelicot))))
    `(diredp-rare-priv ((,class (:foreground ,red :background nil))))
-   `(diredp-read-priv ((,class (:foreground ,blue :background nil))))
+   `(diredp-read-priv ((,class (:foreground ,amber-bright :background nil))))
    `(diredp-symlink ((,class (:foreground ,pink))))
-   `(diredp-write-priv ((,class (:foreground ,magenta-bright :background nil))))
+   `(diredp-write-priv ((,class (:foreground ,blue-bright :background nil))))
 
    ;; ediff
    `(ediff-even-diff-A ((,class (:foreground nil :background nil :inverse-video t))))
@@ -737,7 +735,7 @@
    `(web-mode-doctype-face ((,class (:inherit font-lock-builtin-face))))
    )
   (custom-theme-set-variables
-   'hubisan
+   'Lorisan
 
    ;; pos-tip
    `(pos-tip-foreground-color ,grey-light)
@@ -757,6 +755,6 @@
 ;; no-byte-compile: t
 ;; End:
 
-(provide-theme 'hubisan);
+(provide-theme 'Lorisan);
 
-;;; hubisan-theme.el ends here
+;;; lorisan-theme.el ends here
