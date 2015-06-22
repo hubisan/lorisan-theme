@@ -191,7 +191,7 @@
    `(link ((,class (:foreground ,turquoise-bright :underline t))))
    `(link-visited ((,class (:foreground ,blue-bright :underline t))))
 
-   `(highlight ((,class (:inverse-video nil :background ,coquelicot-darkest :foreground nil))))
+   `(highlight ((,class (:inverse-video nil :background ,magenta-dark :foreground nil))))
    `(isearch ((,class (:foreground ,amber-bright :background ,background :inverse-video t))))
    `(isearch-fail ((,class (:background ,background :inherit font-lock-warning-face :inverse-video t))))
    `(match ((,class (:foreground ,blue-bright :background ,background :inverse-video t))))
@@ -201,9 +201,9 @@
    `(trailing-whitespace ((,class (:background ,red-bright :underline nil))))
    `(hl-line ((,class (:background ,blue-darkest))))
    
-   `(mode-line ((t (:foreground ,strong :background ,blue2-dark))))
-   `(mode-line-inactive ((t (:foreground ,amber-dark :background ,blue2-darkest :weight light :box nil :inherit (mode-line )))))
-   `(mode-line-buffer-id ((t (:foreground ,amber))))
+   `(mode-line ((t (:foreground ,grey-light :background ,blue2-dark))))
+   `(mode-line-inactive ((t (:foreground ,grey :background ,blue2-darkest :weight light :box nil :inherit (mode-line )))))
+   `(mode-line-buffer-id ((t (:foreground ,cyan-bright))))
    `(mode-line-emphasis ((,class (:foreground ,magenta))))
    `(which-func ((,class (:foreground ,blue :background nil :weight bold))))
 
@@ -537,11 +537,11 @@
    `(jabber-title-large ((,class (:foreground ,pink-bright :height 1.0 :weight bold))))
    `(jabber-title-medium ((,class (:foreground ,amber-bright :height 1.0))))
    `(jabber-title-small ((,class (:foreground ,indigo-bright :height 1.0))))
-   `(jabber-chat-prompt-local ((,class (:foreground ,indigo))))
-   `(jabber-chat-prompt-foreign ((,class (:foreground ,coquelicot))))
-   `(jabber-chat-prompt-system ((,class (:foreground ,amber :weight bold))))
-   `(jabber-chat-text-local ((,class (:foreground ,indigo))))
-   `(jabber-chat-text-foreign ((,class (:foreground ,coquelicot))))
+   `(jabber-chat-prompt-local ((,class (:foreground ,pink))))
+   `(jabber-chat-prompt-foreign ((,class (:foreground ,indigo))))
+   `(jabber-chat-prompt-system ((,class (:foreground ,coquelicot :weight bold))))
+   `(jabber-chat-text-local ((,class (:foreground ,pink))))
+   `(jabber-chat-text-foreign ((,class (:foreground ,indigo))))
    `(jabber-chat-text-error ((,class (:foreground ,red-bright))))
    `(jabber-roster-user-online ((,class (:foreground ,green))))
    `(jabber-roster-user-xa ((,class :foreground ,faint)))
@@ -595,11 +595,11 @@
    ;; magit `next'
    `(magit-section ((,class (:inherit nil :weight bold))))
    `(magit-section-highlight ((,class (:foreground ,bright))))
-   `(magit-section-heading ((,class (:foreground ,blue-bright))))
-   `(magit-branch-local ((,class (:foreground ,turquoise))))
-   `(magit-branch-remote ((,class (:foreground ,amber))))
+   `(magit-section-heading ((,class (:foreground ,pink))))
+   `(magit-branch-local ((,class (:foreground ,turquoise-bright))))
+   `(magit-branch-remote ((,class (:foreground ,mint))))
    `(magit-hash ((,class (:foreground "white"))))
-   `(magit-diff-file-heading ((,class (:foreground ,amber))))
+   `(magit-diff-file-heading ((,class (:foreground ,indigo))))
    `(magit-diff-hunk-heading ((,class (:foreground ,magenta))))
    `(magit-diff-hunk-heading-highlight ((,class (:inherit magit-diff-hunk-heading :weight bold))))
    `(magit-diff-context ((,class (:foreground ,normal))))
@@ -608,6 +608,14 @@
    `(magit-diff-added-highlight ((,class (:inherit magit-diff-added :weight bold))))
    `(magit-diff-removed ((,class (:foreground ,red-bright))))
    `(magit-diff-removed-highlight ((,class (:inherit magit-diff-removed :weight bold))))
+
+   ;; git
+   `(git-commit-comment-action ((,class (:foreground ,white))))
+   `(git-commit-comment-file ((,class (:foreground ,cyan-bright))))
+   `(git-commit-comment-heading ((,class (:foreground ,pink-bright))))
+   `(git-commit-comment-branch ((,class (:foreground ,turquoise-bright))))
+   `(git-commit-note ((,class (:foreground ,grey-light))))
+   `(git-commit-summary ((,class (:foreground ,grey-light))))
 
    ;; markdown
    `(markdown-url-face ((,class (:inherit link))))
@@ -743,10 +751,21 @@
    `(slime-repl-output-face ((,class (:foreground ,blue :background ,background))))
 
    ;; smart-mode-line
-   `(sml/prefix ((,class (:foreground ,green-bright))))
+   `(sml/global ((,class (:foreground ,grey-light))))
+   `(sml/position-percentage ((,class (:foreground ,mint-low))))
+   `(sml/prefix ((,class (:foreground ,violet-bright))))
    `(sml/folder ((,class (:foreground ,blue-light))))
-   `(sml/filename ((,class (:foreground ,amber-bright))))
-   `(sml/vc-edited ((,class (:foreground ,coquelicot-bright))))
+   `(sml/filename ((,class (:foreground ,cyan-bright))))
+   `(sml/vc-edited ((,class (:foreground ,pink-bright))))
+   `(sml/col-number ((,class (:foreground ,blue-bright))))
+   `(sml/line-number ((,class (:foreground ,cyan-bright))))
+   `(sml/modes ((,class (:foreground ,amber))))
+   `(sml/minor-modes ((,class (:foreground ,brown-light))))
+   `(sml/git ((,class (:foreground ,white))))
+   `(sml/modified ((,class (:foreground ,red-bright))))
+   `(sml/not-modified ((,class (:foreground ,grey-light))))
+   `(sml/numbers-separator ((,class (:foreground ,grey))))
+   
 
    ;; term
    `(term-color-black ((,class (:background ,alt-background :foreground ,alt-background))))
