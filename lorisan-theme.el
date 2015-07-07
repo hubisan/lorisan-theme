@@ -226,11 +226,11 @@
    `(custom-group-tag ((,class (:foreground ,blue))))
    `(custom-state-tag ((,class (:foreground ,green))))
 
-   ;; ;; general font lock faces
+   ;; general font lock faces
    `(font-lock-builtin-face ((,class (:foreground ,turquoise))))
    `(font-lock-comment-delimiter-face ((,class (:foreground ,indigo :slant italic))))
    `(font-lock-comment-face ((,class (:foreground ,indigo :slant italic))))
-   `(font-lock-constant-face ((,class (:foreground ,coquelicot))))
+   `(font-lock-constant-face ((,class (:foreground "#FF99BB"))))
    `(font-lock-doc-face ((,class (:foreground ,brown-light))))
    `(font-lock-doc-string-face ((,class (:foreground ,red))))
    `(font-lock-function-name-face ((,class (:foreground ,amber))))
@@ -316,10 +316,10 @@
 
    ;; dired+
    `(diredp-compressed-file-suffix ((,class (:foreground ,turquoise-bright))))
-   `(diredp-date-time ((,class (:foreground ,amber))))
+   `(diredp-date-time ((,class (:foreground ,indigo))))
    `(diredp-deletion ((,class (:foreground ,red-bright :weight bold :slant italic))))
    `(diredp-deletion-file-name ((,class (:foreground ,red-bright :background ,red-dark :underline t))))
-   `(diredp-dir-heading ((,class (:foreground ,pink-bright :underline t :weight bold))))
+   `(diredp-dir-heading ((,class (:foreground ,pink :underline t :weight normal))))
    `(diredp-dir-priv ((,class (:foreground ,cyan :background nil))))
    `(diredp-exec-priv ((,class (:foreground ,pink-bright :background nil))))
    `(diredp-executable-tag ((,class (:foreground ,green-bright :background nil))))
@@ -750,22 +750,36 @@
    `(slime-repl-result-face ((,class (:foreground ,green))))
    `(slime-repl-output-face ((,class (:foreground ,blue :background ,background))))
 
+   ;; bmkp bookmark+
+   `(bmkp-heading ((,class (:foreground ,pink-bright))))
+   `(bmkp-local-file-without-region ((,class (:foreground ,indigo))))
+   `(bmkp->-mark ((,class (:foreground ,amber))))
+   `(bmkp-D-mark ((,class (:foreground ,red-bright))))
+   `(bmkp-*-mark ((,class (:foreground ,coquelicot-bright))))
+   `(bmkp-X-mark ((,class (:foreground ,violet-bright))))
+   `(bmkp-a-mark ((,class (:foreground ,grey))))
+   `(bmkp-bad-bookmark ((,class (:foreground ,red-bright :background ,red-darkest :underline t))))
+   `(bmkp-bookmark-file ((,class (:foreground ,indigo-bright))))
+   `(bmkp-bookmark-list ((,class (:foreground ,cyan-bright))))
+   `(bmkp-buffer ((,class (:foreground ,magenta-bright))))
+   `(bmkp-desktop ((,class (:foreground ,coquelicot-dark :background ,indigo-bright))))
+   `(bmkp-url ((,class (:foreground ,turquoise-bright))))
+   
    ;; smart-mode-line
    `(sml/global ((,class (:foreground ,grey-light))))
    `(sml/position-percentage ((,class (:foreground ,mint-low))))
    `(sml/prefix ((,class (:foreground ,violet-bright))))
-   `(sml/folder ((,class (:foreground ,blue-light))))
+   `(sml/folder ((,class (:foreground ,indigo-bright))))
    `(sml/filename ((,class (:foreground ,cyan-bright))))
    `(sml/vc-edited ((,class (:foreground ,pink-bright))))
    `(sml/col-number ((,class (:foreground ,blue-bright))))
    `(sml/line-number ((,class (:foreground ,cyan-bright))))
-   `(sml/modes ((,class (:foreground ,amber))))
+   `(sml/modes ((,class (:foreground ,amber-bright))))
    `(sml/minor-modes ((,class (:foreground ,brown-light))))
-   `(sml/git ((,class (:foreground ,white))))
-   `(sml/modified ((,class (:foreground ,red-bright))))
+   `(sml/git ((,class (:foreground ,grey-light))))
+   `(sml/modified ((,class (:foreground ,pink-bright))))
    `(sml/not-modified ((,class (:foreground ,grey-light))))
    `(sml/numbers-separator ((,class (:foreground ,grey))))
-   
 
    ;; term
    `(term-color-black ((,class (:background ,alt-background :foreground ,alt-background))))
@@ -776,13 +790,18 @@
    `(term-color-red ((,class (:background ,red :foreground ,red))))
    `(term-color-white ((,class (:background ,contrast-background :foreground ,contrast-background))))
    `(term-color-amber ((,class (:background ,amber :foreground ,amber))))
+   
+   ;; ace-jump
+   `(ace-jump-face-background ((,class (:foreground ,grey))))
+   `(ace-jump-face-foreground ((,class (:foreground ,red-bright))))
 
    ;; undo-tree
-   `(undo-tree-visualizer-default-face ((,class (:foreground ,normal))))
-   `(undo-tree-visualizer-current-face ((,class (:foreground ,green :weight bold))))
-   `(undo-tree-visualizer-active-branch-face ((,class (:foreground ,red))))
-   `(undo-tree-visualizer-register-face ((,class (:foreground ,amber))))
-
+   `(undo-tree-visualizer-current-face ((,class (:foreground ,pink-bright))))
+   `(undo-tree-visualizer-default-face ((,class (:foreground ,grey-light))))
+   `(undo-tree-visualizer-active-branch-face ((,class (:foreground ,indigo-bright))))
+   `(undo-tree-visualizer-unmodified-face ((,class (:foreground ,brown-light))))
+   `(undo-tree-visualizer-register-face ((,class (:foreground ,magenta-bright))))
+      
    ;; web-mode
    `(web-mode-html-tag-face ((,class (:foreground ,bright))))
    `(web-mode-html-attr-name-face ((,class (:inherit font-lock-doc-face))))
