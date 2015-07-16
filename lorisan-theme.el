@@ -139,6 +139,7 @@
       (blue2 "#5E55FF")
       (blue2-dark "#1b1d4a")
       (blue2-darkest "#0a0f1d")
+      (blue3-dark "#302D7D")
       (violet-light "#E2BAF5")
       (violet-bright "#C877F0")
       (violet "#C88CE7")
@@ -211,7 +212,7 @@
    `(isearch-fail ((,class (:background ,background :inherit font-lock-warning-face :inverse-video t))))
    `(match ((,class (:foreground ,blue-bright :background ,background :inverse-video t))))
    `(lazy-highlight ((,class (:foreground ,green-bright :background ,background :inverse-video t))))
-   `(region ((,class (:background ,indigo-darkest))))
+   `(region ((,class (:background ,blue3-dark))))
    `(secondary-selection ((,class (:background ,blue-dark))))
    `(trailing-whitespace ((,class (:background ,red-bright :underline nil))))
    `(hl-line ((,class (:background ,grey-darkest))))
@@ -835,7 +836,7 @@
    `(pos-tip-background-color ,blue2-darkest)
 
    ;; hl-parens
-   `(hl-paren-background-colors '("#4540BB" "#232461" "#131633"))
+   `(hl-paren-background-colors '("#461039" "#260C1E"))
    `(hl-paren-colors '("#E1ff4d" "#CDE947" "#B8D250"))
    ))
 
