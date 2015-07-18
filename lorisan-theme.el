@@ -139,7 +139,7 @@
       (blue2 "#5E55FF")
       (blue2-dark "#1b1d4a")
       (blue2-darkest "#0a0f1d")
-      (blue3-dark "#302D7D")
+      (blue3-dark "#272566")
       (violet-light "#E2BAF5")
       (violet-bright "#C877F0")
       (violet "#C88CE7")
@@ -215,7 +215,7 @@
    `(region ((,class (:background ,blue3-dark))))
    `(secondary-selection ((,class (:background ,blue-dark))))
    `(trailing-whitespace ((,class (:background ,red-bright :underline nil))))
-   `(hl-line ((,class (:background ,grey-darkest))))
+   `(hl-line ((,class (:background ,blue2-dark))))
    
    `(mode-line ((t (:foreground ,grey-light :background ,blue2-dark))))
    `(mode-line-inactive ((t (:foreground ,grey :background ,blue2-darkest :weight light :box nil :inherit (mode-line )))))
@@ -235,7 +235,7 @@
    `(warning ((,class (:foreground ,coquelicot-bright))))
    `(error ((,class (:foreground ,red-bright))))
 
-   `(show-paren-match ((,class (:weight bold :foreground ,blue-darkest :background ,green-leucht  :slant italic))))
+   `(show-paren-match ((,class (:weight bold :foreground ,grey-darkest :background ,indigo-bright :slant italic))))
    `(show-paren-mismatch ((,class (:background ,background :inherit font-lock-warning-face :inverse-video t))))
 
    `(custom-variable-tag ((,class (:foreground ,blue))))
@@ -838,7 +838,7 @@
    `(pos-tip-background-color ,blue2-darkest)
 
    ;; hl-parens
-   `(hl-paren-background-colors '("#461039" "#260C1E"))
+   `(hl-paren-background-colors '("#730058" "#400031" "#190014"))
    `(hl-paren-colors '("#E1ff4d" "#CDE947" "#B8D250"))
    ))
 
