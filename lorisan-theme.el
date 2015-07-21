@@ -409,12 +409,12 @@
    `(font-lock-fic-face ((,class (:background ,red :foreground ,red-darkest :weight bold))))
    
    ;; flycheck
-   `(flycheck-error ((,class (:background ,red-darkest :underline (:style line :color ,red-bright)))))
-   `(flycheck-warning ((,class (:background ,amber-darkest :underline (:style line :color ,amber)))))
-   `(flycheck-info ((,class (:background ,blue-darkest :underline (:style line :color ,blue-bright)))))
+   `(flycheck-error ((,class (:underline (:style line :color ,red-bright)))))
+   `(flycheck-warning ((,class (:underline (:style line :color ,amber-darker)))))
+   `(flycheck-info ((,class (:underline (:style line :color ,indigo-dark)))))
    `(flycheck-fringe-error ((,class (:background ,red-bright :foreground ,red-dark))))
-   `(flycheck-fringe-warning ((,class (:background ,amber-bright :foreground ,amber-dark))))
-   `(flycheck-fringe-info ((,class (:background ,blue-bright :foreground ,blue-dark))))
+   `(flycheck-fringe-warning ((,class (:background ,amber :foreground ,amber-dark))))
+   `(flycheck-fringe-info ((,class (:background ,indigo-darker :foreground ,indigo-darkest))))
    
    ;; flymake
    `(flymake-warnline ((,class (:underline ,amber :background ,background))))
