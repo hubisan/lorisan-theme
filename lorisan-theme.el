@@ -838,8 +838,8 @@
    `(pos-tip-background-color ,blue2-darkest)
 
    ;; hl-parens
-   `(hl-paren-background-colors '("#730058" "#400031" "#190014"))
-   `(hl-paren-colors '("#E1ff4d" "#CDE947" "#B8D250"))
+   `(hl-paren-background-colors '("#2d2f30" "#202221" "#131511"))
+   `(hl-paren-colors '("#ff4b0f" "#AC5439" "#595c62"))
    ))
 
 ;;;###autoload
