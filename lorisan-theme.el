@@ -839,7 +839,7 @@
 
    ;; hl-parens
    `(hl-paren-background-colors '("#2d2f30" "#202221" "#131511"))
-   `(hl-paren-colors '("#ff4b0f" "#AC5439" "#595c62"))
+   `(hl-paren-colors '("#ff4b0f" "#B6360B" "#6D2006"))
    ))
 
 ;;;###autoload
