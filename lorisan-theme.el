@@ -159,6 +159,12 @@
       (cerise-darker "#9D3469")
       (cerise-dark "#71264B")
       (cerise-darkest "#3D0722")
+      (wine-light "#FF4A77")
+      (wine-bright "#FF0066")
+      (wine "#FF256F")
+      (wine-darker "#C11E54")
+      (wine-dark "#831739")
+      (wine-darkest "#440F1D")
       (pink-light "#FFB4C0")
       (pink-bright "#FF627C")
       (pink "#FF8A9D")
@@ -251,7 +257,7 @@
    `(font-lock-doc-face ((,class (:foreground ,brown-light))))
    `(font-lock-doc-string-face ((,class (:foreground ,red))))
    `(font-lock-function-name-face ((,class (:foreground ,amber))))
-   `(font-lock-keyword-face ((,class (:foreground ,pink-bright))))
+   `(font-lock-keyword-face ((,class (:foreground ,wine))))
    `(font-lock-negation-char-face ((,class (:foreground ,red-bright))))
    `(font-lock-preprocessor-face ((,class (:foreground ,cerise))))
    `(font-lock-regexp-grouping-backslash ((,class (:foreground ,turquoise-bright))))
@@ -338,7 +344,7 @@
    `(diredp-deletion-file-name ((,class (:foreground ,red-bright :background ,red-dark :underline t))))
    `(diredp-dir-heading ((,class (:foreground ,pink :underline t :weight normal))))
    `(diredp-dir-priv ((,class (:foreground ,cyan :background nil))))
-   `(diredp-exec-priv ((,class (:foreground ,pink-bright :background nil))))
+   `(diredp-exec-priv ((,class (:foreground ,wine-light :background nil))))
    `(diredp-executable-tag ((,class (:foreground ,green-bright :background nil))))
    `(diredp-file-name ((,class (:foreground ,normal))))
    `(diredp-file-suffix ((,class (:foreground ,blue))))
@@ -354,7 +360,7 @@
    `(diredp-rare-priv ((,class (:foreground ,red :background nil))))
    `(diredp-read-priv ((,class (:foreground ,emerald :background nil))))
    `(diredp-symlink ((,class (:foreground ,coquelicot))))
-   `(diredp-write-priv ((,class (:foreground ,indigo :background nil))))
+   `(diredp-write-priv ((,class (:foreground ,indigo-bright :background nil))))
 
    ;; ediff
    `(ediff-even-diff-A ((,class (:foreground nil :background nil :inverse-video t))))
@@ -840,7 +846,7 @@
 
    ;; hl-parens
    `(hl-paren-background-colors '("#2d2f30" "#202221" "#131511"))
-   `(hl-paren-colors '("#ff4b0f" "#B6360B" "#6D2006"))
+   `(hl-paren-colors '("#FF0066" "#C5004F" "#8B0038"))
    ))
 
 ;;;###autoload
