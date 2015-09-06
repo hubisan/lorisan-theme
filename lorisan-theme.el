@@ -4,7 +4,7 @@
 
 ;; Author: Hubisan
 ;; Keywords: color theme coquelicot faces
-;; URL: 
+;; URL:
 
 ;; This file is not part of GNU Emacs.
 
@@ -38,7 +38,7 @@
 
 (let ((class '((class color) (min-colors 89)))
       (alt-background "#222") ;;atm start
-      (strong "#eee") 
+      (strong "#eee")
       (bright "#eee")
       (faint "#888")
       (dark "#888")
@@ -89,7 +89,7 @@
       (yellow-darkest "#221E00")
       (lemon-light "#CDCD68")
       (lemon-bright "#D7D700")
-      (lemon "#BDBD00")      
+      (lemon "#BDBD00")
       (lime "#A8C222")
       (lime-bright "#B0CC24")
       (lime-brightest "#E1FF4D")
@@ -104,8 +104,8 @@
       (emerald-bright "#0CE667")
       (emerald "#3ECF7A")
       (emerald-darker "#006b2d")
-      (emerald-dark "#004E20")      
-      (emerald-darkest "#00240f")      
+      (emerald-dark "#004E20")
+      (emerald-darkest "#00240f")
       (mint-light "#88D7BD")
       (mint-bright "#00E498")
       (mint-low "#39AB85")
@@ -200,7 +200,7 @@
       ;; (outline-8 "#E56EBE")
       ;; (outline-9 "#E6739A")
       )
-      
+
   (custom-theme-set-faces
    'lorisan
 
@@ -221,9 +221,9 @@
    `(lazy-highlight ((,class (:foreground ,green-bright :background ,background :inverse-video t))))
    `(region ((,class (:background ,blue3-dark))))
    `(secondary-selection ((,class (:background ,blue-dark))))
-   `(trailing-whitespace ((,class (:background ,red-bright :underline nil))))
+   `(trailing-whitespace ((,class (:background ,grey-darkest :underline (:color ,red-bright :style wave)))))
    `(hl-line ((,class (:background ,blue2-dark))))
-   
+
    `(mode-line ((t (:foreground ,grey-light :background ,blue2-dark))))
    `(mode-line-inactive ((t (:foreground ,grey :background ,blue2-darkest :weight light :box nil :inherit (mode-line )))))
    `(mode-line-buffer-id ((t (:foreground ,cyan-bright))))
@@ -414,7 +414,7 @@
 
    ;; fic-mode
    `(font-lock-fic-face ((,class (:background ,red :foreground ,red-darkest :weight bold))))
-   
+
    ;; flycheck
    `(flycheck-error ((,class (:underline (:style wave :color ,red-bright)))))
    `(flycheck-warning ((,class (:underline (:style wave :color ,amber-low)))))
@@ -422,7 +422,7 @@
    `(flycheck-fringe-error ((,class (:background ,red-bright :foreground ,red-dark))))
    `(flycheck-fringe-warning ((,class (:background ,amber :foreground ,amber-dark))))
    `(flycheck-fringe-info ((,class (:background ,indigo-darker :foreground ,indigo-darkest))))
-   
+
    ;; flymake
    `(flymake-warnline ((,class (:underline ,amber :background ,background))))
    `(flymake-errline ((,class (:underline ,red-bright :background ,background))))
@@ -541,7 +541,6 @@
    `(info-menu-star ((,class (:foreground ,coquelicot-bright))))
    `(info-xref ((,class (:inherit link))))
    `(info-xref-visited ((,class (:inherit (link-visited info-xref)))))
-   
 
    ;; highlight-symbol
    `(highlight-symbol-face ((,class (:background ,amber-dark))))
@@ -794,7 +793,7 @@
    `(bmkp-desktop ((,class (:foreground ,coquelicot-light))))
    `(bmkp-url ((,class (:foreground ,turquoise-bright))))
    `(bmkp-local-directory ((,class (:foreground ,cyan))))
-   
+
    ;; smart-mode-line
    `(sml/global ((,class (:foreground ,grey-light))))
    `(sml/position-percentage ((,class (:foreground ,mint-low))))
@@ -820,10 +819,16 @@
    `(term-color-red ((,class (:background ,red :foreground ,red))))
    `(term-color-white ((,class (:background ,contrast-background :foreground ,contrast-background))))
    `(term-color-amber ((,class (:background ,amber :foreground ,amber))))
-   
+
    ;; ace-jump
    `(ace-jump-face-background ((,class (:foreground ,grey))))
    `(ace-jump-face-foreground ((,class (:foreground ,red-bright))))
+
+   ;; avy
+   `(avy-lead-face ((,class (:foreground ,grey-darkest :background ,wine-bright))))
+   `(avy-lead-face-0 ((,class (:foreground ,grey-darkest :background ,cerise-bright))))
+   `(avy-lead-face-1 ((,class (:foreground ,white :background ,grey-dark))))
+   `(avy-lead-face-2 ((,class (:foreground ,grey-darkest :background ,wine-bright))))
 
    ;; undo-tree
    `(undo-tree-visualizer-current-face ((,class (:foreground ,pink-bright))))
@@ -831,12 +836,19 @@
    `(undo-tree-visualizer-active-branch-face ((,class (:foreground ,indigo-bright))))
    `(undo-tree-visualizer-unmodified-face ((,class (:foreground ,brown-light))))
    `(undo-tree-visualizer-register-face ((,class (:foreground ,magenta-bright))))
-      
+
    ;; web-mode
    `(web-mode-html-tag-face ((,class (:foreground ,bright))))
    `(web-mode-html-attr-name-face ((,class (:inherit font-lock-doc-face))))
    `(web-mode-doctype-face ((,class (:inherit font-lock-builtin-face))))
+
+   ;; ace-window
+   `(aw-leading-char-face ((,class (:weight bold :foreground ,malachite :background ,green-darker :height 150))))
+
+   ;; whitespace
+
    )
+
   (custom-theme-set-variables
    'lorisan
 
