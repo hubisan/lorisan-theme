@@ -141,6 +141,8 @@
       (blue2-dark "#1b1d4a")
       (blue2-darkest "#0a0f1d")
       (blue3-dark "#272566")
+      (blue4-dark "#1f1f7a")
+      (violet2-dark "#332673")
       (violet-light "#E2BAF5")
       (violet-bright "#C877F0")
       (violet "#C88CE7")
@@ -219,8 +221,8 @@
    `(isearch-fail ((,class (:background ,background :inherit font-lock-warning-face :inverse-video t))))
    `(match ((,class (:foreground ,blue-bright :background ,background :inverse-video t))))
    `(lazy-highlight ((,class (:foreground ,green-bright :background ,background :inverse-video t))))
-   `(region ((,class (:background ,blue3-dark))))
-   `(secondary-selection ((,class (:background ,blue-dark))))
+   `(region ((,class (:background ,blue4-dark))))
+   `(secondary-selection ((,class (:background ,violet2-dark))))
    `(trailing-whitespace ((,class (:background ,grey-darkest :underline (:color ,red-bright :style wave)))))
    `(hl-line ((,class (:background ,blue2-dark))))
 
@@ -825,10 +827,10 @@
    `(ace-jump-face-foreground ((,class (:foreground ,red-bright))))
 
    ;; avy
-   `(avy-lead-face ((,class (:foreground ,grey-darkest :background ,wine-bright))))
-   `(avy-lead-face-0 ((,class (:foreground ,grey-darkest :background ,cerise-bright))))
-   `(avy-lead-face-1 ((,class (:foreground ,white :background ,grey-dark))))
-   `(avy-lead-face-2 ((,class (:foreground ,grey-darkest :background ,wine-bright))))
+   `(avy-lead-face ((,class (:slant normal :foreground ,grey-darkest :background ,wine-bright))))
+   `(avy-lead-face-0 ((,class (:slant normal :foreground ,grey-darkest :background ,cerise-bright))))
+   `(avy-lead-face-1 ((,class (:slant normal :foreground ,white :background ,grey-dark))))
+   `(avy-lead-face-2 ((,class (:slant normal :foreground ,grey-darkest :background ,wine-bright))))
 
    ;; undo-tree
    `(undo-tree-visualizer-current-face ((,class (:foreground ,pink-bright))))
@@ -845,7 +847,12 @@
    ;; ace-window
    `(aw-leading-char-face ((,class (:weight bold :foreground ,malachite :background ,green-darker :height 150))))
 
-   ;; whitespace
+   ;; iedit
+   `(iedit-occurrence ((,class (:inherit isearch))))
+   `(iedit-read-only-occurrence ((,class (:inherit isearch))))
+
+   ;; eval-sexp-fu
+   `(eval-sexp-fu-flash ((,class (:foreground nil :background ,emerald-dark))))
 
    )
 
@@ -857,7 +864,7 @@
    `(pos-tip-background-color ,blue2-darkest)
 
    ;; hl-parens
-   `(hl-paren-background-colors '("#2d2f30" "#202221" "#131511"))
+   `(hl-paren-background-colors '())
    `(hl-paren-colors '("#FF0066" "#C5004F" "#8B0038"))
    ))
 
