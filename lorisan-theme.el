@@ -221,8 +221,8 @@
    `(isearch-fail ((,class (:background ,background :inherit font-lock-warning-face :inverse-video t))))
    `(match ((,class (:foreground ,blue-bright :background ,background :inverse-video t))))
    `(lazy-highlight ((,class (:foreground ,green-bright :background ,background :inverse-video t))))
-   `(region ((,class (:background ,blue4-dark))))
-   `(secondary-selection ((,class (:background ,violet2-dark))))
+   `(region ((,class (:background ,violet2-dark))))
+   `(secondary-selection ((,class (:background ,indigo-dark))))
    `(trailing-whitespace ((,class (:background ,grey-darkest :underline (:color ,red-bright :style wave)))))
    `(hl-line ((,class (:background ,blue2-dark))))
 
@@ -305,10 +305,10 @@
 
    ;; company
    `(company-preview ((,class (:foreground ,bright))))
-   `(company-preview-common ((,class (:foreground ,coquelicot-bright :underline t))))
+   `(company-preview-common ((,class (:background ,emerald :foreground ,emerald-darkest :underline t))))
    `(company-preview-search ((,class (:foreground ,darkest :background ,amber))))
    `(company-tooltip ((,class (:background ,blue2-dark :foreground ,white))))
-   `(company-tooltip-common ((,class (:inherit company-tooltip :foreground ,bright))))
+   `(company-tooltip-common ((,class (:inherit company-tooltip :background ,blue2-darkest :foreground ,grey))))
    `(company-tooltip-common-selection ((,class (:inherit company-tooltip-selection))))
    `(company-tooltip-selection ((,class (:background ,coquelicot :foreground ,coquelicot-darkest))))
    `(company-scrollbar-bg ((,class (:background ,grey-darkest))))
@@ -346,6 +346,7 @@
    `(diredp-deletion-file-name ((,class (:foreground ,red-bright :background ,red-dark :underline t))))
    `(diredp-dir-heading ((,class (:foreground ,pink :underline t :weight normal))))
    `(diredp-dir-priv ((,class (:foreground ,cyan :background nil))))
+   `(diredp-dir-name ((,class (:foreground ,cyan :background ,grey-darkest))))
    `(diredp-exec-priv ((,class (:foreground ,wine-light :background nil))))
    `(diredp-executable-tag ((,class (:foreground ,green-bright :background nil))))
    `(diredp-file-name ((,class (:foreground ,normal))))
@@ -579,16 +580,16 @@
    `(jabber-activity-personal-face ((,class (:foreground ,cyan))))
 
    ;; js2-mode
-   `(js2-warning-face ((,class (:underline ,amber-bright))))
-   `(js2-error-face ((,class (:foreground nil :underline ,red-bright))))
+   `(js2-warning ((,class (:inherit flycheck-warning))))
+   `(js2-error ((,class (:inherit flycheck-error))))
    `(js2-external-variable-face ((,class (:foreground ,magenta-bright))))
    `(js2-function-param-face ((,class (:foreground ,green))))
    `(js2-instance-member-face ((,class (:foreground ,red-bright))))
    `(js2-private-function-call-face ((,class (:foreground ,red-bright))))
 
    ;; js3-mode
-   `(js3-warning-face ((,class (:underline ,amber))))
-   `(js3-error-face ((,class (:foreground nil :underline ,red))))
+   `(js3-warning ((,class (:inherit flycheck-warning))))
+   `(js3-error ((,class (:inherit flycheck-error))))
    `(js3-external-variable-face ((,class (:foreground ,magenta))))
    `(js3-function-param-face ((,class (:foreground ,blue))))
    `(js3-jsdoc-tag-face ((,class (:foreground ,magenta))))
@@ -677,6 +678,14 @@
    `(mmm-code-submode-face ((,class (:background ,alt-background))))
    `(mmm-comment-submode-face ((,class (:inherit font-lock-comment-face))))
    `(mmm-output-submode-face ((,class (:background ,alt-background))))
+
+   ;; neo-tree
+   `(neo-banner-face ((,class (:foreground ,grey))))
+   `(neo-header-face ((,class (:foreground ,amber))))
+   `(neo-root-dir-face ((,class (:foreground ,wine))))
+   `(neo-dir-link-face ((,class (:foreground ,cyan))))
+   `(neo-file-link-face ((,class (:foreground ,normal))))
+   `(neo-expand-btn-face ((,class (:foreground ,wine))))
 
    ;; nrepl-eval-sexp-fu
    `(nrepl-eval-sexp-fu-flash ((,class (:background ,magenta-dark))))
@@ -864,8 +873,8 @@
    `(pos-tip-background-color ,blue2-darkest)
 
    ;; hl-parens
-   `(hl-paren-background-colors '())
-   `(hl-paren-colors '("#FF0066" "#C5004F" "#8B0038"))
+   `(hl-paren-background-colors '("#222" "#333"))
+   `(hl-paren-colors '("#FFBB66" "#FF4B0F"))
    ))
 
 ;;;###autoload
