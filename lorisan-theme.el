@@ -863,6 +863,13 @@
    ;; eval-sexp-fu
    `(eval-sexp-fu-flash ((,class (:foreground nil :background ,emerald-dark))))
 
+   ;; hydra (use one color for all)
+   `(hydra-face-amaranth ((,class (:foreground ,wine-bright :weight bold))))
+   `(hydra-face-blue ((,class (:foreground ,wine-bright :weight bold))))
+   `(hydra-face-pink ((,class (:foreground ,wine-bright :weight bold))))
+   `(hydra-face-red ((,class (:foreground ,wine-bright :weight bold))))
+   `(hydra-face-teal ((,class (:foreground ,wine-bright :weight bold))))
+
    )
 
   (custom-theme-set-variables
