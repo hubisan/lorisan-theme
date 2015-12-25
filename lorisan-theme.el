@@ -224,7 +224,7 @@
    `(region ((,class (:background ,violet2-dark))))
    `(secondary-selection ((,class (:background ,indigo-dark))))
    `(trailing-whitespace ((,class (:background ,grey-darkest :underline (:color ,red-bright :style wave)))))
-   `(hl-line ((,class (:background ,grey-darkest))))
+   `(hl-line ((,class (:background ,pink-dark))))
 
    `(mode-line ((t (:foreground ,grey-light :background ,blue2-dark))))
    `(mode-line-inactive ((t (:foreground ,grey :background ,blue2-darkest :weight light :box nil :inherit (mode-line )))))
@@ -616,7 +616,7 @@
    `(magit-log-head-label-remote ((,class (:foreground ,violet :box nil :weight bold))))
    `(magit-log-head-label-tags ((,class (:foreground ,cyan :box nil :weight bold))))
    `(magit-section-title ((,class (:foreground ,blue :weight bold))))
-   `(magit-popup-argument ((,class (:foreground ,emerald :weight normal))))
+   `(magit-popup-argument ((,class (:foreground ,emerald-darkest :background ,emerald :weight normal))))
 
    ;; magit `next'
    `(magit-section ((,class (:inherit nil :weight bold))))
@@ -869,6 +869,12 @@
    `(hydra-face-pink ((,class (:foreground ,wine-bright :weight bold))))
    `(hydra-face-red ((,class (:foreground ,wine-bright :weight bold))))
    `(hydra-face-teal ((,class (:foreground ,wine-bright :weight bold))))
+
+   ;; wiki-page-intro
+   `(wiki-page-intro-title ((,class (:foreground ,wine-bright :weight bold))))
+   `(wiki-page-intro-text ((,class (:foreground ,normal))))
+   `(wiki-page-intro-not-found ((,class (:foreground ,normal :underline (:style wave :color ,wine)))))
+   `(wiki-page-intro-error ((,class (:inherit error))))
 
    )
 
