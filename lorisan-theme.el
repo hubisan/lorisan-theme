@@ -1,27 +1,23 @@
 ;;; lorisan-theme.el --- Lorisan color theme for Emacs > 24
 
-;; Copyright 2014, Hubisan
+;; Copyright 2015 Daniel Hubmann
 
-;; Author: Hubisan
-;; Keywords: color theme coquelicot faces
-;; URL:
+;; Author: Daniel Hubmann <hubisan@gmail.com>
+;; URL: 
+;; Keywords: lorisan, dark, theme
 
-;; This file is not part of GNU Emacs.
+;; This file is not part of GNU Emacs
 
-;; This file is free software; you can redistribute it and/or modify
-;; it under the terms of the GNU General Public License as published by
-;; the Free Software Foundation; either version 2, or (at your option)
-;; any later version.
+;; This file is free software: you can redistribute it and/or modify
+;; it under the terms of the GNU General Public License as published
+;; by the Free Software Foundation, either version 3 of the License,
+;; or (at your option) any later version.
 
-;; This file is distributed in the hope that it will be useful,
-;; but WITHOUT ANY WARRANTY; without even the implied warranty of
-;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-;; GNU General Public License for more details.
-
-;; You should have received a copy of the GNU General Public License
-;; along with GNU Emacs; see the file COPYING.  If not, write to
-;; the Free Software Foundation, Inc., 59 Temple Place - Suite 330,
-;; Boston, MA 02111-1307, USA.
+;; This file is distributed in the hope that it will be useful, but
+;; WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+;; General Public License for more details.
+;; <http://www.gnu.org/licenses/>.
 
 ;;; Commentary:
 
@@ -341,16 +337,16 @@
 
    ;; dired+
    `(diredp-compressed-file-suffix ((,class (:foreground ,turquoise-bright))))
-   `(diredp-date-time ((,class (:foreground ,indigo))))
+   `(diredp-date-time ((,class (:foreground ,grey-darker))))
    `(diredp-deletion ((,class (:foreground ,red-bright :weight bold :slant italic))))
    `(diredp-deletion-file-name ((,class (:foreground ,red-bright :background ,red-dark :underline t))))
    `(diredp-dir-heading ((,class (:foreground ,pink :underline t :weight normal))))
-   `(diredp-dir-priv ((,class (:foreground ,cyan :background nil))))
-   `(diredp-dir-name ((,class (:foreground ,cyan :background ,grey-darkest))))
-   `(diredp-exec-priv ((,class (:foreground ,wine-light :background nil))))
+   `(diredp-dir-priv ((,class (:foreground ,wine))))
+   `(diredp-dir-name ((,class (:foreground ,wine))))
+   `(diredp-exec-priv ((,class (:foreground ,indigo :background nil))))
    `(diredp-executable-tag ((,class (:foreground ,green-bright :background nil))))
    `(diredp-file-name ((,class (:foreground ,normal))))
-   `(diredp-file-suffix ((,class (:foreground ,blue))))
+   `(diredp-file-suffix ((,class (:foreground ,normal))))
    `(diredp-flag-mark ((,class (:foreground ,red-bright :weight bold))))
    `(diredp-flag-mark-line ((,class (:inherit region))))
    `(diredp-ignored-file-name ((,class (:foreground ,grey-darker))))
@@ -358,12 +354,12 @@
    `(diredp-mode-line-flagged ((,class (:foreground ,coquelicot))))
    `(diredp-mode-line-marked ((,class (:foreground ,magenta))))
    `(diredp-no-priv ((,class (:foreground ,dark :background nil))))
-   `(diredp-number ((,class (:foreground ,pink-bright))))
-   `(diredp-other-priv ((,class (:background nil :foreground ,coquelicot))))
-   `(diredp-rare-priv ((,class (:foreground ,red :background nil))))
-   `(diredp-read-priv ((,class (:foreground ,emerald :background nil))))
-   `(diredp-symlink ((,class (:foreground ,coquelicot))))
-   `(diredp-write-priv ((,class (:foreground ,indigo-bright :background nil))))
+   `(diredp-number ((,class (:foreground ,white))))
+   `(diredp-other-priv ((,class (:background nil :foreground ,indigo))))
+   `(diredp-rare-priv ((,class (:foreground ,indigo :background nil))))
+   `(diredp-read-priv ((,class (:foreground ,indigo :background nil))))
+   `(diredp-symlink ((,class (:foreground ,normal))))
+   `(diredp-write-priv ((,class (:foreground ,indigo :background nil))))
 
    ;; ediff
    `(ediff-even-diff-A ((,class (:foreground nil :background nil :inverse-video t))))
@@ -403,14 +399,14 @@
    `(eshell-ls-backup ((,class (:foreground ,amber))))
    `(eshell-ls-clutter ((,class (:foreground ,coquelicot :weight normal))))
    `(eshell-ls-directory ((,class (:foreground ,cyan :weight normal))))
-   `(eshell-ls-executable ((,class (:foreground ,cerise-bright :weight normal))))
+   `(eshell-ls-executable ((,class (:foreground ,normal :weight normal))))
    `(eshell-ls-missing ((,class (:foreground ,violet :weight normal))))
    `(eshell-ls-product ((,class (:foreground ,amber))))
    `(eshell-ls-readonly ((,class (:foreground ,brown-light))))
    `(eshell-ls-special ((,class (:foreground ,emerald :weight normal))))
-   `(eshell-ls-symlink ((,class (:foreground ,magenta :weight normal))))
+   `(eshell-ls-symlink ((,class (:foreground ,blue-bright :weight normal))))
    `(eshell-ls-unreadable ((,class (:foreground ,normal))))
-   `(eshell-prompt ((,class (:foreground ,pink-bright :weight normal))))
+   `(eshell-prompt ((,class (:foreground ,wine :weight normal))))
 
    ;; eval-sexp-fu
    `(eval-sexp-fu-flash ((,class (:background ,magenta-dark))))
@@ -680,12 +676,12 @@
    `(mmm-output-submode-face ((,class (:background ,alt-background))))
 
    ;; neo-tree
-   `(neo-banner-face ((,class (:foreground ,grey))))
-   `(neo-header-face ((,class (:foreground ,amber))))
-   `(neo-root-dir-face ((,class (:foreground ,wine))))
-   `(neo-dir-link-face ((,class (:foreground ,cyan))))
+   `(neo-banner-face ((,class (:foreground ,cyan))))
+   `(neo-header-face ((,class (:foreground ,normal))))
+   `(neo-root-dir-face ((,class (:foreground ,wine-darkest :background ,wine-darker))))
+   `(neo-dir-link-face ((,class (:foreground ,wine))))
    `(neo-file-link-face ((,class (:foreground ,normal))))
-   `(neo-expand-btn-face ((,class (:foreground ,wine))))
+   `(neo-expand-btn-face ((,class (:foreground ,indigo))))
 
    ;; nrepl-eval-sexp-fu
    `(nrepl-eval-sexp-fu-flash ((,class (:background ,magenta-dark))))
