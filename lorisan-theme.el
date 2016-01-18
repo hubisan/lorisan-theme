@@ -3,8 +3,8 @@
 ;; Copyright 2015 Daniel Hubmann
 
 ;; Author: Daniel Hubmann <hubisan@gmail.com>
-;; URL: 
-;; Keywords: lorisan, dark, theme
+;; URL: https://github.com/Hubisan/lorisan-theme
+;; Keywords: lorisan, dark, themes
 
 ;; This file is not part of GNU Emacs
 
@@ -21,8 +21,9 @@
 
 ;;; Commentary:
 
-;; Dark color theme for Emacs with intensive colors. The theme
-;; structure has been borrowed grandshell theme by Steckerhalter
+;; Dark color theme for Emacs with intensive colors.
+;; The theme structure has been partly borrowed from grandshell theme
+;; by Steckerhalter
 
 ;;; Requirements:
 
@@ -265,8 +266,15 @@
    `(font-lock-variable-name-face ((,class (:foreground ,cyan))))
    `(font-lock-warning-face ((,class (:weight bold :foreground ,red-bright))))
 
-   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
    ;; mode specific faces
+
+   ;; ace-jump
+   `(ace-jump-face-background ((,class (:foreground ,grey))))
+   `(ace-jump-face-foreground ((,class (:foreground ,red-bright))))
+
+   ;; ace-window
+   `(aw-leading-char-face ((,class (:weight bold :foreground ,malachite :background ,green-darker :height 150))))
 
    ;; asorted faces
    `(csv-separator-face ((,class (:foreground ,coquelicot))))
@@ -286,6 +294,28 @@
 
    ;; auto-dim-other-buffers
    `(auto-dim-other-buffers-face ((,class (:background "#0c0c0c"))))
+
+   ;; avy
+   `(avy-lead-face ((,class (:slant normal :foreground ,grey-darkest :background ,wine-bright))))
+   `(avy-lead-face-0 ((,class (:slant normal :foreground ,grey-darkest :background ,cerise-bright))))
+   `(avy-lead-face-1 ((,class (:slant normal :foreground ,white :background ,grey-dark))))
+   `(avy-lead-face-2 ((,class (:slant normal :foreground ,grey-darkest :background ,wine-bright))))
+
+   ;; bmkp bookmark+
+   `(bmkp-heading ((,class (:foreground ,pink-bright))))
+   `(bmkp-local-file-without-region ((,class (:foreground ,indigo))))
+   `(bmkp->-mark ((,class (:foreground ,amber))))
+   `(bmkp-D-mark ((,class (:foreground ,red-bright :weight bold :slant italic))))
+   `(bmkp-*-mark ((,class (:foreground ,coquelicot-bright))))
+   `(bmkp-X-mark ((,class (:foreground ,violet-bright))))
+   `(bmkp-a-mark ((,class (:foreground ,grey))))
+   `(bmkp-bad-bookmark ((,class (:foreground ,red-bright :background ,red-darkest :underline t))))
+   `(bmkp-bookmark-file ((,class (:foreground ,grey-light))))
+   `(bmkp-bookmark-list ((,class (:foreground ,cyan-bright))))
+   `(bmkp-buffer ((,class (:foreground ,magenta-bright))))
+   `(bmkp-desktop ((,class (:foreground ,coquelicot-light))))
+   `(bmkp-url ((,class (:foreground ,turquoise-bright))))
+   `(bmkp-local-directory ((,class (:foreground ,cyan))))
 
    ;; clojure
    `(clojure-test-failure-face ((,class (:background nil :inherit flymake-warnline))))
@@ -409,7 +439,7 @@
    `(eshell-prompt ((,class (:foreground ,wine :weight normal))))
 
    ;; eval-sexp-fu
-   `(eval-sexp-fu-flash ((,class (:background ,magenta-dark))))
+   `(eval-sexp-fu-flash ((,class (:foreground nil :background ,emerald-dark))))
 
    ;; fic-mode
    `(font-lock-fic-face ((,class (:background ,red :foreground ,red-darkest :weight bold))))
@@ -426,6 +456,14 @@
    `(flymake-warnline ((,class (:underline ,amber :background ,background))))
    `(flymake-errline ((,class (:underline ,red-bright :background ,background))))
    `(flymake-infoline ((,class (:underline ,blue-bright :background ,background))))
+
+   ;; git
+   `(git-commit-comment-action ((,class (:foreground ,white))))
+   `(git-commit-comment-file ((,class (:foreground ,cyan-bright))))
+   `(git-commit-comment-heading ((,class (:foreground ,pink-bright))))
+   `(git-commit-comment-branch ((,class (:foreground ,turquoise-bright))))
+   `(git-commit-note ((,class (:foreground ,grey-light))))
+   `(git-commit-summary ((,class (:foreground ,grey-light))))
 
    ;; git-gutter
    `(git-gutter:modified ((,class (:foreground ,indigo-bright :weight bold))))
@@ -527,6 +565,16 @@
    `(helm-grep-match ((,class (:foreground ,amber))))
    `(helm-grep-running ((,class (:foreground ,pink-bright))))
 
+   ;; highlight-symbol
+   `(highlight-symbol-face ((,class (:background ,amber-dark))))
+
+   ;; hydra (use one color for all)
+   `(hydra-face-amaranth ((,class (:foreground ,wine-bright :weight bold))))
+   `(hydra-face-blue ((,class (:foreground ,wine-bright :weight bold))))
+   `(hydra-face-pink ((,class (:foreground ,wine-bright :weight bold))))
+   `(hydra-face-red ((,class (:foreground ,wine-bright :weight bold))))
+   `(hydra-face-teal ((,class (:foreground ,wine-bright :weight bold))))
+
    ;; info
    `(info-title-1 ((,class (:foreground ,pink-bright :weight bold))))
    `(info-title-2 ((,class (:foreground ,amber :weight bold))))
@@ -541,9 +589,6 @@
    `(info-xref ((,class (:inherit link))))
    `(info-xref-visited ((,class (:inherit (link-visited info-xref)))))
 
-   ;; highlight-symbol
-   `(highlight-symbol-face ((,class (:background ,amber-dark))))
-
    ;; icomplete
    `(icomplete-first-match ((,class (:foreground "white" :bold t))))
 
@@ -553,6 +598,10 @@
    `(ido-only-match ((,class (:foreground ,green))))
    `(ido-indicator ((,class (:foreground ,red :background ,background))))
    `(ido-virtual ((,class (:foreground ,faintest))))
+
+   ;; iedit
+   `(iedit-occurrence ((,class (:inherit isearch))))
+   `(iedit-read-only-occurrence ((,class (:inherit isearch))))
 
    ;; jabber
    `(jabber-title-large ((,class (:foreground ,pink-bright :height 1.0 :weight bold))))
@@ -632,14 +681,6 @@
    `(magit-diff-added-highlight ((,class (:inherit magit-diff-added :weight bold))))
    `(magit-diff-removed ((,class (:foreground ,pink-bright))))
    `(magit-diff-removed-highlight ((,class (:inherit magit-diff-removed :weight bold))))
-
-   ;; git
-   `(git-commit-comment-action ((,class (:foreground ,white))))
-   `(git-commit-comment-file ((,class (:foreground ,cyan-bright))))
-   `(git-commit-comment-heading ((,class (:foreground ,pink-bright))))
-   `(git-commit-comment-branch ((,class (:foreground ,turquoise-bright))))
-   `(git-commit-note ((,class (:foreground ,grey-light))))
-   `(git-commit-summary ((,class (:foreground ,grey-light))))
 
    ;; markdown
    `(markdown-url-face ((,class (:inherit link))))
@@ -785,22 +826,6 @@
    `(slime-repl-result-face ((,class (:foreground ,green))))
    `(slime-repl-output-face ((,class (:foreground ,blue :background ,background))))
 
-   ;; bmkp bookmark+
-   `(bmkp-heading ((,class (:foreground ,pink-bright))))
-   `(bmkp-local-file-without-region ((,class (:foreground ,indigo))))
-   `(bmkp->-mark ((,class (:foreground ,amber))))
-   `(bmkp-D-mark ((,class (:foreground ,red-bright :weight bold :slant italic))))
-   `(bmkp-*-mark ((,class (:foreground ,coquelicot-bright))))
-   `(bmkp-X-mark ((,class (:foreground ,violet-bright))))
-   `(bmkp-a-mark ((,class (:foreground ,grey))))
-   `(bmkp-bad-bookmark ((,class (:foreground ,red-bright :background ,red-darkest :underline t))))
-   `(bmkp-bookmark-file ((,class (:foreground ,grey-light))))
-   `(bmkp-bookmark-list ((,class (:foreground ,cyan-bright))))
-   `(bmkp-buffer ((,class (:foreground ,magenta-bright))))
-   `(bmkp-desktop ((,class (:foreground ,coquelicot-light))))
-   `(bmkp-url ((,class (:foreground ,turquoise-bright))))
-   `(bmkp-local-directory ((,class (:foreground ,cyan))))
-
    ;; smart-mode-line
    `(sml/global ((,class (:foreground ,grey-light))))
    `(sml/position-percentage ((,class (:foreground ,mint-low))))
@@ -827,16 +852,6 @@
    `(term-color-white ((,class (:background ,contrast-background :foreground ,contrast-background))))
    `(term-color-amber ((,class (:background ,amber :foreground ,amber))))
 
-   ;; ace-jump
-   `(ace-jump-face-background ((,class (:foreground ,grey))))
-   `(ace-jump-face-foreground ((,class (:foreground ,red-bright))))
-
-   ;; avy
-   `(avy-lead-face ((,class (:slant normal :foreground ,grey-darkest :background ,wine-bright))))
-   `(avy-lead-face-0 ((,class (:slant normal :foreground ,grey-darkest :background ,cerise-bright))))
-   `(avy-lead-face-1 ((,class (:slant normal :foreground ,white :background ,grey-dark))))
-   `(avy-lead-face-2 ((,class (:slant normal :foreground ,grey-darkest :background ,wine-bright))))
-
    ;; undo-tree
    `(undo-tree-visualizer-current-face ((,class (:foreground ,pink-bright))))
    `(undo-tree-visualizer-default-face ((,class (:foreground ,grey-light))))
@@ -848,23 +863,6 @@
    `(web-mode-html-tag-face ((,class (:foreground ,bright))))
    `(web-mode-html-attr-name-face ((,class (:inherit font-lock-doc-face))))
    `(web-mode-doctype-face ((,class (:inherit font-lock-builtin-face))))
-
-   ;; ace-window
-   `(aw-leading-char-face ((,class (:weight bold :foreground ,malachite :background ,green-darker :height 150))))
-
-   ;; iedit
-   `(iedit-occurrence ((,class (:inherit isearch))))
-   `(iedit-read-only-occurrence ((,class (:inherit isearch))))
-
-   ;; eval-sexp-fu
-   `(eval-sexp-fu-flash ((,class (:foreground nil :background ,emerald-dark))))
-
-   ;; hydra (use one color for all)
-   `(hydra-face-amaranth ((,class (:foreground ,wine-bright :weight bold))))
-   `(hydra-face-blue ((,class (:foreground ,wine-bright :weight bold))))
-   `(hydra-face-pink ((,class (:foreground ,wine-bright :weight bold))))
-   `(hydra-face-red ((,class (:foreground ,wine-bright :weight bold))))
-   `(hydra-face-teal ((,class (:foreground ,wine-bright :weight bold))))
 
    ;; wiki-page-intro
    `(wiki-page-intro-title ((,class (:foreground ,wine-bright :weight bold))))
