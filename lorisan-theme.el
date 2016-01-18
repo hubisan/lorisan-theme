@@ -3,7 +3,8 @@
 ;; Copyright 2015 Daniel Hubmann
 
 ;; Author: Daniel Hubmann <hubisan@gmail.com>
-;; URL: https://github.com/Hubisan/lorisan-theme
+;; Version: 1.0
+;; URL: https://github.com/hubisan/lorisan-theme
 ;; Keywords: lorisan, dark, themes
 
 ;; This file is not part of GNU Emacs
@@ -21,9 +22,9 @@
 
 ;;; Commentary:
 
-;; Dark color theme for Emacs with intensive colors.
+;; Dark color theme for emacs with intensive colors.
 ;; The theme structure has been partly borrowed from grandshell theme
-;; by Steckerhalter
+;; by steckerhalter
 
 ;;; Requirements:
 
