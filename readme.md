@@ -9,7 +9,7 @@ Dark color theme for Emacs >= 24
 `quelpa` is at https://github.com/quelpa/quelpa
 
 ```lisp
-(quelpa '(lorisan-theme :repo "lorisan/lorisan-theme" :fetcher github))
+(quelpa '(lorisan-theme :repo "hubisan/lorisan-theme" :fetcher github))
 ```
 ### melpa
 
