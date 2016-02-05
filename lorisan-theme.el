@@ -216,7 +216,7 @@
 
    `(highlight ((,class (:inverse-video nil :background ,violet-darkest :foreground nil))))
    `(isearch ((,class (:foreground ,amber-bright :background ,background :inverse-video t))))
-   `(isearch-fail ((,class (:background ,background :inherit font-lock-warning-face :inverse-video t))))
+   `(isearch-fail ((,class (:foreground ,background :background ,coquelicot))))
    `(match ((,class (:foreground ,blue-bright :background ,background :inverse-video t))))
    `(lazy-highlight ((,class (:foreground ,green-bright :background ,background :inverse-video t))))
    `(region ((,class (:background ,violet2-dark))))
@@ -243,7 +243,7 @@
    `(error ((,class (:foreground ,red-bright))))
 
    `(show-paren-match ((,class (:weight bold :foreground ,grey-darkest :background ,indigo-bright :slant italic))))
-   `(show-paren-mismatch ((,class (:background ,background :inherit font-lock-warning-face :inverse-video t))))
+   `(show-paren-mismatch ((,class (:weight bold :foreground ,background :background ,red-bright))))
 
    `(custom-variable-tag ((,class (:foreground ,blue))))
    `(custom-group-tag ((,class (:foreground ,blue))))
@@ -265,7 +265,7 @@
    `(font-lock-string-face ((,class (:foreground ,coquelicot-light))))
    `(font-lock-type-face ((,class (:foreground ,magenta))))
    `(font-lock-variable-name-face ((,class (:foreground ,cyan))))
-   `(font-lock-warning-face ((,class (:weight bold :foreground ,red-bright))))
+   `(font-lock-warning-face ((,class (:weight normal :foreground ,coquelicot))))
 
    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
    ;; mode specific faces
@@ -810,8 +810,8 @@
    `(rainbow-delimiters-depth-7-face ((,class (:foreground ,paren7))))
    `(rainbow-delimiters-depth-8-face ((,class (:foreground ,paren8))))
    `(rainbow-delimiters-depth-9-face ((,class (:foreground ,paren9))))
-   `(rainbow-delimiters-unmatched-face ((,class (:foreground ,red-bright))))
-   `(rainbow-delimiters-mismatched-face ((,class (:foreground ,red-bright))))
+   `(rainbow-delimiters-unmatched-face ((,class (:weight bold :foreground ,background :background ,red-bright))))
+   `(rainbow-delimiters-mismatched-face ((,class (:weight bold :foreground ,background :background ,red-bright))))
 
    ;; regex-tool
    `(regex-tool-matched-face ((,class (:foreground nil :background nil :inherit match))))
