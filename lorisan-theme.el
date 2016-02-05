@@ -222,7 +222,7 @@
    `(region ((,class (:background ,violet2-dark))))
    `(secondary-selection ((,class (:background ,indigo-dark))))
    `(trailing-whitespace ((,class (:background ,grey-darkest :underline (:color ,red-bright :style wave)))))
-   `(hl-line ((,class (:background ,pink-dark))))
+   `(hl-line ((,class (:background ,grey-darkest))))
 
    `(mode-line ((t (:foreground ,grey-light :background ,blue2-dark))))
    `(mode-line-inactive ((t (:foreground ,grey :background ,blue2-darkest :weight light :box nil :inherit (mode-line )))))
@@ -530,6 +530,10 @@
    `(gnus-group-news-4-empty ((,class (:inherit gnus-group-news-4 :foreground ,faint))))
    `(gnus-group-news-5-empty ((,class (:inherit gnus-group-news-5 :foreground ,faint))))
    `(gnus-group-news-6-empty ((,class (:inherit gnus-group-news-6 :foreground ,faint))))
+
+   ;; google-translate
+   `(google-translate-text-face ((,class (:foreground ,indigo :background nil :weight bold))))
+   `(google-translate-translation-face ((,class (:foreground ,emerald :background nil :weight bold))))
 
    ;; grep
    `(grep-context-face ((,class (:foreground ,faint))))
