@@ -3,7 +3,7 @@
 ;; Copyright 2015 Daniel Hubmann
 
 ;; Author: Daniel Hubmann <hubisan@gmail.com>
-;; Version: 1.0
+;; Version: 1.03
 ;; URL: https://github.com/hubisan/lorisan-theme
 ;; Keywords: lorisan, dark, themes
 
@@ -72,6 +72,12 @@
       (orange-darker "#b05a0e")
       (orange-dark "#743d11")
       (orange-darkest "#3c210e")
+      (fulvous-light "#E5C495")
+      (fulvous-bright "#FF9600")
+      (fulvous "#ffb54c")
+      (fulvous-darker "#ba843b")
+      (fulvous-dark "#78572a")
+      (fulvous-darkest "#3d2d19")
       (amber-light "#D9C78C")
       (amber-bright "#FFC811")
       (amber "#d9ab41")
@@ -196,15 +202,6 @@
       (outline-7 "#109310")
       (outline-6 "#109166")
       (outline-5 "#1587C0")
-      ;; (outline-1 "#1EA9A9")
-      ;; (outline-2 "#30A2DA")
-      ;; (outline-3 "#7198E6")
-      ;; (outline-4 "#8F8FEB")
-      ;; (outline-5 "#A887EA")
-      ;; (outline-6 "#C47BE8")
-      ;; (outline-7 "#E465E4")
-      ;; (outline-8 "#E56EBE")
-      ;; (outline-9 "#E6739A")
       )
 
   (custom-theme-set-faces
@@ -226,7 +223,7 @@
    `(match ((,class (:foreground ,blue-bright :background ,background :inverse-video t))))
    `(lazy-highlight ((,class (:foreground ,green-bright :background ,background :inverse-video t))))
    `(region ((,class (:background ,violet2-dark))))
-   `(secondary-selection ((,class (:background ,indigo-dark))))
+   `(secondary-selection ((,class (:background ,indigo-darkest))))
    `(trailing-whitespace ((,class (:background ,grey-darkest :underline (:color ,red-bright :style wave)))))
    `(hl-line ((,class (:background ,blue2-dark))))
 
@@ -260,9 +257,9 @@
    `(font-lock-comment-delimiter-face ((,class (:foreground ,indigo-darker :slant italic))))
    `(font-lock-comment-face ((,class (:foreground ,indigo-darker :slant italic))))
    `(font-lock-constant-face ((,class (:foreground ,emerald))))
-   `(font-lock-doc-face ((,class (:foreground ,brown-light))))
+   `(font-lock-doc-face ((,class (:foreground ,pink-darker))))
    `(font-lock-doc-string-face ((,class (:foreground ,red))))
-   `(font-lock-function-name-face ((,class (:foreground ,amber))))
+   `(font-lock-function-name-face ((,class (:foreground ,fulvous))))
    `(font-lock-keyword-face ((,class (:foreground ,wine))))
    `(font-lock-negation-char-face ((,class (:foreground ,red-bright))))
    `(font-lock-preprocessor-face ((,class (:foreground ,cerise))))
@@ -376,7 +373,7 @@
    `(diredp-compressed-file-suffix ((,class (:foreground ,turquoise-bright))))
    `(diredp-date-time ((,class (:foreground ,grey-darker))))
    `(diredp-deletion ((,class (:foreground ,red-bright :weight bold :slant italic))))
-   `(diredp-deletion-file-name ((,class (:foreground ,red-bright :background ,red-dark :underline nil))))
+   `(diredp-deletion-file-name ((,class (:foreground ,red-bright :background ,red-darkest :underline nil))))
    `(diredp-dir-heading ((,class (:foreground ,pink :underline t :weight normal))))
    `(diredp-dir-priv ((,class (:foreground ,wine))))
    `(diredp-dir-name ((,class (:foreground ,wine))))
@@ -666,7 +663,7 @@
    `(linum ((,class (:background ,alt-background))))
 
    ;; magit
-   `(magit-branch ((,class (:foreground ,green))))
+   `(magit-branch ((,class (:foreground ,emerald))))
    `(magit-header ((,class (:inherit nil :weight bold))))
    `(magit-item-highlight ((,class (:inherit highlight :background nil))))
    `(magit-log-graph ((,class (:foreground ,faintest))))
@@ -684,9 +681,10 @@
    `(magit-section ((,class (:inherit nil :weight bold))))
    `(magit-section-highlight ((,class (:foreground ,brown-light))))
    `(magit-section-heading ((,class (:foreground ,pink))))
+   `(magit-tag ((,class (:foreground ,orange-light))))
    `(magit-branch-local ((,class (:foreground ,indigo-bright))))
    `(magit-branch-remote ((,class (:foreground ,emerald))))
-   `(magit-hash ((,class (:foreground ,pink-bright))))
+   `(magit-hash ((,class (:foreground ,wine))))
    `(magit-diff-file-heading ((,class (:foreground ,indigo))))
    `(magit-diff-hunk-heading ((,class (:foreground ,cerise-bright :background ,blue2-dark))))
    `(magit-diff-hunk-heading-highlight ((,class (:inherit magit-diff-hunk-heading :weight bold :underline t))))
@@ -795,15 +793,26 @@
    `(org-checkbox-statistics-done ((,class (:foreground ,green))))
 
    ;; outline
-   `(outline-1 ((,class (:slant normal :foreground ,outline-1 :underline (:style line :color ,grey-dark)))))
-   `(outline-2 ((,class (:slant normal :foreground ,outline-2 :underline (:style line :color ,grey-dark)))))
-   `(outline-3 ((,class (:slant normal :foreground ,outline-3 :underline (:style line :color ,grey-dark)))))
-   `(outline-4 ((,class (:slant normal :foreground ,outline-4 :underline (:style line :color ,grey-dark)))))
-   `(outline-5 ((,class (:slant normal :foreground ,outline-5 :underline (:style line :color ,grey-dark)))))
-   `(outline-6 ((,class (:slant normal :foreground ,outline-6 :underline (:style line :color ,grey-dark)))))
-   `(outline-7 ((,class (:slant normal :foreground ,outline-7 :underline (:style line :color ,grey-dark)))))
-   `(outline-8 ((,class (:slant normal :foreground ,outline-8 :underline (:style line :color ,grey-dark)))))
-   `(outline-9 ((,class (:slant normal :foreground ,outline-9 :underline (:style line :color ,grey-dark)))))
+   `(outline-1 ((,class (:slant normal :foreground ,outline-1))))
+   `(outline-2 ((,class (:slant normal :foreground ,outline-2))))
+   `(outline-3 ((,class (:slant normal :foreground ,outline-3))))
+   `(outline-4 ((,class (:slant normal :foreground ,outline-4))))
+   `(outline-5 ((,class (:slant normal :foreground ,outline-5))))
+   `(outline-6 ((,class (:slant normal :foreground ,outline-6))))
+   `(outline-7 ((,class (:slant normal :foreground ,outline-7))))
+   `(outline-8 ((,class (:slant normal :foreground ,outline-8))))
+   `(outline-9 ((,class (:slant normal :foreground ,outline-9))))
+
+   ;; outline
+   `(outshine-level-1 ((,class (:slant normal :weight bold :foreground ,white))))
+   `(outshine-level-2 ((,class (:slant normal :weight normal :foreground ,white))))
+   `(outshine-level-3 ((,class (:slant italic :weight normal :foreground ,white))))
+   `(outshine-level-4 ((,class (:slant italic :weight normal :foreground ,grey-light))))
+   `(outshine-level-5 ((,class (:slant italic :weight normal :foreground ,grey-light))))
+   `(outshine-level-6 ((,class (:slant italic :weight normal :foreground ,grey-light))))
+   `(outshine-level-7 ((,class (:slant italic :weight normal :foreground ,grey-light))))
+   `(outshine-level-8 ((,class (:slant italic :weight normal :foreground ,grey-light))))
+   `(outshine-level-9 ((,class (:slant italic :weight normal :foreground ,grey-light))))
 
    ;; parenface
    `(paren-face ((,class (:foreground ,faintest :background nil))))
