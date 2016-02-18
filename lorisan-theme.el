@@ -253,7 +253,7 @@
    `(custom-state-tag ((,class (:foreground ,green))))
 
    ;; general font lock faces
-   `(font-lock-builtin-face ((,class (:foreground ,turquoise))))
+   `(font-lock-builtin-face ((,class (:foreground ,cerise))))
    `(font-lock-comment-delimiter-face ((,class (:foreground ,indigo-darker :slant italic))))
    `(font-lock-comment-face ((,class (:foreground ,indigo-darker :slant italic))))
    `(font-lock-constant-face ((,class (:foreground ,emerald))))
