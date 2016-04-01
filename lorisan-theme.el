@@ -213,7 +213,7 @@
    `(italic ((,class (:slant italic))))
    `(bold-italic ((,class (:slant italic :weight bold))))
    `(underline ((,class (:underline t))))
-   `(shadow ((,class (:foreground ,normal))))
+   `(shadow ((,class (:foreground ,grey-light))))
    `(link ((,class (:foreground ,turquoise-bright :underline t))))
    `(link-visited ((,class (:foreground ,blue-bright :underline t))))
 
@@ -239,7 +239,7 @@
    `(cursor ((,class (:background ,coquelicot-bright))))
    `(border ((,class (:background ,alt-background))))
    `(widget-button ((,class (:underline t))))
-   `(widget-field ((,class (:background ,alt-background :box (:line-width 1 :color ,normal)))))
+   `(widget-field ((,class (:background ,alt-background :box (:line-width 1 :color ,grey-light)))))
 
    `(success ((,class (:foreground ,green-bright))))
    `(warning ((,class (:foreground ,coquelicot-bright))))
@@ -283,7 +283,7 @@
    ;; asorted faces
    `(csv-separator-face ((,class (:foreground ,coquelicot))))
    `(border-glyph ((,class (nil))))
-   `(gui-element ((,class (:background ,alt-background :foreground ,normal))))
+   `(gui-element ((,class (:background ,alt-background :foreground ,grey-light))))
    `(hl-sexp-face ((,class (:background ,blue-dark))))
    `(highlight-80+ ((,class (:background ,blue-dark))))
    `(rng-error-face ((,class (:underline ,red-bright))))
@@ -379,8 +379,8 @@
    `(diredp-dir-name ((,class (:foreground ,wine))))
    `(diredp-exec-priv ((,class (:foreground ,indigo :background nil))))
    `(diredp-executable-tag ((,class (:foreground ,green-bright :background nil))))
-   `(diredp-file-name ((,class (:foreground ,normal))))
-   `(diredp-file-suffix ((,class (:foreground ,normal))))
+   `(diredp-file-name ((,class (:foreground ,grey-light))))
+   `(diredp-file-suffix ((,class (:foreground ,grey-light))))
    `(diredp-flag-mark ((,class (:foreground ,red-bright :weight bold))))
    `(diredp-flag-mark-line ((,class (:inherit region))))
    `(diredp-ignored-file-name ((,class (:foreground ,grey-darker))))
@@ -392,7 +392,7 @@
    `(diredp-other-priv ((,class (:background nil :foreground ,indigo))))
    `(diredp-rare-priv ((,class (:foreground ,indigo :background nil))))
    `(diredp-read-priv ((,class (:foreground ,indigo :background nil))))
-   `(diredp-symlink ((,class (:foreground ,normal))))
+   `(diredp-symlink ((,class (:foreground ,grey-light))))
    `(diredp-write-priv ((,class (:foreground ,indigo :background nil))))
 
    ;; ediff
@@ -433,13 +433,13 @@
    `(eshell-ls-backup ((,class (:foreground ,amber))))
    `(eshell-ls-clutter ((,class (:foreground ,coquelicot :weight normal))))
    `(eshell-ls-directory ((,class (:foreground ,cyan :weight normal))))
-   `(eshell-ls-executable ((,class (:foreground ,normal :weight normal))))
+   `(eshell-ls-executable ((,class (:foreground ,grey-light :weight normal))))
    `(eshell-ls-missing ((,class (:foreground ,violet :weight normal))))
    `(eshell-ls-product ((,class (:foreground ,amber))))
    `(eshell-ls-readonly ((,class (:foreground ,brown-light))))
    `(eshell-ls-special ((,class (:foreground ,emerald :weight normal))))
    `(eshell-ls-symlink ((,class (:foreground ,blue-bright :weight normal))))
-   `(eshell-ls-unreadable ((,class (:foreground ,normal))))
+   `(eshell-ls-unreadable ((,class (:foreground ,grey-light))))
    `(eshell-prompt ((,class (:foreground ,wine :weight normal))))
 
    ;; eval-sexp-fu
@@ -502,7 +502,7 @@
    `(gnus-button ((,class (:inherit link :foreground nil))))
    `(gnus-signature ((,class (:inherit font-lock-comment-face))))
    `(gnus-summary-normal-unread ((,class (:foreground ,strong :weight normal))))
-   `(gnus-summary-normal-read ((,class (:foreground ,normal :weight normal))))
+   `(gnus-summary-normal-read ((,class (:foreground ,grey-light :weight normal))))
    `(gnus-summary-normal-ancient ((,class (:foreground ,cyan :weight normal))))
    `(gnus-summary-normal-ticked ((,class (:foreground ,coquelicot :weight normal))))
    `(gnus-summary-low-unread ((,class (:foreground ,faint :weight normal))))
@@ -555,9 +555,9 @@
    `(helm-match ((,class (:foreground ,amber-bright))))
    `(helm-prefarg ((,class (:foreground ,mint))))
    `(helm-candidate-number ((,class (:background ,background :foreground ,amber :bold t))))
-   `(helm-visible-mark ((,class (:background ,cerise-dark :foreground nil :bold))))
-   `(helm-header ((,class (:background ,background :foreground ,coquelicot))))
-   `(helm-selection ((,class (:background ,grey-dark :foreground nil :underline t))))
+   `(helm-visible-mark ((,class (:background ,violet2-dark :foreground nil :bold))))
+   `(helm-header ((,class (:background ,background :foreground ,indigo-darker))))
+   `(helm-selection ((,class (:background ,grey-dark :foreground ,nil))))
    `(helm-selection-line ((,class (:background ,indigo-dark :foreground nil :underline nil))))
    `(helm-separator ((,class (:foreground ,indigo))))
    `(helm-source-header ((,class (:background ,blue2-dark, :foreground ,pink-bright, :underline nil, :weight bold))))
@@ -591,7 +591,7 @@
 
    ;; info
    `(info-title-1 ((,class (:foreground ,pink-bright :weight bold))))
-   `(info-title-2 ((,class (:foreground ,amber :weight bold))))
+   `(info-title-2 ((,class (:foreground ,fulvous :weight bold))))
    `(info-title-3 ((,class (:foreground ,violet :weight bold))))
    `(info-title-4 ((,class (:weight bold))))
    `(info-node ((,class (:foreground ,pink-light :slant italic :weight bold))))
@@ -641,7 +641,8 @@
    ;; js2-mode
    `(js2-warning ((,class (:inherit flycheck-warning))))
    `(js2-error ((,class (:inherit flycheck-error))))
-   `(js2-external-variable-face ((,class (:foreground ,magenta-bright))))
+   `(js2-external-variable ((,class (:foreground ,violet-bright))))
+   `(js2-external-variable-face ((,class (:foreground ,violet-bright))))
    `(js2-function-param-face ((,class (:foreground ,green))))
    `(js2-instance-member-face ((,class (:foreground ,red-bright))))
    `(js2-private-function-call-face ((,class (:foreground ,red-bright))))
@@ -649,7 +650,8 @@
    ;; js3-mode
    `(js3-warning ((,class (:inherit flycheck-warning))))
    `(js3-error ((,class (:inherit flycheck-error))))
-   `(js3-external-variable-face ((,class (:foreground ,magenta))))
+   `(js3-external-variable ((,class (:foreground ,violet-bright))))
+   `(js3-external-variable-face ((,class (:foreground ,violet-bright))))
    `(js3-function-param-face ((,class (:foreground ,blue))))
    `(js3-jsdoc-tag-face ((,class (:foreground ,magenta))))
    `(js3-jsdoc-type-face ((,class (:foreground ,cyan))))
@@ -689,7 +691,7 @@
    `(magit-diff-file-heading ((,class (:foreground ,indigo))))
    `(magit-diff-hunk-heading ((,class (:foreground ,cerise-bright :background ,blue2-dark))))
    `(magit-diff-hunk-heading-highlight ((,class (:inherit magit-diff-hunk-heading :weight bold :underline t))))
-   `(magit-diff-context ((,class (:foreground ,normal))))
+   `(magit-diff-context ((,class (:foreground ,grey-light))))
    `(magit-diff-context-highlight ((,class (:inherit magit-diff-context :foreground ,grey-light))))
    `(magit-diff-lines-boundary ((,class (:background ,coquelicot-bright))))
    `(magit-diff-lines-heading ((,class (:inherit magit-diff-hunk-heading-highlight :foreground ,coquelicot-bright))))
@@ -734,10 +736,10 @@
 
    ;; neo-tree
    `(neo-banner-face ((,class (:foreground ,cyan))))
-   `(neo-header-face ((,class (:foreground ,normal))))
+   `(neo-header-face ((,class (:foreground ,grey-light))))
    `(neo-root-dir-face ((,class (:foreground ,wine-darkest :background ,wine-darker))))
    `(neo-dir-link-face ((,class (:foreground ,wine))))
-   `(neo-file-link-face ((,class (:foreground ,normal))))
+   `(neo-file-link-face ((,class (:foreground ,grey-light))))
    `(neo-expand-btn-face ((,class (:foreground ,indigo))))
 
    ;; nrepl-eval-sexp-fu
@@ -759,7 +761,7 @@
    `(org-code ((,class (:foreground ,amber))))
    `(org-column ((,class (:inherit default))))
    `(org-column-title ((,class (:inherit mode-line :foreground ,magenta :weight bold :underline t))))
-   `(org-date ((,class (:foreground ,blue :underline t))))
+   `(org-date ((,class (:foreground ,fulvous-light :underline nil))))
    `(org-document-info ((,class (:foreground ,pink))))
    `(org-document-info-keyword ((,class (:foreground ,pink-darker))))
    `(org-document-title ((,class (:weight bold :foreground ,amber :height 1.44))))
@@ -768,20 +770,20 @@
    `(org-footnote ((,class (:foreground ,cyan))))
    `(org-formula ((,class (:foreground ,coquelicot))))
    `(org-hide ((,class (:foreground ,background :background ,background))))
-   `(org-level-1 ((,class (:foreground ,magenta))))
+   `(org-level-1 ((,class (:foreground ,indigo))))
    `(org-level-2 ((,class (:foreground ,indigo))))
-   `(org-level-3 ((,class (:foreground ,coquelicot-light))))
-   `(org-level-4 ((,class (:foreground ,emerald-light))))
-   `(org-level-5 ((,class (:foreground ,turquoise-light))))
-   `(org-level-6 ((,class (:foreground ,amber-light))))
-   `(org-level-7 ((,class (:foreground ,pink))))
-   `(org-level-8 ((,class (:foreground ,green-light))))
+   `(org-level-3 ((,class (:foreground ,indigo))))
+   `(org-level-4 ((,class (:foreground ,indigo))))
+   `(org-level-5 ((,class (:foreground ,indigo))))
+   `(org-level-6 ((,class (:foreground ,indigo))))
+   `(org-level-7 ((,class (:foreground ,indigo))))
+   `(org-level-8 ((,class (:foreground ,indigo))))
    `(org-link ((,class (:foreground ,turquoise-bright :underline t))))
    `(org-scheduled ((,class (:foreground ,amber-bright))))
    `(org-scheduled-previously ((,class (:foreground ,amber-darker))))
    `(org-scheduled-today ((,class (:foreground ,amber-light))))
-   `(org-special-keyword ((,class (:foreground ,mint-low))))
-   `(org-table ((,class (:foreground ,normal))))
+   `(org-special-keyword ((,class (:foreground ,cerise))))
+   `(org-table ((,class (:foreground ,grey-light))))
    `(org-tag ((,class (:foreground ,violet))))
    `(org-target ((,class (:foreground ,green))))
    `(org-time-grid ((,class (:inherit default))))
@@ -819,8 +821,8 @@
    `(paren-face ((,class (:foreground ,faintest :background nil))))
 
    ;; powerline
-   `(powerline-active1 ((t (:foreground ,normal :background ,contrast-background))))
-   `(powerline-active2 ((t (:foreground ,normal :background ,alt-background))))
+   `(powerline-active1 ((t (:foreground ,grey-light :background ,contrast-background))))
+   `(powerline-active2 ((t (:foreground ,grey-light :background ,alt-background))))
 
    ;; rainbow-delimiters
    `(rainbow-delimiters-depth-1-face ((,class (:foreground ,paren1))))
@@ -893,8 +895,8 @@
 
    ;; wiki-page-intro
    `(wiki-page-intro-title ((,class (:foreground ,wine-bright :weight bold))))
-   `(wiki-page-intro-text ((,class (:foreground ,normal))))
-   `(wiki-page-intro-not-found ((,class (:foreground ,normal :underline (:style wave :color ,wine)))))
+   `(wiki-page-intro-text ((,class (:foreground ,grey-light))))
+   `(wiki-page-intro-not-found ((,class (:foreground ,grey-light :underline (:style wave :color ,wine)))))
    `(wiki-page-intro-error ((,class (:inherit error))))
 
    )
