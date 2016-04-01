@@ -3,7 +3,7 @@
 ;; Copyright 2015 Daniel Hubmann
 
 ;; Author: Daniel Hubmann <hubisan@gmail.com>
-;; Version: 1.03
+;; Version: 1.07
 ;; URL: https://github.com/hubisan/lorisan-theme
 ;; Keywords: lorisan, dark, themes
 
@@ -355,14 +355,14 @@
    `(compilation-info ((,class (:foreground ,turquoise))))
 
    ;; diff
-   `(diff-added ((,class (:foreground ,emerald-bright))))
+   `(diff-added ((,class (:inherit magit-diff-added))))
    `(diff-changed ((,class (:foreground ,indigo-bright))))
-   `(diff-removed ((,class (:foreground ,pink-bright))))
+   `(diff-removed ((,class (:inherit magit-diff-removed))))
    `(diff-header ((,class (:foreground ,cyan :background nil))))
-   `(diff-file-header ((,class (:foreground ,blue-bright :background nil))))
-   `(diff-hunk-header ((,class (:foreground ,magenta))))
-   `(diff-refine-removed ((,class (:inherit magit-diff-removed-highlight :foreground ,grey-darkest :background ,pink-bright))))
-   `(diff-refine-added ((,class (:inherit magit-diff-added-highlight :foreground ,grey-darkest :background ,emerald-bright))))
+   `(diff-file-header ((,class (:inherit magit-diff-file-heading))))
+   `(diff-hunk-header ((,class (:inherit magit-diff-hunk-heading))))
+   `(diff-refine-removed ((,class (:foreground ,background :background ,wine))))
+   `(diff-refine-added ((,class (:foreground ,background :background ,emerald))))
 
    ;; diff-hl
    `(diff-hl-change ((,class (:foreground ,indigo-darker :background ,indigo-bright))))
@@ -396,10 +396,18 @@
    `(diredp-write-priv ((,class (:foreground ,indigo :background nil))))
 
    ;; ediff
-   `(ediff-even-diff-A ((,class (:foreground nil :background nil :inverse-video t))))
-   `(ediff-even-diff-B ((,class (:foreground nil :background nil :inverse-video t))))
-   `(ediff-odd-diff-A  ((,class (:foreground ,faint :background nil :inverse-video t))))
-   `(ediff-odd-diff-B  ((,class (:foreground ,faint :background nil :inverse-video t))))
+   `(ediff-even-diff-A ((,class (:foreground nil :background ,fulvous-dark))))
+   `(ediff-odd-diff-A  ((,class (:foreground nil :background ,fulvous-dark))))
+   `(ediff-current-diff-A  ((,class (:foreground ,background :background ,fulvous-darker))))
+   `(ediff-fine-diff-A  ((,class (:foreground ,background :background ,fulvous))))
+   `(ediff-even-diff-B ((,class (:foreground nil :background ,emerald-dark))))
+   `(ediff-odd-diff-B  ((,class (:foreground nil :background ,emerald-dark))))
+   `(ediff-current-diff-B  ((,class (:foreground ,background :background ,emerald-darker))))
+   `(ediff-fine-diff-B  ((,class (:foreground ,background :background ,emerald))))
+   `(ediff-even-diff-C ((,class (:foreground nil :background ,indigo-dark))))
+   `(ediff-odd-diff-C  ((,class (:foreground nil :background ,indigo-dark))))
+   `(ediff-current-diff-C  ((,class (:foreground ,background :background ,indigo-darker))))
+   `(ediff-fine-diff-C  ((,class (:foreground ,background :background ,indigo))))
 
    ;; eldoc
    `(eldoc-highlight-function-argument ((,class (:foreground ,green :weight bold))))
@@ -695,9 +703,9 @@
    `(magit-diff-context-highlight ((,class (:inherit magit-diff-context :foreground ,grey-light))))
    `(magit-diff-lines-boundary ((,class (:background ,coquelicot-bright))))
    `(magit-diff-lines-heading ((,class (:inherit magit-diff-hunk-heading-highlight :foreground ,coquelicot-bright))))
-   `(magit-diff-added ((,class (:foreground ,emerald-bright))))
+   `(magit-diff-added ((,class (:foreground ,emerald))))
    `(magit-diff-added-highlight ((,class (:inherit magit-diff-added :weight bold))))
-   `(magit-diff-removed ((,class (:foreground ,pink-bright))))
+   `(magit-diff-removed ((,class (:foreground ,wine))))
    `(magit-diff-removed-highlight ((,class (:inherit magit-diff-removed :weight bold))))
 
    ;; markdown
