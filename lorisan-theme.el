@@ -3,7 +3,7 @@
 ;; Copyright 2015 Daniel Hubmann
 
 ;; Author: Daniel Hubmann <hubisan@gmail.com>
-;; Version: 1.07
+;; Version: 1.08
 ;; URL: https://github.com/hubisan/lorisan-theme
 ;; Keywords: lorisan, dark, themes
 
@@ -361,8 +361,8 @@
    `(diff-header ((,class (:foreground ,cyan :background nil))))
    `(diff-file-header ((,class (:inherit magit-diff-file-heading))))
    `(diff-hunk-header ((,class (:inherit magit-diff-hunk-heading))))
-   `(diff-refine-removed ((,class (:foreground ,background :background ,wine))))
-   `(diff-refine-added ((,class (:foreground ,background :background ,emerald))))
+   `(diff-refine-removed ((,class (:foreground ,wine-light :background ,wine-dark))))
+   `(diff-refine-added ((,class (:foreground ,emerald-bright :background ,emerald-dark))))
 
    ;; diff-hl
    `(diff-hl-change ((,class (:foreground ,indigo-darker :background ,indigo-bright))))
@@ -396,16 +396,16 @@
    `(diredp-write-priv ((,class (:foreground ,indigo :background nil))))
 
    ;; ediff
-   `(ediff-even-diff-A ((,class (:foreground nil :background ,fulvous-dark))))
-   `(ediff-odd-diff-A  ((,class (:foreground nil :background ,fulvous-dark))))
+   `(ediff-even-diff-A ((,class (:foreground nil :background ,fulvous-darkest))))
+   `(ediff-odd-diff-A  ((,class (:foreground nil :background ,fulvous-darkest))))
    `(ediff-current-diff-A  ((,class (:foreground ,background :background ,fulvous-darker))))
    `(ediff-fine-diff-A  ((,class (:foreground ,background :background ,fulvous))))
-   `(ediff-even-diff-B ((,class (:foreground nil :background ,emerald-dark))))
-   `(ediff-odd-diff-B  ((,class (:foreground nil :background ,emerald-dark))))
+   `(ediff-even-diff-B ((,class (:foreground nil :background ,emerald-darkest))))
+   `(ediff-odd-diff-B  ((,class (:foreground nil :background ,emerald-darkest))))
    `(ediff-current-diff-B  ((,class (:foreground ,background :background ,emerald-darker))))
    `(ediff-fine-diff-B  ((,class (:foreground ,background :background ,emerald))))
-   `(ediff-even-diff-C ((,class (:foreground nil :background ,indigo-dark))))
-   `(ediff-odd-diff-C  ((,class (:foreground nil :background ,indigo-dark))))
+   `(ediff-even-diff-C ((,class (:foreground nil :background ,indigo-darkest))))
+   `(ediff-odd-diff-C  ((,class (:foreground nil :background ,indigo-darkest))))
    `(ediff-current-diff-C  ((,class (:foreground ,background :background ,indigo-darker))))
    `(ediff-fine-diff-C  ((,class (:foreground ,background :background ,indigo))))
 
