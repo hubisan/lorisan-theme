@@ -3,7 +3,7 @@
 ;; Copyright 2015 Daniel Hubmann
 
 ;; Author: Daniel Hubmann <hubisan@gmail.com>
-;; Version: 1.08
+;; Version: 1.081
 ;; URL: https://github.com/hubisan/lorisan-theme
 ;; Keywords: lorisan, dark, themes
 
@@ -778,14 +778,14 @@
    `(org-footnote ((,class (:foreground ,cyan))))
    `(org-formula ((,class (:foreground ,coquelicot))))
    `(org-hide ((,class (:foreground ,background :background ,background))))
-   `(org-level-1 ((,class (:foreground ,indigo))))
+   `(org-level-1 ((,class (:foreground ,magenta))))
    `(org-level-2 ((,class (:foreground ,indigo))))
-   `(org-level-3 ((,class (:foreground ,indigo))))
-   `(org-level-4 ((,class (:foreground ,indigo))))
-   `(org-level-5 ((,class (:foreground ,indigo))))
-   `(org-level-6 ((,class (:foreground ,indigo))))
-   `(org-level-7 ((,class (:foreground ,indigo))))
-   `(org-level-8 ((,class (:foreground ,indigo))))
+   `(org-level-3 ((,class (:foreground ,coquelicot-light))))
+   `(org-level-4 ((,class (:foreground ,emerald-light))))
+   `(org-level-5 ((,class (:foreground ,turquoise-light))))
+   `(org-level-6 ((,class (:foreground ,amber-light))))
+   `(org-level-7 ((,class (:foreground ,pink))))
+   `(org-level-8 ((,class (:foreground ,green-light))))
    `(org-link ((,class (:foreground ,turquoise-bright :underline t))))
    `(org-scheduled ((,class (:foreground ,amber-bright))))
    `(org-scheduled-previously ((,class (:foreground ,amber-darker))))
