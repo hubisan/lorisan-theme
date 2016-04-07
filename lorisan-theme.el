@@ -3,7 +3,7 @@
 ;; Copyright 2015 Daniel Hubmann
 
 ;; Author: Daniel Hubmann <hubisan@gmail.com>
-;; Version: 1.081
+;; Version: 1.082
 ;; URL: https://github.com/hubisan/lorisan-theme
 ;; Keywords: lorisan, dark, themes
 
@@ -53,6 +53,7 @@
       (grey-darker "#595C62")
       (grey-dark "#494a4e")
       (grey-darkest "#272829")
+      (grey-darkester "#171718")
       (red-light "#FFB5B4")
       (red-bright "#FE0400")
       (red "#FF6865")
@@ -148,6 +149,7 @@
       (indigo-dark "#525078")
       (indigo-darkest "#2b293b")
       (blue2 "#5E55FF")
+      (blue2-darker "#362d77")
       (blue2-dark "#1b1d4a")
       (blue2-darkest "#0a0f1d")
       (blue3-dark "#272566")
@@ -214,7 +216,7 @@
    `(bold-italic ((,class (:slant italic :weight bold))))
    `(underline ((,class (:underline t))))
    `(shadow ((,class (:foreground ,grey-light))))
-   `(link ((,class (:foreground ,turquoise-bright :underline t))))
+   `(link ((,class (:foreground ,turquoise :underline t))))
    `(link-visited ((,class (:foreground ,blue-bright :underline t))))
 
    `(highlight ((,class (:inverse-video nil :background ,grey-darkest :foreground nil))))
@@ -228,7 +230,7 @@
    `(hl-line ((,class (:background ,blue2-dark))))
 
    `(mode-line ((t (:foreground ,grey-light :background ,blue2-dark))))
-   `(mode-line-inactive ((t (:foreground ,grey :background ,blue2-darkest :weight light :box nil :inherit (mode-line )))))
+   `(mode-line-inactive ((t (:foreground ,grey :background ,grey-darkester :weight light :box nil :inherit (mode-line )))))
    `(mode-line-buffer-id ((t (:foreground ,cyan-bright))))
    `(mode-line-emphasis ((,class (:foreground ,magenta))))
    `(which-func ((,class (:foreground ,blue :background nil :weight bold))))
@@ -278,7 +280,8 @@
    `(ace-jump-face-foreground ((,class (:foreground ,red-bright))))
 
    ;; ace-window
-   `(aw-leading-char-face ((,class (:weight bold :foreground ,malachite :background ,green-darker :height 150))))
+   `(aw-leading-char-face ((,class (:foreground ,wine-darkest :background ,wine-bright :weight bold))))
+   `(aw-background-face ((,class (:background ,background :foreground ,grey-dark))))
 
    ;; asorted faces
    `(csv-separator-face ((,class (:foreground ,coquelicot))))
@@ -560,7 +563,7 @@
 
    ;; helm
    `(helm-M-x-key ((,class (:foreground ,blue :underline t))))
-   `(helm-match ((,class (:foreground ,amber-bright))))
+   `(helm-match ((,class (:foreground ,fulvous))))
    `(helm-prefarg ((,class (:foreground ,mint))))
    `(helm-candidate-number ((,class (:background ,background :foreground ,amber :bold t))))
    `(helm-visible-mark ((,class (:background ,violet2-dark :foreground nil :bold))))
@@ -579,7 +582,7 @@
    `(helm-ff-symlink ((,class (:foreground ,coquelicot))))
    `(helm-ff-dotted-directory ((,class (:foreground ,cyan :slant italic))))
    `(helm-ff-executable ((,class (:foreground ,indigo :background))))
-   `(helm-ff-file ((,class (:foreground ,coquelicot-light))))
+   `(helm-ff-file ((,class (:foreground ,indigo))))
    `(helm-grep-cmd-line ((,class (:foreground ,green-bright))))
    `(helm-grep-file ((,class (:foreground ,coquelicot-light))))
    `(helm-grep-finish ((,class (:foreground ,green))))
@@ -709,15 +712,31 @@
    `(magit-diff-removed-highlight ((,class (:inherit magit-diff-removed :weight bold))))
 
    ;; markdown
-   `(markdown-url-face ((,class (:inherit link))))
-   `(markdown-link-face ((,class (:foreground ,blue :underline t))))
-   `(markdown-header-face-1 ((,class (:inherit org-level-1))))
-   `(markdown-header-face-2 ((,class (:inherit org-level-2))))
-   `(markdown-header-face-3 ((,class (:inherit org-level-3))))
-   `(markdown-header-face-4 ((,class (:inherit org-level-4))))
-   `(markdown-header-delimiter-face ((,class (:foreground ,coquelicot))))
-   `(markdown-pre-face ((,class (:foreground "white"))))
-   `(markdown-inline-code-face ((,class (:foreground "white"))))
+   `(markdown-url-face ((,class (:foreground ,turquoise-darker :underline t))))
+   `(markdown-link-face ((,class (:foreground ,turquoise :underline t))))
+   `(markdown-link-title-face ((,class (:foreground ,turquoise-darker))))
+   `(markdown-header-face ((,class (:foreground ,wine-bright))))
+   `(markdown-header-face-1 ((,class (:foreground ,wine-bright))))
+   `(markdown-header-face-2 ((,class (:foreground ,wine-bright))))
+   `(markdown-header-face-3 ((,class (:foreground ,wine-bright))))
+   `(markdown-header-face-4 ((,class (:foreground ,wine-bright))))
+   `(markdown-header-face-5 ((,class (:foreground ,wine-bright))))
+   `(markdown-header-face-6 ((,class (:foreground ,wine-bright))))
+   `(markdown-header-delimiter-face ((,class (:foreground ,wine))))
+   `(markdown-header-rule-face ((,class (:foreground ,wine))))
+   `(markdown-pre-face ((,class (:foreground ,pink))))
+   `(markdown-inline-code-face ((,class (:foreground ,pink))))
+   `(markdown-markup-face ((,class (:foreground ,blue2 :weight bold))))
+   `(markdown-bold-face ((,class (:foreground ,grey-light :weight bold))))
+   `(markdown-italic-face ((,class (:foreground ,grey-light :slant italic))))
+   `(markdown-strike-through-face ((,class (:foreground ,grey-light :strike-through t))))
+   `(markdown-list-face ((,class (:foreground ,cyan))))
+   `(markdown-reference-face ((,class (:foreground ,cerise))))
+   `(markdown-language-keyword-face ((,class (:foreground ,blue2))))
+   `(markdown-comment-face ((,class (:foreground ,indigo-darker :slant italic))))
+   `(markdown-blockquote-face ((,class (:foreground ,indigo))))
+   `(markdown-gfm-checkbox-face ((,class (:foreground ,cerise))))
+   `(markdown-footnote-face ((,class (:foreground ,coquelicot-light))))
 
    ;; mark-multiple
    `(mm/master-face ((,class (:inherit region :foreground nil :background nil))))
