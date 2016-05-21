@@ -472,13 +472,16 @@
    `(flycheck-error-list-column-number ((,class (:foreground ,grey-darker))))
    `(flycheck-error-list-highlight ((,class (:background ,blue2-dark))))
 
-
    ;; flymake
    `(flymake-warnline ((,class (:underline ,amber :background ,background))))
    `(flymake-errline ((,class (:underline ,red-bright :background ,background))))
    `(flymake-infoline ((,class (:underline ,blue-bright :background ,background))))
 
-   ;; git
+   ;; flyspell
+   `(flyspell-incorrect ((,class (:underline (:style wave :color ,red-bright)))))
+   `(flyspell-duplicate ((,class (:underline (:style wave :color ,indigo-dark)))))
+
+                        ;; git
    `(git-commit-comment-action ((,class (:foreground ,white))))
    `(git-commit-comment-file ((,class (:foreground ,cyan-bright))))
    `(git-commit-comment-heading ((,class (:foreground ,pink-bright))))
@@ -672,6 +675,26 @@
    `(js3-instance-member-face ((,class (:foreground ,blue))))
    `(js3-private-function-call-face ((,class (:foreground ,red))))
 
+   ;; latex
+   `(font-latex-bold-face ((,class (:foreground ,grey-light :background nil :weight bold ))))
+   `(font-latex-doctex-documentation-face ((,class (:foreground ,brown-light :background nil))))
+   `(font-latex-doctex-preprocessor-face ((,class (:foreground ,orange :background nil))))
+   `(font-latex-italic-face ((,class (:foreground ,grey-light :background nil :slant italic))))
+   `(font-latex-math-face ((,class (:foreground ,blue2 :background nil))))
+   `(font-latex-sectioning-0-face ((,class (:foreground ,white :background nil :weight bold))))
+   `(font-latex-sectioning-1-face ((,class (:foreground ,white :background nil :weight bold))))
+   `(font-latex-sectioning-2-face ((,class (:foreground ,white :background nil :weight bold))))
+   `(font-latex-sectioning-3-face ((,class (:foreground ,white :background nil :weight bold))))
+   `(font-latex-sectioning-4-face ((,class (:foreground ,white :background nil :weight bold))))
+   `(font-latex-sectioning-5-face ((,class (:foreground ,white :background nil :weight bold))))
+   `(font-latex-sedate-face ((,class (:foreground ,pink :background nil))))
+   `(font-latex-slide-title-face ((,class (:foreground ,white :background nil :weight bold))))
+   `(font-latex-string-face ((,class (:foreground ,coquelicot-light :background nil))))
+   `(font-latex-subscript-face ((,class (:foreground ,blue2 :background nil))))
+   `(font-latex-superscript-face ((,class (:foreground ,blue2 :background nil))))
+   `(font-latex-verbatim-face ((,class (:foreground ,blue2 :background nil))))
+   `(font-latex-warning-face ((,class (:inherit warning))))
+
    ;; linum
    `(linum ((,class (:background ,alt-background))))
 
@@ -791,7 +814,7 @@
    `(org-date ((,class (:foreground ,fulvous-light :underline nil))))
    `(org-document-info ((,class (:foreground ,pink))))
    `(org-document-info-keyword ((,class (:foreground ,pink-darker))))
-   `(org-document-title ((,class (:weight bold :foreground ,amber :height 1.44))))
+   `(org-document-title ((,class (:weight bold :foreground ,white))))
    `(org-done ((,class (:foreground ,emerald))))
    `(org-ellipsis ((,class (:foreground ,faint))))
    `(org-footnote ((,class (:foreground ,cyan))))
