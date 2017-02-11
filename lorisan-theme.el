@@ -357,6 +357,11 @@
    `(compilation-mode-line-run ((,class (:foreground ,blue))))
    `(compilation-info ((,class (:foreground ,turquoise))))
 
+   ;; css
+   `(css-selector ((,class (:foreground ,wine))))
+   `(css-property ((,class (:foreground ,cyan))))
+   `(css-proprietary-property ((,class (:foreground ,emerald))))
+
    ;; diff
    `(diff-added ((,class (:inherit magit-diff-added))))
    `(diff-changed ((,class (:foreground ,indigo-bright))))
@@ -660,6 +665,11 @@
    `(js2-function-param-face ((,class (:foreground ,green))))
    `(js2-instance-member-face ((,class (:foreground ,red-bright))))
    `(js2-private-function-call-face ((,class (:foreground ,red-bright))))
+   `(js2-jsdoc-tag ((,class (:foreground ,pink-darker))))
+   `(js2-jsdoc-type ((,class (:foreground ,pink-darker))))
+   `(js2-jsdoc-value ((,class (:foreground ,pink-darker))))
+   `(js2-jsdoc-html-tag-delimiter ((,class (:foreground ,pink-darker))))
+   `(js2-jsdoc-html-tag-name ((,class (:foreground ,pink-darker))))
 
    ;; js3-mode
    `(js3-warning ((,class (:inherit flycheck-warning))))
@@ -667,11 +677,11 @@
    `(js3-external-variable ((,class (:foreground ,violet-bright))))
    `(js3-external-variable-face ((,class (:foreground ,violet-bright))))
    `(js3-function-param-face ((,class (:foreground ,blue))))
-   `(js3-jsdoc-tag-face ((,class (:foreground ,magenta))))
-   `(js3-jsdoc-type-face ((,class (:foreground ,cyan))))
-   `(js3-jsdoc-value-face ((,class (:foreground ,violet))))
-   `(js3-jsdoc-html-tag-name-face ((,class (:foreground ,blue))))
-   `(js3-jsdoc-html-tag-delimiter-face ((,class (:foreground ,green))))
+   `(js3-jsdoc-tag-face ((,class (:foreground ,pink-darker))))
+   `(js3-jsdoc-type-face ((,class (:foreground ,pink-darker))))
+   `(js3-jsdoc-value-face ((,class (:foreground ,pink-darker))))
+   `(js3-jsdoc-html-tag-name-face ((,class (:foreground pink-darker))))
+   `(js3-jsdoc-html-tag-delimiter-face ((,class (:foreground ,pink-darker))))
    `(js3-instance-member-face ((,class (:foreground ,blue))))
    `(js3-private-function-call-face ((,class (:foreground ,red))))
 
@@ -821,7 +831,7 @@
    `(org-formula ((,class (:foreground ,coquelicot))))
    `(org-hide ((,class (:foreground ,background :background ,background))))
    `(org-level-1 ((,class (:foreground ,magenta))))
-   `(org-level-2 ((,class (:foreground ,indigo))))
+   `(org-level-2 ((,class (:foreground ,indigo :slant italic))))
    `(org-level-3 ((,class (:foreground ,coquelicot-light))))
    `(org-level-4 ((,class (:foreground ,emerald-light))))
    `(org-level-5 ((,class (:foreground ,turquoise-light))))
@@ -896,7 +906,7 @@
    `(sh-quoted-exec ((,class (:foreground nil :inherit font-lock-preprocessor-face))))
 
    ;; shr
-   `(shr-link ((,class (:foreground ,blue :underline t))))
+   `(shr-link ((,class (:foreground ,turquoise-bright :underline t))))
 
    ;; slime
    `(slime-highlight-edits-face ((,class (:foreground ,strong))))
@@ -939,9 +949,12 @@
    `(undo-tree-visualizer-register-face ((,class (:foreground ,magenta-bright))))
 
    ;; web-mode
-   `(web-mode-html-tag-face ((,class (:foreground ,bright))))
-   `(web-mode-html-attr-name-face ((,class (:inherit font-lock-doc-face))))
+   `(web-mode-html-tag-face ((,class (:foreground ,wine))))
+   `(web-mode-html-attr-name-face ((,class (:foreground ,cyan-bright))))
+   `(web-mode-html-attr-value-face ((,class (:foreground ,coquelicot-light))))
    `(web-mode-doctype-face ((,class (:inherit font-lock-builtin-face))))
+   `(web-mode-block-delimiter-face ((,class (:foreground ,blue-bright))))
+   `(web-mode-function-call-face ((,class (:foreground ,fulvous))))
 
    ;; wiki-page-intro
    `(wiki-page-intro-title ((,class (:foreground ,wine-bright :weight bold))))
