@@ -27,4 +27,4 @@ and the theme should be loaded and activated on startup.
 
 ## Screenshot
 
-Screenshots will be added in the future.
+![screenshot of lorisan theme](lorisan-theme.png)
