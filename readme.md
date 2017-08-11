@@ -19,9 +19,9 @@ Clone repo to any place you want. Change the folder in the following snippet to 
 ```
 ### Quelpa
 
-`quelpa` is at https://github.com/quelpa/quelpa
+Quelpa is at https://github.com/quelpa/quelpa
 
-```lisp
+```emacs-lisp
 (quelpa '(lorisan-theme :repo "hubisan/lorisan-theme" :fetcher github))
 ```
 ### Melpa
