@@ -2,28 +2,35 @@
 
 Dark color theme for Emacs >= 24
 
-## Installation ##
+## Installation
 
-### quelpa
+### Manual with use-package
+
+Clone repo to any place you want. Change the folder in the following snippet to the one you are using.
+
+```emacs-lisp
+(use-package lorisan-theme
+  :ensure nil
+  :if (not (custom-theme-enabled-p 'lorisan))
+  :init
+  (setq custom-theme-directory "~/.emacs.d/themes/")
+  (load-theme 'lorisan t)
+  (add-hook 'after-init-hook (lambda () (enable-theme 'lorisan))))
+```
+### Quelpa
 
 `quelpa` is at https://github.com/quelpa/quelpa
 
 ```lisp
 (quelpa '(lorisan-theme :repo "hubisan/lorisan-theme" :fetcher github))
 ```
-### melpa
+### Melpa
 
-theme is not yet available on melpa
+Theme is not yet available on melpa
 
-## Usage
+## Font Recommendation
 
-In Emacs24 you can just use `M-x customize-themes` to select themes.
-
-If you want to load the theme in your `.emacs` or similar you can add:
-
-    (load-theme 'lorisan t)
-
-and the theme should be loaded and activated on startup.
+This theme works really well with a bolder font like Source Code Pro.
 
 ## Screenshot
 
