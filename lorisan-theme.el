@@ -601,6 +601,15 @@
    ;; highlight-symbol
    `(highlight-symbol-face ((,class (:background ,amber-dark))))
 
+   ;; hightlight-indentation
+   `(highlight-indentation-face ((,class (:background "#0B0B0B"))))
+   `(highlight-indentation-current-column-face ((,class (:background ,grey-darkest))))
+
+   ;; highlight-indent-guides
+   `(highlight-indent-guides-odd-face ((,class (:background "#1B1B1B"))))
+   `(highlight-indent-guides-even-face ((,class (:background "#1B1B1B"))))
+   `(highlight-indent-guides-character-face ((,class (:background nil :foreground "#1B1B1B"))))
+
    ;; hydra (use one color for all)
    `(hydra-face-amaranth ((,class (:foreground ,wine-bright :weight bold))))
    `(hydra-face-blue ((,class (:foreground ,wine-bright :weight bold))))
