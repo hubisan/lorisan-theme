@@ -419,6 +419,11 @@
    `(ediff-current-diff-C  ((,class (:foreground ,background :background ,indigo-darker))))
    `(ediff-fine-diff-C  ((,class (:foreground ,background :background ,indigo))))
 
+   ;; ein
+   `(ein:cell-input-area  ((,class (:background ,grey-darkest))))
+   `(ein:cell-input-prompt  ((,class (:foreground ,indigo-bright :background nil :underline t))))
+   `(ein:cell-output-prompt  ((,class (:foreground ,indigo-bright :background nil :underline t))))
+
    ;; eldoc
    `(eldoc-highlight-function-argument ((,class (:foreground ,green :weight bold))))
 
