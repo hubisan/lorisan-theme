@@ -238,7 +238,7 @@
    `(header-line ((,class (:inherit mode-line :foreground ,magenta :background nil))))
    `(minibuffer-prompt ((,class (:foreground ,blue))))
    `(fringe ((,class (:background ,alt-background))))
-   `(cursor ((,class (:background ,coquelicot-bright))))
+   `(cursor ((,class (:background ,wine-bright))))
    `(border ((,class (:background ,alt-background))))
    `(widget-button ((,class (:underline t))))
    `(widget-field ((,class (:background ,alt-background :box (:line-width 1 :color ,grey-light)))))
