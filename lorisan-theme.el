@@ -962,6 +962,14 @@
    `(term-color-white ((,class (:background ,contrast-background :foreground ,contrast-background))))
    `(term-color-amber ((,class (:background ,amber :foreground ,amber))))
 
+   ;; tldr
+   `(tldr-title ((,class (:foreground ,emerald-bright :weight bold))))
+   `(tldr-description ((,class (:foreground ,indigo))))
+   `(tldr-command-itself ((,class (:foreground ,emerald-bright :weight bold  :background ,grey-darkester))))
+   `(tldr-code-block ((,class (:foreground ,emerald-bright :weight bold  :background ,grey-darkester))))
+   `(tldr-command-argument ((,class (:foreground ,normal  :background ,grey-darkester))))
+   `(tldr-directory-path ((,class (:foreground ,green-bright))))
+
    ;; undo-tree
    `(undo-tree-visualizer-current-face ((,class (:foreground ,pink-bright))))
    `(undo-tree-visualizer-default-face ((,class (:foreground ,grey-light))))
