@@ -366,13 +366,14 @@
 
    ;; diff
    `(diff-added ((,class (:inherit magit-diff-added))))
-   `(diff-changed ((,class (:foreground ,indigo-bright))))
+   `(diff-changed ((,class (:foreground ,fulvous-bright))))
    `(diff-removed ((,class (:inherit magit-diff-removed))))
    `(diff-header ((,class (:foreground ,cyan :background nil))))
    `(diff-file-header ((,class (:inherit magit-diff-file-heading))))
    `(diff-hunk-header ((,class (:inherit magit-diff-hunk-heading))))
-   `(diff-refine-removed ((,class (:foreground ,wine-light :background ,wine-dark))))
-   `(diff-refine-added ((,class (:foreground ,emerald-bright :background ,emerald-dark))))
+   `(diff-refine-removed ((,class (:foreground ,wine-light :background ,wine-darkest))))
+   `(diff-refine-added ((,class (:foreground ,emerald-bright :background ,emerald-darkest))))
+   `(diff-refine-changed ((,class (:foreground ,fulvous-bright :background ,fulvous-darkest))))
 
    ;; diff-hl
    `(diff-hl-change ((,class (:foreground ,indigo-darker :background ,indigo-bright))))
@@ -730,6 +731,7 @@
 
    ;; magit
    `(magit-branch ((,class (:foreground ,emerald))))
+   `(magit-blame-heading ((,class (:foreground ,cerise-bright :background ,blue2-dark))))
    `(magit-header ((,class (:inherit nil :weight bold))))
    `(magit-item-highlight ((,class (:inherit highlight :background nil))))
    `(magit-log-graph ((,class (:foreground ,faintest))))
@@ -963,11 +965,12 @@
    `(term-color-amber ((,class (:background ,amber :foreground ,amber))))
 
    ;; tldr
-   `(tldr-title ((,class (:foreground ,emerald-bright :weight bold))))
+   `(tldr-title ((,class (:foreground ,cerise-bright :weight bold))))
+   `(tldr-introduction ((,class (:foreground ,normal))))
    `(tldr-description ((,class (:foreground ,indigo))))
-   `(tldr-command-itself ((,class (:foreground ,emerald-bright :weight bold  :background ,grey-darkester))))
-   `(tldr-code-block ((,class (:foreground ,emerald-bright :weight bold  :background ,grey-darkester))))
-   `(tldr-command-argument ((,class (:foreground ,normal  :background ,grey-darkester))))
+   `(tldr-command-itself ((,class (:foreground ,cerise-bright :weight bold :background ,blue2-dark))))
+   `(tldr-code-block ((,class (:foreground ,emerald-bright :weight bold  :background ,blue2-dark))))
+   `(tldr-command-argument ((,class (:foreground ,normal  :background ,blue2-dark))))
    `(tldr-directory-path ((,class (:foreground ,green-bright))))
 
    ;; undo-tree
