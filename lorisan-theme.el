@@ -35,7 +35,7 @@
 (deftheme lorisan "Lorisan, a dark theme for Emacs24+")
 
 (let ((class '((class color) (min-colors 89)))
-      (alt-background "#222") ;;atm start
+      (alt-background "#130E17")
       (strong "#eee")
       (bright "#eee")
       (faint "#888")
@@ -46,7 +46,7 @@
       (contrast-background "#331133")
       (malachite "#3aff83")
       (normal "#BDC0C6")
-      (background "#060802")
+      (background "#08000F")
       (brown-light "#b69191")
       (grey-light "#BDC0C6")
       (grey "#979AA1")
@@ -239,7 +239,8 @@
    `(minibuffer-prompt ((,class (:foreground ,blue))))
    `(fringe ((,class (:background ,alt-background))))
    `(cursor ((,class (:background ,wine-bright))))
-   `(border ((,class (:background ,alt-background))))
+   `(border ((,class (:background ,alt-background :foreground ,grey-dark))))
+   `(vertical-border ((,class (:background ,alt-background :foreground ,grey-dark))))
    `(widget-button ((,class (:underline t))))
    `(widget-field ((,class (:background ,alt-background :box (:line-width 1 :color ,grey-light)))))
 
@@ -953,6 +954,13 @@
    `(sml/modified ((,class (:foreground ,pink-bright))))
    `(sml/not-modified ((,class (:foreground ,grey-light))))
    `(sml/numbers-separator ((,class (:foreground ,grey))))
+
+   ;; swiper
+   `(swiper-line-face ((,class (:background ,coquelicot :foreground ,background))))
+   `(swiper-match-face-1 ((,class (:background ,emerald-darkest :foreground ,normal))))
+   `(swiper-match-face-2 ((,class (:background ,emerald-bright :foreground ,background))))
+   `(swiper-match-face-3 ((,class (:background ,emerald-bright :foreground ,background))))
+   `(swiper-match-face-4 ((,class (:background ,emerald-bright :foreground ,background))))
 
    ;; term
    `(term-color-black ((,class (:background ,alt-background :foreground ,alt-background))))
