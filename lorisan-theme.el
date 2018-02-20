@@ -46,7 +46,7 @@
       (contrast-background "#331133")
       (malachite "#3aff83")
       (normal "#BDC0C6")
-      (background "#08000F")
+      (background "#06000C")
       (brown-light "#b69191")
       (grey-light "#BDC0C6")
       (grey "#979AA1")
@@ -258,7 +258,7 @@
    ;; general font lock faces
    `(font-lock-builtin-face ((,class (:foreground ,cerise))))
    `(font-lock-comment-delimiter-face ((,class (:foreground ,indigo-darker :slant italic))))
-   `(font-lock-comment-face ((,class (:foreground ,indigo-darker :slant italic))))
+   `(font-lock-comment-face ((,class (:foreground ,indigo-darker :background nil :slant italic))))
    `(font-lock-constant-face ((,class (:foreground ,emerald))))
    `(font-lock-doc-face ((,class (:foreground ,indigo-darker))))
    `(font-lock-doc-string-face ((,class (:foreground ,red))))
