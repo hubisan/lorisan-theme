@@ -905,8 +905,10 @@
    `(paren-face ((,class (:foreground ,faintest :background nil))))
 
    ;; powerline
-   `(powerline-active1 ((t (:foreground ,grey-light :background ,contrast-background))))
-   `(powerline-active2 ((t (:foreground ,grey-light :background ,alt-background))))
+   `(powerline-active1 ((,class (:inherit mode-line))))
+   `(powerline-active2 ((,class (:inherit mode-line))))
+   `(powerline-inactive1 ((,class (:inherit mode-line-inactive))))
+   `(powerline-inactive2 ((,class (:inherit mode-line-inactive))))
 
    ;; rainbow-delimiters
    `(rainbow-delimiters-depth-1-face ((,class (:foreground ,paren1))))
@@ -955,6 +957,15 @@
    `(sml/not-modified ((,class (:foreground ,grey-light))))
    `(sml/numbers-separator ((,class (:foreground ,grey))))
 
+   ;; spaceline
+   `(spaceline-flycheck-error  ((,class (:foreground , wine))))
+   `(spaceline-flycheck-info   ((,class (:foreground ,indigo))))
+   `(spaceline-flycheck-warning((,class (:foreground ,amber))))
+   `(spaceline-python-venv ((,class (:foreground ,magenta))))
+
+   ;; spacemacs
+   `(spacemacs-emacs-face ((,class (:foreground ,cyan-darkest :background ,cyan-darker))))
+
    ;; swiper
    `(swiper-line-face ((,class (:background ,coquelicot :foreground ,background))))
    `(swiper-match-face-1 ((,class (:background ,emerald-darkest :foreground ,normal))))
@@ -995,6 +1006,13 @@
    `(web-mode-doctype-face ((,class (:inherit font-lock-builtin-face))))
    `(web-mode-block-delimiter-face ((,class (:foreground ,blue-bright))))
    `(web-mode-function-call-face ((,class (:foreground ,fulvous))))
+
+   ;; which-key
+   `(which-key-command-description-face ((,class (:foreground ,normal))))
+   `(which-key-group-description-face ((,class (:foreground ,indigo-darker))))
+   `(which-key-key-face ((,class (:foreground ,wine))))
+   `(which-key-separator-face ((,class (:background nil :foreground ,grey-dark))))
+   `(which-key-special-key-face ((,class (:foreground ,magenta))))
 
    ;; wiki-page-intro
    `(wiki-page-intro-title ((,class (:foreground ,wine-bright :weight bold))))
