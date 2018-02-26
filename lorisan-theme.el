@@ -609,8 +609,8 @@
 
    ;; helm-swoop
    `(helm-swoop-line-number-face ((,class (:background nil :foreground ,wine-bright))))
-   `(helm-swoop-target-line-face ((,class (:background ,emerald-bright :foreground ,background))))
-   `(helm-swoop-target-word-face ((,class (:background ,emerald-bright :foreground ,background))))
+   `(helm-swoop-target-line-face ((,class (:background ,coquelicot :foreground ,background))))
+   `(helm-swoop-target-word-face ((,class (:background ,blue2 :foreground ,background))))
    `(helm-swoop-target-line-block-face ((,class (:background ,grey :foreground ,background))))
 
    ;; highlight-symbol
@@ -973,8 +973,8 @@
    `(spacemacs-emacs-face ((,class (:foreground ,cyan-darkest :background ,cyan-darker))))
 
    ;; swiper
-   `(swiper-line-face ((,class (:background ,coquelicot :foreground ,background))))
-   `(swiper-match-face-1 ((,class (:background ,emerald-darkest :foreground ,normal))))
+   `(swiper-line-face ((,class (:background ,lime-brightest :foreground ,background))))
+   `(swiper-match-face-1 ((,class (:background ,emerald-bright :foreground ,background))))
    `(swiper-match-face-2 ((,class (:background ,emerald-bright :foreground ,background))))
    `(swiper-match-face-3 ((,class (:background ,emerald-bright :foreground ,background))))
    `(swiper-match-face-4 ((,class (:background ,emerald-bright :foreground ,background))))
