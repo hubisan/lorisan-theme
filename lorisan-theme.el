@@ -610,7 +610,7 @@
    ;; helm-swoop
    `(helm-swoop-line-number-face ((,class (:background nil :foreground ,wine-bright))))
    `(helm-swoop-target-line-face ((,class (:background ,coquelicot :foreground ,background))))
-   `(helm-swoop-target-word-face ((,class (:background ,blue2 :foreground ,background))))
+   `(helm-swoop-target-word-face ((,class (:background ,emerald-bright :foreground ,background))))
    `(helm-swoop-target-line-block-face ((,class (:background ,grey :foreground ,background))))
 
    ;; highlight-symbol
