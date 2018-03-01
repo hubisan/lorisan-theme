@@ -474,12 +474,12 @@
    `(font-lock-fic-face ((,class (:background ,red :foreground ,red-darkest :weight bold))))
 
    ;; flycheck
-   `(flycheck-error ((,class (:underline (:style wave :color ,red-bright)))))
+   `(flycheck-error ((,class (:underline (:style wave :color ,wine-darker)))))
    `(flycheck-warning ((,class (:underline (:style wave :color ,amber-low)))))
-   `(flycheck-info ((,class (:underline (:style wave :color ,indigo-dark)))))
-   `(flycheck-fringe-error ((,class (:background ,red-bright :foreground ,red-dark))))
-   `(flycheck-fringe-warning ((,class (:background ,amber :foreground ,amber-dark))))
-   `(flycheck-fringe-info ((,class (:background ,indigo-darker :foreground ,indigo-darkest))))
+   `(flycheck-info ((,class (:underline (:style wave :color ,indigo-darker)))))
+   `(flycheck-fringe-error ((,class (:background nil :foreground ,wine-bright))))
+   `(flycheck-fringe-warning ((,class (:background nil :foreground ,amber))))
+   `(flycheck-fringe-info ((,class (:background nil :foreground ,indigo))))
    `(flycheck-error-list-warning ((,class (:foreground ,amber))))
    `(flycheck-error-list-error ((,class (:background ,red-bright :foreground ,red-dark))))
    `(flycheck-error-list-line-number ((,class (:foreground ,grey-darker))))
