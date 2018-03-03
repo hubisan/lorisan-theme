@@ -585,7 +585,7 @@
    `(helm-candidate-number ((,class (:background ,background :foreground ,amber :bold t))))
    `(helm-visible-mark ((,class (:background ,violet2-dark :foreground nil :bold))))
    `(helm-header ((,class (:background ,background :foreground ,indigo-darker))))
-   `(helm-selection ((,class (:background ,grey-dark :foreground ,nil))))
+   `(helm-selection ((,class (:background ,fulvous :foreground ,background))))
    `(helm-selection-line ((,class (:background ,indigo-dark :foreground nil :underline nil))))
    `(helm-separator ((,class (:foreground ,indigo))))
    `(helm-source-header ((,class (:background ,blue2-dark, :foreground ,pink-bright, :underline nil, :weight bold))))
@@ -610,7 +610,7 @@
    ;; helm-swoop
    `(helm-swoop-line-number-face ((,class (:background nil :foreground ,wine-bright))))
    `(helm-swoop-target-line-face ((,class (:background ,coquelicot :foreground ,background))))
-   `(helm-swoop-target-word-face ((,class (:background ,emerald-bright :foreground ,background))))
+   `(helm-swoop-target-word-face ((,class (:background ,mint-bright :foreground ,background))))
    `(helm-swoop-target-line-block-face ((,class (:background ,grey :foreground ,background))))
 
    ;; highlight-symbol
