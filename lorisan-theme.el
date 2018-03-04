@@ -585,7 +585,7 @@
    `(helm-candidate-number ((,class (:background ,background :foreground ,amber :bold t))))
    `(helm-visible-mark ((,class (:background ,violet2-dark :foreground nil :bold))))
    `(helm-header ((,class (:background ,background :foreground ,indigo-darker))))
-   `(helm-selection ((,class (:background ,fulvous :foreground ,background))))
+   `(helm-selection ((,class (:background ,indigo-bright :foreground ,background))))
    `(helm-selection-line ((,class (:background ,indigo-dark :foreground nil :underline nil))))
    `(helm-separator ((,class (:foreground ,indigo))))
    `(helm-source-header ((,class (:background ,blue2-dark, :foreground ,pink-bright, :underline nil, :weight bold))))
