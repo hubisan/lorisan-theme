@@ -609,8 +609,8 @@
 
    ;; helm-swoop
    `(helm-swoop-line-number-face ((,class (:background nil :foreground ,wine-bright))))
-   `(helm-swoop-target-line-face ((,class (:background ,wine-bright :foreground ,background))))
-   `(helm-swoop-target-word-face ((,class (:background ,mint-bright :foreground ,background))))
+   `(helm-swoop-target-line-face ((,class (:background ,lime-brightest :foreground ,background))))
+   `(helm-swoop-target-word-face ((,class (:background ,emerald-bright :foreground ,background))))
    `(helm-swoop-target-line-block-face ((,class (:background ,grey :foreground ,background))))
 
    ;; highlight-symbol
@@ -659,6 +659,19 @@
    ;; iedit
    `(iedit-occurrence ((,class (:inherit isearch))))
    `(iedit-read-only-occurrence ((,class (:inherit isearch))))
+
+   ;; ivy
+   `(ivy-current-match ((,class (:background ,indigo-bright :foreground ,background))))
+   `(ivy-minibuffer-match-face-1 ((,class (:foreground ,fulvous))))
+   `(ivy-minibuffer-match-face-2 ((,class (:foreground ,fulvous))))
+   `(ivy-minibuffer-match-face-3 ((,class (:foreground ,fulvous))))
+   `(ivy-minibuffer-match-face-4 ((,class (:inherit ivy-minibuffer-match-face-1))))
+   `(ivy-virtual ((,class (:foreground ,indigo-bright))))
+   `(ivy-action ((,class (:foreground ,wine))))
+   `(ivy-confirm-face ((,class (:foreground ,emerald))))
+   `(ivy-match-required-face ((,class (:foreground ,wine))))
+   `(ivy-subdir ((,class (:foreground ,indigo-bright))))
+   `(ivy-remote ((,class (:foreground ,emerald))))
 
    ;; jabber
    `(jabber-title-large ((,class (:foreground ,pink-bright :height 1.0 :weight bold))))
