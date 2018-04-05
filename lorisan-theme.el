@@ -203,8 +203,7 @@
       (outline-8 "#628B0F")
       (outline-7 "#109310")
       (outline-6 "#109166")
-      (outline-5 "#1587C0")
-      )
+      (outline-5 "#1587C0"))
 
   (custom-theme-set-faces
    'lorisan
@@ -929,16 +928,16 @@
    `(powerline-inactive1 ((,class (:inherit mode-line-inactive))))
    `(powerline-inactive2 ((,class (:inherit mode-line-inactive))))
 
-   ;; rainbow-delimiters
+      ;; rainbow-delimiters
    `(rainbow-delimiters-depth-1-face ((,class (:foreground ,paren1))))
    `(rainbow-delimiters-depth-2-face ((,class (:foreground ,paren2))))
    `(rainbow-delimiters-depth-3-face ((,class (:foreground ,paren3))))
-   `(rainbow-delimiters-depth-4-face ((,class (:foreground ,paren4))))
-   `(rainbow-delimiters-depth-5-face ((,class (:foreground ,paren5))))
-   `(rainbow-delimiters-depth-6-face ((,class (:foreground ,paren6))))
-   `(rainbow-delimiters-depth-7-face ((,class (:foreground ,paren7))))
-   `(rainbow-delimiters-depth-8-face ((,class (:foreground ,paren8))))
-   `(rainbow-delimiters-depth-9-face ((,class (:foreground ,paren9))))
+   `(rainbow-delimiters-depth-4-face ((,class (:foreground ,paren1))))
+   `(rainbow-delimiters-depth-5-face ((,class (:foreground ,paren2))))
+   `(rainbow-delimiters-depth-6-face ((,class (:foreground ,paren3))))
+   `(rainbow-delimiters-depth-7-face ((,class (:foreground ,paren1))))
+   `(rainbow-delimiters-depth-8-face ((,class (:foreground ,paren2))))
+   `(rainbow-delimiters-depth-9-face ((,class (:foreground ,paren3))))
    `(rainbow-delimiters-unmatched-face ((,class (:weight bold :foreground ,background :background ,red-bright))))
    `(rainbow-delimiters-mismatched-face ((,class (:weight bold :foreground ,background :background ,red-bright))))
 
