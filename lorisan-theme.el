@@ -1,4 +1,4 @@
-;;; lorisan-theme.el --- Dark theme;;; lorisan-theme.el --- Lorisan color theme for Emacs > 24
+;;; lorisan-theme.el --- Dark theme
 
 ;; Copyright 2015-2018 Daniel Hubmann
 
@@ -22,11 +22,11 @@
 
 ;;; Commentary:
 
-;; Lorisan, dark color theme
+;; Lorisan, dark theme
 
 ;;; Code:
 
-(deftheme lorisan "Lorisan, a dark theme for Emacs24+")
+(deftheme lorisan "Lorisan, dark theme")
 
 (let ((class '((class color) (min-colors 89)))
       (alt-background "#130E17")
