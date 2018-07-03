@@ -4,7 +4,7 @@
 
 ;; Author: Daniel Hubmann <hubisan@gmail.com>
 ;; URL: https://github.com/hubisan/lorisan-theme
-;; Version: 1.1.0
+;; Version: 1.0.0
 ;; Package-Requires: ((emacs "24"))
 
 ;; This program is free software; you can redistribute it and/or modify
@@ -22,11 +22,13 @@
 
 ;;; Commentary:
 
-;; Lorisan, dark theme
+;; Dark color theme.
 
 ;;; Code:
 
 (deftheme lorisan "Lorisan, dark theme")
+
+;;; COLORS
 
 (let ((class '((class color) (min-colors 89)))
       (alt-background "#130E17")
@@ -140,6 +142,7 @@
       (indigo-bright "#918BFF")
       (indigo "#A9A4FF")
       (indigo-darker "#7c78b9")
+      (indigo-darker- "#676499")
       (indigo-dark "#525078")
       (indigo-darkest "#2b293b")
       (blue2 "#5E55FF")
@@ -202,7 +205,8 @@
   (custom-theme-set-faces
    'lorisan
 
-   ;; standard faces
+   ;;; STANDARD FACES
+
    `(default ((,class (:foreground ,grey-light :background ,background))))
    `(bold ((,class (:weight bold))))
    `(italic ((,class (:slant italic))))
@@ -215,7 +219,6 @@
    `(highlight ((,class (:inverse-video nil :background ,grey-darkest :foreground nil))))
    `(isearch ((,class (:foreground ,amber-bright :background ,background :inverse-video t))))
    `(isearch-fail ((,class (:foreground ,background :background ,coquelicot))))
-   `(match ((,class (:foreground ,blue-bright :background ,background :inverse-video t))))
    `(lazy-highlight ((,class (:foreground ,green-bright :background ,background :inverse-video t))))
    `(region ((,class (:background ,violet2-dark))))
    `(secondary-selection ((,class (:background ,indigo-darkest))))
@@ -248,36 +251,35 @@
    `(custom-group-tag ((,class (:foreground ,blue))))
    `(custom-state-tag ((,class (:foreground ,green))))
 
-   ;; general font lock faces
-   `(font-lock-builtin-face ((,class (:weight normal :foreground ,cerise))))
-   `(font-lock-comment-delimiter-face ((,class (:weight normal :foreground ,indigo-darker :slant italic))))
-   `(font-lock-comment-face ((,class (:weight normal :foreground ,indigo-darker :background nil :slant italic))))
-   `(font-lock-constant-face ((,class (:weight normal :foreground ,emerald))))
-   `(font-lock-doc-face ((,class (:weight normal :foreground ,indigo-darker))))
-   `(font-lock-doc-string-face ((,class (:weight normal :foreground ,red))))
-   `(font-lock-function-name-face ((,class (:weight normal :foreground ,fulvous))))
+   ;;; GENERAL FONT LOCK FACES
+
    `(font-lock-keyword-face ((,class (:weight normal :foreground ,wine))))
+   `(font-lock-function-name-face ((,class (:weight normal :foreground ,mint))))
+   `(font-lock-variable-name-face ((,class (:weight normal :foreground ,indigo))))
+   `(font-lock-string-face ((,class (:weight normal :foreground ,fulvous-light))))
+   `(font-lock-builtin-face ((,class (:weight normal :foreground ,cerise))))
+   `(font-lock-constant-face ((,class (:weight normal :foreground ,cyan))))
+   `(font-lock-type-face ((,class (:weight normal :foreground ,pink))))
+   `(font-lock-comment-face ((,class (:weight normal :foreground ,indigo-darker :background nil :slant italic))))
+   `(font-lock-comment-delimiter-face ((,class (:weight normal :foreground ,indigo-darker :slant italic))))
+   `(font-lock-doc-face ((,class (:weight normal :foreground ,indigo-darker))))
    `(font-lock-negation-char-face ((,class (:weight normal :foreground ,red-bright))))
    `(font-lock-preprocessor-face ((,class (:weight normal :foreground ,cerise))))
    `(font-lock-regexp-grouping-backslash ((,class (:weight normal :foreground ,turquoise-bright))))
    `(font-lock-regexp-grouping-construct ((,class (:weight normal :foreground ,violet-bright))))
-   `(font-lock-string-face ((,class (:weight normal :foreground ,coquelicot-light))))
-   `(font-lock-type-face ((,class (:weight normal :foreground ,magenta))))
-   `(font-lock-variable-name-face ((,class (:weight normal :foreground ,cyan))))
    `(font-lock-warning-face ((,class (:weight normal :foreground ,coquelicot))))
 
-   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-   ;; mode specific faces
+   ;;; MODE SPECIFIC FACES
 
-   ;; ace-jump
+   ;;;; ace-jump
    `(ace-jump-face-background ((,class (:foreground ,grey))))
    `(ace-jump-face-foreground ((,class (:foreground ,red-bright))))
 
-   ;; ace-window
+   ;;;; ace-window
    `(aw-leading-char-face ((,class (:foreground ,wine-darkest :background ,wine-bright :weight bold))))
    `(aw-background-face ((,class (:background ,background :foreground ,grey-dark))))
 
-   ;; asorted faces
+   ;;;; asorted faces
    `(csv-separator-face ((,class (:foreground ,coquelicot))))
    `(border-glyph ((,class (nil))))
    `(gui-element ((,class (:background ,alt-background :foreground ,grey-light))))
@@ -286,23 +288,23 @@
    `(rng-error-face ((,class (:underline ,red-bright))))
    `(py-builtins-face ((,class (:foreground ,coquelicot))))
 
-   ;; auto-complete
+   ;;;; auto-complete
    `(ac-completion-face ((,class (:foreground ,bright :underline t))))
    `(ac-candidate-face ((,class (:background ,blue2-darkest :foreground ,bright))))
    `(ac-selection-face ((,class (:background ,blue-bright :foreground ,darkest))))
    `(ac-yasnippet-candidate-face ((,class (:background ,pink-darker :foreground ,darkest))))
    `(ac-yasnippet-selection-face ((,class (:background ,pink :foreground ,darkest))))
 
-   ;; auto-dim-other-buffers
+   ;;;; auto-dim-other-buffers
    `(auto-dim-other-buffers-face ((,class (:background "#0c0c0c"))))
 
-   ;; avy
+   ;;;; avy
    `(avy-lead-face ((,class (:slant normal :foreground ,grey-darkest :background ,wine-bright))))
    `(avy-lead-face-0 ((,class (:slant normal :foreground ,grey-darkest :background ,cerise-bright))))
    `(avy-lead-face-1 ((,class (:slant normal :foreground ,white :background ,grey-dark))))
    `(avy-lead-face-2 ((,class (:slant normal :foreground ,grey-darkest :background ,wine-bright))))
 
-   ;; bmkp bookmark+
+   ;;;; bmkp bookmark+
    `(bmkp-heading ((,class (:foreground ,pink-bright))))
    `(bmkp-local-file-without-region ((,class (:foreground ,indigo))))
    `(bmkp->-mark ((,class (:foreground ,amber))))
@@ -318,7 +320,7 @@
    `(bmkp-url ((,class (:foreground ,turquoise-bright))))
    `(bmkp-local-directory ((,class (:foreground ,cyan))))
 
-   ;; clojure
+   ;;;; clojure
    `(clojure-test-failure-face ((,class (:background nil :inherit flymake-warnline))))
    `(clojure-test-error-face ((,class (:background nil :inherit flymake-errline))))
    `(clojure-test-success-face ((,class (:background nil :foreground nil :underline ,green))))
@@ -330,7 +332,7 @@
    `(clojure-special ((,class (:foreground ,blue))))
    `(clojure-java-call ((,class (:foreground ,magenta))))
 
-   ;; company
+   ;;;; company
    `(company-preview ((,class (:foreground ,bright))))
    `(company-preview-common ((,class (:background ,emerald :foreground ,emerald-darkest :underline t))))
    `(company-preview-search ((,class (:foreground ,darkest :background ,amber))))
@@ -344,7 +346,7 @@
    `(company-tooltip-search-selection ((,class (:foreground ,amber-bright :background ,background :inverse-video t))))
    `(company-tooltip-search ((,class (:foreground ,green-bright :background ,background :inverse-video t))))
 
-   ;; compilation
+   ;;;; compilation
    `(compilation-column-number ((,class (:foreground ,amber))))
    `(compilation-line-number ((,class (:foreground ,amber))))
    `(compilation-message-face ((,class (:foreground ,blue))))
@@ -353,12 +355,12 @@
    `(compilation-mode-line-run ((,class (:foreground ,blue))))
    `(compilation-info ((,class (:foreground ,turquoise))))
 
-   ;; css
+   ;;;; css
    `(css-selector ((,class (:foreground ,wine))))
    `(css-property ((,class (:foreground ,cyan))))
    `(css-proprietary-property ((,class (:foreground ,emerald))))
 
-   ;; diff
+   ;;;; diff
    `(diff-added ((,class (:inherit magit-diff-added))))
    `(diff-changed ((,class (:foreground ,fulvous-bright))))
    `(diff-removed ((,class (:inherit magit-diff-removed))))
@@ -369,12 +371,12 @@
    `(diff-refine-added ((,class (:foreground ,emerald-bright :background ,emerald-darkest))))
    `(diff-refine-changed ((,class (:foreground ,fulvous-bright :background ,fulvous-darkest))))
 
-   ;; diff-hl
+   ;;;; diff-hl
    `(diff-hl-change ((,class (:foreground ,indigo-darker :background ,indigo-bright))))
    `(diff-hl-delete ((,class (:foreground ,pink-darker :background ,pink-bright))))
    `(diff-hl-insert ((,class (:foreground ,emerald-darker :background ,emerald-bright))))
 
-   ;; dired+
+   ;;;; dired+
    `(diredp-compressed-file-suffix ((,class (:foreground ,turquoise-bright))))
    `(diredp-date-time ((,class (:foreground ,grey-darker))))
    `(diredp-deletion ((,class (:foreground ,red-bright :weight bold :slant italic))))
@@ -400,7 +402,7 @@
    `(diredp-symlink ((,class (:foreground ,grey-light))))
    `(diredp-write-priv ((,class (:foreground ,indigo :background nil))))
 
-   ;; doom-modeline
+   ;;;; doom-modeline
    `(doom-modeline-buffer-file ((,class (:foreground ,cyan-bright :background nil :weight normal))))
    `(doom-modeline-buffer-path ((,class (:foreground ,indigo-bright :background nil :weight normal))))
    `(doom-modeline-buffer-modified ((,class (:foreground ,wine :background nil :weight normal))))
@@ -417,7 +419,7 @@
    `(doom-modeline-eyebrowse ((,class (:foreground ,green-dark :background ,green :weight normal))))
    `(doom-modeline-bracket ((,class (:foreground ,green-dark :background ,green :weight normal))))
 
-   ;; ediff
+   ;;;; ediff
    `(ediff-even-diff-A ((,class (:foreground nil :background ,fulvous-darkest))))
    `(ediff-odd-diff-A  ((,class (:foreground nil :background ,fulvous-darkest))))
    `(ediff-current-diff-A  ((,class (:foreground ,background :background ,fulvous-darker))))
@@ -431,15 +433,15 @@
    `(ediff-current-diff-C  ((,class (:foreground ,background :background ,indigo-darker))))
    `(ediff-fine-diff-C  ((,class (:foreground ,background :background ,indigo))))
 
-   ;; ein
+   ;;;; ein
    `(ein:cell-input-area  ((,class (:background ,grey-darkest))))
    `(ein:cell-input-prompt  ((,class (:foreground ,indigo-bright :background nil :underline t))))
    `(ein:cell-output-prompt  ((,class (:foreground ,indigo-bright :background nil :underline t))))
 
-   ;; eldoc
+   ;;;; eldoc
    `(eldoc-highlight-function-argument ((,class (:foreground ,green :weight bold))))
 
-   ;; erb
+   ;;;; erb
    `(erb-delim-face ((,class (:background ,alt-background))))
    `(erb-exec-face ((,class (:background ,alt-background :weight bold))))
    `(erb-exec-delim-face ((,class (:background ,alt-background))))
@@ -448,7 +450,7 @@
    `(erb-comment-face ((,class (:background ,alt-background :weight bold :slant italic))))
    `(erb-comment-delim-face ((,class (:background ,alt-background))))
 
-   ;; erc
+   ;;;; erc
    `(erc-direct-msg-face ((,class (:foreground ,amber))))
    `(erc-error-face ((,class (:foreground ,red))))
    `(erc-header-face ((,class (:foreground ,strong :background ,alt-background))))
@@ -463,7 +465,7 @@
    `(erc-timestamp-face ((,class (:foreground ,cyan))))
    `(erc-keyword-face ((,class (:foreground ,green))))
 
-   ;; eshell
+   ;;;; eshell
    `(eshell-ls-archive ((,class (:foreground ,indigo))))
    `(eshell-ls-backup ((,class (:foreground ,amber))))
    `(eshell-ls-clutter ((,class (:foreground ,coquelicot))))
@@ -477,13 +479,13 @@
    `(eshell-ls-unreadable ((,class (:foreground ,grey-light))))
    `(eshell-prompt ((,class (:foreground ,wine))))
 
-   ;; eval-sexp-fu
+   ;;;; eval-sexp-fu
    `(eval-sexp-fu-flash ((,class (:foreground nil :background ,emerald-dark))))
 
-   ;; fic-mode
+   ;;;; fic-mode
    `(font-lock-fic-face ((,class (:background ,red :foreground ,red-darkest :weight bold))))
 
-   ;; flycheck
+   ;;;; flycheck
    `(flycheck-error ((,class (:underline (:style wave :color ,wine-darker)))))
    `(flycheck-warning ((,class (:underline (:style wave :color ,amber-low)))))
    `(flycheck-info ((,class (:underline (:style wave :color ,indigo-darker)))))
@@ -496,16 +498,16 @@
    `(flycheck-error-list-column-number ((,class (:foreground ,grey-darker))))
    `(flycheck-error-list-highlight ((,class (:background ,blue2-dark))))
 
-   ;; flymake
+   ;;;; flymake
    `(flymake-warnline ((,class (:underline ,amber :background ,background))))
    `(flymake-errline ((,class (:underline ,red-bright :background ,background))))
    `(flymake-infoline ((,class (:underline ,blue-bright :background ,background))))
 
-   ;; flyspell
+   ;;;; flyspell
    `(flyspell-incorrect ((,class (:underline (:style wave :color ,red-bright)))))
    `(flyspell-duplicate ((,class (:underline (:style wave :color ,indigo-dark)))))
 
-   ;; git
+   ;;;; git
    `(git-commit-comment-action ((,class (:foreground ,white))))
    `(git-commit-comment-file ((,class (:foreground ,cyan-bright))))
    `(git-commit-comment-heading ((,class (:foreground ,pink-bright))))
@@ -513,18 +515,18 @@
    `(git-commit-note ((,class (:foreground ,grey-light))))
    `(git-commit-summary ((,class (:foreground ,grey-light))))
 
-   ;; git-gutter
+   ;;;; git-gutter
    `(git-gutter:modified ((,class (:foreground ,indigo-bright :weight bold))))
    `(git-gutter:added ((,class (:foreground ,emerald-bright :weight bold))))
    `(git-gutter:deleted ((,class (:foreground ,pink-bright :weight bold))))
    `(git-gutter:unchanged ((,class (:background ,amber))))
 
-   ;; git-gutter-fringe
+   ;;;; git-gutter-fringe
    `(git-gutter-fr:modified ((,class (:foreground ,indigo-bright :weight bold))))
    `(git-gutter-fr:added ((,class (:foreground ,emerald-bright :weight bold))))
    `(git-gutter-fr:deleted ((,class (:foreground ,pink-bright :weight bold))))
 
-   ;; gnus
+   ;;;; gnus
    `(gnus-cite-1 ((,class (:inherit outline-1 :foreground nil))))
    `(gnus-cite-2 ((,class (:inherit outline-2 :foreground nil))))
    `(gnus-cite-3 ((,class (:inherit outline-3 :foreground nil))))
@@ -578,17 +580,17 @@
    `(gnus-group-news-5-empty ((,class (:inherit gnus-group-news-5 :foreground ,faint))))
    `(gnus-group-news-6-empty ((,class (:inherit gnus-group-news-6 :foreground ,faint))))
 
-   ;; google-translate
+   ;;;; google-translate
    `(google-translate-text-face ((,class (:foreground ,indigo :background nil :weight bold))))
    `(google-translate-translation-face ((,class (:foreground ,emerald :background nil :weight bold))))
 
-   ;; grep
+   ;;;; grep
    `(grep-context-face ((,class (:foreground ,faint))))
    `(grep-error-face ((,class (:foreground ,red :weight bold :underline t))))
    `(grep-hit-face ((,class (:foreground ,blue))))
    `(grep-match-face ((,class (:foreground nil :background nil :inherit match))))
 
-   ;; helm
+   ;;;; helm
    `(helm-M-x-key ((,class (:foreground ,blue :underline t))))
    `(helm-match ((,class (:foreground ,fulvous))))
    `(helm-prefarg ((,class (:foreground ,mint))))
@@ -617,32 +619,32 @@
    `(helm-grep-match ((,class (:foreground ,amber))))
    `(helm-grep-running ((,class (:foreground ,pink-bright))))
 
-   ;; helm-swoop
+   ;;;; helm-swoop
    `(helm-swoop-line-number-face ((,class (:background nil :foreground ,wine-bright))))
    `(helm-swoop-target-line-face ((,class (:background ,lime-brightest :foreground ,background))))
    `(helm-swoop-target-word-face ((,class (:background ,emerald-bright :foreground ,background))))
    `(helm-swoop-target-line-block-face ((,class (:background ,grey :foreground ,background))))
 
-   ;; highlight-symbol
+   ;;;; highlight-symbol
    `(highlight-symbol-face ((,class (:background ,amber-dark))))
 
-   ;; hightlight-indentation
+   ;;;; hightlight-indentation
    `(highlight-indentation-face ((,class (:background "#0B0B0B"))))
    `(highlight-indentation-current-column-face ((,class (:background ,grey-darkest))))
 
-   ;; highlight-indent-guides
+   ;;;; highlight-indent-guides
    `(highlight-indent-guides-odd-face ((,class (:background "#1B1B1B"))))
    `(highlight-indent-guides-even-face ((,class (:background "#1B1B1B"))))
    `(highlight-indent-guides-character-face ((,class (:background nil :foreground "#1B1B1B"))))
 
-   ;; hydra (use one color for all)
-   `(hydra-face-amaranth ((,class (:foreground ,wine-bright :weight bold))))
-   `(hydra-face-blue ((,class (:foreground ,wine-bright :weight bold))))
-   `(hydra-face-pink ((,class (:foreground ,wine-bright :weight bold))))
-   `(hydra-face-red ((,class (:foreground ,wine-bright :weight bold))))
-   `(hydra-face-teal ((,class (:foreground ,wine-bright :weight bold))))
+   ;;;; hydra (use one color for all)
+   `(hydra-face-amaranth ((,class (:foreground ,wine :weight bold))))
+   `(hydra-face-blue ((,class (:foreground ,wine :weight bold))))
+   `(hydra-face-pink ((,class (:foreground ,wine :weight bold))))
+   `(hydra-face-red ((,class (:foreground ,wine :weight bold))))
+   `(hydra-face-teal ((,class (:foreground ,wine :weight bold))))
 
-   ;; info
+   ;;;; info
    `(info-title-1 ((,class (:foreground ,pink-bright :weight bold))))
    `(info-title-2 ((,class (:foreground ,fulvous :weight bold))))
    `(info-title-3 ((,class (:foreground ,violet :weight bold))))
@@ -656,21 +658,21 @@
    `(info-xref ((,class (:inherit link))))
    `(info-xref-visited ((,class (:inherit (link-visited info-xref)))))
 
-   ;; icomplete
+   ;;;; icomplete
    `(icomplete-first-match ((,class (:foreground "white" :bold t))))
 
-   ;; ido
+   ;;;; ido
    `(ido-subdir ((,class (:foreground ,magenta))))
    `(ido-first-match ((,class (:foreground ,amber))))
    `(ido-only-match ((,class (:foreground ,green))))
    `(ido-indicator ((,class (:foreground ,red :background ,background))))
    `(ido-virtual ((,class (:foreground ,faintest))))
 
-   ;; iedit
+   ;;;; iedit
    `(iedit-occurrence ((,class (:inherit isearch))))
    `(iedit-read-only-occurrence ((,class (:inherit isearch))))
 
-   ;; ivy
+   ;;;; ivy
    `(ivy-current-match ((,class (:background ,indigo-bright :foreground ,background))))
    `(ivy-minibuffer-match-face-1 ((,class (:foreground ,fulvous))))
    `(ivy-minibuffer-match-face-2 ((,class (:foreground ,fulvous))))
@@ -683,7 +685,7 @@
    `(ivy-subdir ((,class (:foreground ,indigo-bright))))
    `(ivy-remote ((,class (:foreground ,emerald))))
 
-   ;; jabber
+   ;;;; jabber
    `(jabber-title-large ((,class (:foreground ,pink-bright :height 1.0 :weight bold))))
    `(jabber-title-medium ((,class (:foreground ,amber-bright :height 1.0))))
    `(jabber-title-small ((,class (:foreground ,indigo-bright :height 1.0))))
@@ -704,16 +706,16 @@
    `(jabber-activity-face ((,class (:foreground ,violet))))
    `(jabber-activity-personal-face ((,class (:foreground ,cyan))))
 
-   ;; js2-mode
+   ;;;; js2-mode
    `(js2-warning ((,class (:inherit flycheck-warning))))
    `(js2-error ((,class (:inherit flycheck-error))))
-   `(js2-external-variable ((,class (:foreground ,violet-bright))))
-   `(js2-external-variable-face ((,class (:foreground ,violet-bright))))
-   `(js2-function-param ((,class (:foreground ,green))))
-   `(js2-function-param-face ((,class (:foreground ,green))))
+   `(js2-external-variable ((,class (:foreground ,grey-light))))
+   `(js2-external-variable-face ((,class (:foreground ,grey-light))))
+   `(js2-function-param ((,class (:foreground ,grey-light))))
+   `(js2-function-param-face ((,class (:foreground ,grey-light))))
    `(js2-instance-member-face ((,class (:foreground ,red-bright))))
-   `(js2-object-property ((,class (:foreground ,indigo))))
-   `(js2-function-call ((,class (:foreground ,grey-light))))
+   `(js2-object-property ((,class (:foreground ,cerise))))
+   `(js2-function-call ((,class (:foreground ,mint))))
    `(js2-private-function-call-face ((,class (:foreground ,red-bright))))
    `(js2-jsdoc-tag ((,class (:inherit font-lock-comment-face :foreground ,indigo-light))))
    `(js2-jsdoc-type ((,class (:inherit font-lock-comment-face))))
@@ -722,7 +724,7 @@
    `(js2-jsdoc-html-tag-name ((,class (:inherit font-lock-comment-face))))
 
 
-   ;; js3-mode
+   ;;;; js3-mode
    `(js3-warning ((,class (:inherit flycheck-warning))))
    `(js3-error ((,class (:inherit flycheck-error))))
    `(js3-external-variable ((,class (:foreground ,violet-bright))))
@@ -736,7 +738,7 @@
    `(js3-instance-member-face ((,class (:foreground ,blue))))
    `(js3-private-function-call-face ((,class (:foreground ,red))))
 
-   ;; latex
+   ;;;; latex
    `(font-latex-bold-face ((,class (:foreground ,grey-light :background nil :weight bold ))))
    `(font-latex-doctex-documentation-face ((,class (:foreground ,brown-light :background nil))))
    `(font-latex-doctex-preprocessor-face ((,class (:foreground ,orange :background nil))))
@@ -756,10 +758,10 @@
    `(font-latex-verbatim-face ((,class (:foreground ,blue2 :background nil))))
    `(font-latex-warning-face ((,class (:inherit warning))))
 
-   ;; linum
+   ;;;; linum
    `(linum ((,class (:background ,alt-background))))
 
-   ;; magit
+   ;;;; magit
    `(magit-branch ((,class (:foreground ,emerald))))
    `(magit-blame-heading ((,class (:foreground ,cerise-bright :background ,blue2-dark))))
    `(magit-header ((,class (:inherit nil :weight bold))))
@@ -775,7 +777,7 @@
    `(magit-section-title ((,class (:foreground ,blue :weight bold))))
    `(magit-popup-argument ((,class (:foreground ,emerald-darkest :background ,emerald))))
 
-   ;; magit `next'
+   ;;;; magit `next'
    `(magit-section ((,class (:inherit nil :weight bold))))
    `(magit-section-highlight ((,class (:foreground ,brown-light))))
    `(magit-section-heading ((,class (:foreground ,pink))))
@@ -796,17 +798,17 @@
    `(magit-diff-removed ((,class (:foreground ,wine))))
    `(magit-diff-removed-highlight ((,class (:inherit magit-diff-removed :weight normal))))
 
-   ;; markdown
+   ;;;; markdown
    `(markdown-url-face ((,class (:foreground ,turquoise-darker :underline t))))
    `(markdown-link-face ((,class (:foreground ,turquoise :underline t))))
    `(markdown-link-title-face ((,class (:foreground ,turquoise-darker))))
-   `(markdown-header-face ((,class (:foreground ,wine-bright))))
-   `(markdown-header-face-1 ((,class (:foreground ,wine-bright))))
-   `(markdown-header-face-2 ((,class (:foreground ,wine-bright))))
-   `(markdown-header-face-3 ((,class (:foreground ,wine-bright))))
-   `(markdown-header-face-4 ((,class (:foreground ,wine-bright))))
-   `(markdown-header-face-5 ((,class (:foreground ,wine-bright))))
-   `(markdown-header-face-6 ((,class (:foreground ,wine-bright))))
+   `(markdown-header-face ((,class (:foreground ,wine))))
+   `(markdown-header-face-1 ((,class (:foreground ,wine))))
+   `(markdown-header-face-2 ((,class (:foreground ,wine))))
+   `(markdown-header-face-3 ((,class (:foreground ,wine))))
+   `(markdown-header-face-4 ((,class (:foreground ,wine))))
+   `(markdown-header-face-5 ((,class (:foreground ,wine))))
+   `(markdown-header-face-6 ((,class (:foreground ,wine))))
    `(markdown-header-delimiter-face ((,class (:foreground ,wine))))
    `(markdown-header-rule-face ((,class (:foreground ,wine))))
    `(markdown-pre-face ((,class (:foreground ,pink))))
@@ -823,11 +825,11 @@
    `(markdown-gfm-checkbox-face ((,class (:foreground ,cerise))))
    `(markdown-footnote-face ((,class (:foreground ,coquelicot-light))))
 
-   ;; mark-multiple
+   ;;;; mark-multiple
    `(mm/master-face ((,class (:inherit region :foreground nil :background nil))))
    `(mm/mirror-face ((,class (:inherit region :foreground nil :background nil))))
 
-   ;; message-mode
+   ;;;; message-mode
    `(message-header-other ((,class (:foreground nil :background nil))))
    `(message-header-subject ((,class (:inherit message-header-other :weight bold :foreground ,amber))))
    `(message-header-to ((,class (:inherit message-header-other :weight bold :foreground ,coquelicot))))
@@ -836,17 +838,17 @@
    `(message-header-newsgroups ((,class (:foreground ,cyan :background nil :slant normal))))
    `(message-separator ((,class (:foreground ,magenta))))
 
-   ;; mic-paren
+   ;;;; mic-paren
    `(paren-face-match ((,class (:foreground nil :background nil :inherit show-paren-match))))
    `(paren-face-mismatch ((,class (:foreground nil :background nil :inherit show-paren-mismatch))))
    `(paren-face-no-match ((,class (:foreground nil :background nil :inherit show-paren-mismatch))))
 
-   ;; mmm-mode
+   ;;;; mmm-mode
    `(mmm-code-submode-face ((,class (:background ,alt-background))))
    `(mmm-comment-submode-face ((,class (:inherit font-lock-comment-face))))
    `(mmm-output-submode-face ((,class (:background ,alt-background))))
 
-   ;; neo-tree
+   ;;;; neo-tree
    `(neo-banner-face ((,class (:foreground ,cyan))))
    `(neo-header-face ((,class (:foreground ,grey-light))))
    `(neo-root-dir-face ((,class (:foreground ,wine-darkest :background ,wine-darker))))
@@ -854,17 +856,17 @@
    `(neo-file-link-face ((,class (:foreground ,grey-light))))
    `(neo-expand-btn-face ((,class (:foreground ,indigo))))
 
-   ;; nrepl-eval-sexp-fu
+   ;;;; nrepl-eval-sexp-fu
    `(nrepl-eval-sexp-fu-flash ((,class (:background ,magenta-dark))))
 
-   ;; nxml
+   ;;;; nxml
    `(nxml-name-face ((,class (:foreground unspecified :inherit font-lock-constant-face))))
    `(nxml-attribute-local-name-face ((,class (:foreground unspecified :inherit font-lock-variable-name-face))))
    `(nxml-ref-face ((,class (:foreground unspecified :inherit font-lock-preprocessor-face))))
    `(nxml-delimiter-face ((,class (:foreground unspecified :inherit font-lock-keyword-face))))
    `(nxml-delimited-data-face ((,class (:foreground unspecified :inherit font-lock-string-face))))
 
-   ;; org
+   ;;;; org
    `(org-agenda-structure ((,class (:foreground ,blue))))
    `(org-agenda-date ((,class (:foreground "white"))))
    `(org-agenda-done ((,class (:foreground ,green-darker))))
@@ -883,14 +885,14 @@
    `(org-footnote ((,class (:foreground ,cyan))))
    `(org-formula ((,class (:foreground ,coquelicot))))
    `(org-hide ((,class (:foreground ,background :background ,background))))
-   `(org-level-1 ((,class (:foreground ,wine-bright :weight bold))))
-   `(org-level-2 ((,class (:foreground ,wine-bright :weight bold))))
-   `(org-level-3 ((,class (:foreground ,wine-bright :weight bold))))
-   `(org-level-4 ((,class (:foreground ,wine-bright :weight bold))))
-   `(org-level-5 ((,class (:foreground ,wine-bright :weight bold))))
-   `(org-level-6 ((,class (:foreground ,wine-bright :weight bold))))
-   `(org-level-7 ((,class (:foreground ,wine-bright :weight bold))))
-   `(org-level-8 ((,class (:foreground ,wine-bright :weight bold))))
+   `(org-level-1 ((,class (:foreground ,wine :weight bold))))
+   `(org-level-2 ((,class (:foreground ,wine :weight bold))))
+   `(org-level-3 ((,class (:foreground ,wine :weight bold))))
+   `(org-level-4 ((,class (:foreground ,wine :weight bold))))
+   `(org-level-5 ((,class (:foreground ,wine :weight bold))))
+   `(org-level-6 ((,class (:foreground ,wine :weight bold))))
+   `(org-level-7 ((,class (:foreground ,wine :weight bold))))
+   `(org-level-8 ((,class (:foreground ,wine :weight bold))))
    `(org-link ((,class (:foreground ,turquoise-bright :underline nil))))
    `(org-scheduled ((,class (:foreground ,amber-bright))))
    `(org-scheduled-previously ((,class (:foreground ,amber-darker))))
@@ -908,7 +910,7 @@
    `(org-checkbox-statistics-todo ((,class (:foreground ,red-bright))))
    `(org-checkbox-statistics-done ((,class (:foreground ,green))))
 
-   ;; outline
+   ;;;; outline
    `(outline-1 ((,class (:slant normal :foreground ,outline-1))))
    `(outline-2 ((,class (:slant normal :foreground ,outline-2))))
    `(outline-3 ((,class (:slant normal :foreground ,outline-3))))
@@ -919,7 +921,7 @@
    `(outline-8 ((,class (:slant normal :foreground ,outline-8))))
    `(outline-9 ((,class (:slant normal :foreground ,outline-9))))
 
-   ;; outline
+   ;;;; outshine
    `(outshine-level-1 ((,class (:slant normal :weight bold :foreground ,white))))
    `(outshine-level-2 ((,class (:slant normal :foreground ,white))))
    `(outshine-level-3 ((,class (:slant italic :foreground ,white))))
@@ -930,16 +932,16 @@
    `(outshine-level-8 ((,class (:slant italic :foreground ,grey-light))))
    `(outshine-level-9 ((,class (:slant italic :foreground ,grey-light))))
 
-   ;; parenface
+   ;;;; parenface
    `(paren-face ((,class (:foreground ,faintest :background nil))))
 
-   ;; powerline
+   ;;;; powerline
    `(powerline-active1 ((,class (:inherit mode-line))))
    `(powerline-active2 ((,class (:inherit mode-line))))
    `(powerline-inactive1 ((,class (:inherit mode-line-inactive))))
    `(powerline-inactive2 ((,class (:inherit mode-line-inactive))))
 
-      ;; rainbow-delimiters
+   ;;;; rainbow-delimiters
    `(rainbow-delimiters-depth-1-face ((,class (:foreground ,paren1))))
    `(rainbow-delimiters-depth-2-face ((,class (:foreground ,paren2))))
    `(rainbow-delimiters-depth-3-face ((,class (:foreground ,paren3))))
@@ -952,25 +954,25 @@
    `(rainbow-delimiters-unmatched-face ((,class (:weight bold :foreground ,background :background ,red-bright))))
    `(rainbow-delimiters-mismatched-face ((,class (:weight bold :foreground ,background :background ,red-bright))))
 
-   ;; regex-tool
+   ;;;; regex-tool
    `(regex-tool-matched-face ((,class (:foreground nil :background nil :inherit match))))
    `(regex-tool-matched-face ((,class (:foreground nil :background nil :inherit match))))
 
-   ;; sh-script
+   ;;;; sh-script
    `(sh-heredoc ((,class (:foreground nil :inherit font-lock-string-face))))
    `(sh-quoted-exec ((,class (:foreground nil :inherit font-lock-preprocessor-face))))
 
-   ;; shr
+   ;;;; shr
    `(shr-link ((,class (:foreground ,turquoise-bright :underline t))))
 
-   ;; slime
+   ;;;; slime
    `(slime-highlight-edits-face ((,class (:foreground ,strong))))
    `(slime-repl-input-face ((,class (:underline nil))))
    `(slime-repl-prompt-face ((,class (:underline nil :weight bold :foreground ,magenta))))
    `(slime-repl-result-face ((,class (:foreground ,green))))
    `(slime-repl-output-face ((,class (:foreground ,blue :background ,background))))
 
-   ;; smart-mode-line
+   ;;;; smart-mode-line
    `(sml/global ((,class (:foreground ,grey-light))))
    `(sml/position-percentage ((,class (:foreground ,mint-low))))
    `(sml/prefix ((,class (:foreground ,violet-bright))))
@@ -986,23 +988,23 @@
    `(sml/not-modified ((,class (:foreground ,grey-light))))
    `(sml/numbers-separator ((,class (:foreground ,grey))))
 
-   ;; spaceline
+   ;;;; spaceline
    `(spaceline-flycheck-error  ((,class (:foreground , wine))))
    `(spaceline-flycheck-info   ((,class (:foreground ,indigo))))
    `(spaceline-flycheck-warning((,class (:foreground ,amber))))
    `(spaceline-python-venv ((,class (:foreground ,magenta))))
 
-   ;; spacemacs
+   ;;;; spacemacs
    `(spacemacs-emacs-face ((,class (:foreground ,cyan-darkest :background ,cyan-darker))))
 
-   ;; swiper
+   ;;;; swiper
    `(swiper-line-face ((,class (:background ,lime-brightest :foreground ,background))))
    `(swiper-match-face-1 ((,class (:background ,emerald-bright :foreground ,background))))
    `(swiper-match-face-2 ((,class (:background ,emerald-bright :foreground ,background))))
    `(swiper-match-face-3 ((,class (:background ,emerald-bright :foreground ,background))))
    `(swiper-match-face-4 ((,class (:background ,emerald-bright :foreground ,background))))
 
-   ;; term
+   ;;;; term
    `(term-color-black ((,class (:background ,alt-background :foreground ,alt-background))))
    `(term-color-blue ((,class (:background ,blue :foreground ,blue))))
    `(term-color-cyan ((,class (:background ,cyan :foreground ,cyan))))
@@ -1012,7 +1014,7 @@
    `(term-color-white ((,class (:background ,contrast-background :foreground ,contrast-background))))
    `(term-color-amber ((,class (:background ,amber :foreground ,amber))))
 
-   ;; tldr
+   ;;;; tldr
    `(tldr-title ((,class (:foreground ,cerise-bright :weight bold))))
    `(tldr-introduction ((,class (:foreground ,normal))))
    `(tldr-description ((,class (:foreground ,indigo))))
@@ -1021,14 +1023,14 @@
    `(tldr-command-argument ((,class (:foreground ,normal  :background ,blue2-dark))))
    `(tldr-directory-path ((,class (:foreground ,green-bright))))
 
-   ;; undo-tree
+   ;;;; undo-tree
    `(undo-tree-visualizer-current-face ((,class (:foreground ,pink-bright))))
    `(undo-tree-visualizer-default-face ((,class (:foreground ,grey-light))))
    `(undo-tree-visualizer-active-branch-face ((,class (:foreground ,indigo-bright))))
    `(undo-tree-visualizer-unmodified-face ((,class (:foreground ,brown-light))))
    `(undo-tree-visualizer-register-face ((,class (:foreground ,magenta-bright))))
 
-   ;; web-mode
+   ;;;; web-mode
    `(web-mode-html-tag-face ((,class (:foreground ,wine))))
    `(web-mode-html-attr-name-face ((,class (:foreground ,cyan-bright))))
    `(web-mode-html-attr-value-face ((,class (:foreground ,coquelicot-light))))
@@ -1036,32 +1038,37 @@
    `(web-mode-block-delimiter-face ((,class (:foreground ,blue-bright))))
    `(web-mode-function-call-face ((,class (:foreground ,fulvous))))
 
-   ;; which-key
+   ;;;; which-key
    `(which-key-command-description-face ((,class (:foreground ,normal))))
    `(which-key-group-description-face ((,class (:foreground ,indigo-darker))))
    `(which-key-key-face ((,class (:foreground ,wine))))
    `(which-key-separator-face ((,class (:background nil :foreground ,grey-dark))))
    `(which-key-special-key-face ((,class (:foreground ,magenta))))
 
-   ;; wiki-page-intro
-   `(wiki-page-intro-title ((,class (:foreground ,wine-bright :weight bold))))
+   ;;;; wiki-page-intro
+   `(wiki-page-intro-title ((,class (:foreground ,wine :weight bold))))
    `(wiki-page-intro-text ((,class (:foreground ,grey-light))))
    `(wiki-page-intro-not-found ((,class (:foreground ,grey-light :underline (:style wave :color ,wine)))))
    `(wiki-page-intro-error ((,class (:inherit error))))
 
    )
 
+
+  ;;; CUSTOM VARIABLES
+
   (custom-theme-set-variables
    'lorisan
 
-   ;; pos-tip
+   ;;;; pos-tip
    `(pos-tip-foreground-color ,grey-light)
    `(pos-tip-background-color ,blue2-darkest)
 
-   ;; hl-parens
+   ;;;; hl-parens
    `(hl-paren-background-colors '("#777" "#555" "#333"))
    `(hl-paren-colors '("#FFF" "#DDD" "#BBB"))
    ))
+
+;;; PROVIDE THEME
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
