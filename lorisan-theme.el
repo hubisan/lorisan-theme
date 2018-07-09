@@ -213,8 +213,8 @@
    `(bold-italic ((,class (:slant italic :weight bold))))
    `(underline ((,class (:underline t))))
    `(shadow ((,class (:foreground ,grey-light))))
-   `(link ((,class (:foreground ,turquoise :underline t))))
-   `(link-visited ((,class (:foreground ,blue-bright :underline t))))
+   `(link ((,class (:foreground ,indigo :underline t))))
+   `(link-visited ((,class (:foreground ,indigo-dark :underline t))))
 
    `(highlight ((,class (:inverse-video nil :background ,grey-darkest :foreground nil))))
    `(isearch ((,class (:foreground ,amber-bright :background ,background :inverse-video t))))
@@ -334,7 +334,7 @@
 
    ;;;; company
    `(company-preview ((,class (:foreground ,bright))))
-   `(company-preview-common ((,class (:background ,emerald :foreground ,emerald-darkest :underline t))))
+   `(company-preview-common ((,class (:background ,mint :foreground ,mint-darkest :underline t))))
    `(company-preview-search ((,class (:foreground ,darkest :background ,amber))))
    `(company-tooltip ((,class (:background ,blue2-dark :foreground ,white))))
    `(company-tooltip-common ((,class (:inherit company-tooltip :background ,blue2-darkest :foreground ,grey))))
@@ -358,7 +358,7 @@
    ;;;; css
    `(css-selector ((,class (:foreground ,wine))))
    `(css-property ((,class (:foreground ,cyan))))
-   `(css-proprietary-property ((,class (:foreground ,emerald))))
+   `(css-proprietary-property ((,class (:foreground ,mint))))
 
    ;;;; diff
    `(diff-added ((,class (:inherit magit-diff-added))))
@@ -368,13 +368,13 @@
    `(diff-file-header ((,class (:inherit magit-diff-file-heading))))
    `(diff-hunk-header ((,class (:inherit magit-diff-hunk-heading))))
    `(diff-refine-removed ((,class (:foreground ,wine-light :background ,wine-darkest))))
-   `(diff-refine-added ((,class (:foreground ,emerald-bright :background ,emerald-darkest))))
+   `(diff-refine-added ((,class (:foreground ,mint-bright :background ,mint-darkest))))
    `(diff-refine-changed ((,class (:foreground ,fulvous-bright :background ,fulvous-darkest))))
 
    ;;;; diff-hl
    `(diff-hl-change ((,class (:foreground ,indigo-darker :background ,indigo-bright))))
    `(diff-hl-delete ((,class (:foreground ,pink-darker :background ,pink-bright))))
-   `(diff-hl-insert ((,class (:foreground ,emerald-darker :background ,emerald-bright))))
+   `(diff-hl-insert ((,class (:foreground ,mint-darker :background ,mint-bright))))
 
    ;;;; dired+
    `(diredp-compressed-file-suffix ((,class (:foreground ,turquoise-bright))))
@@ -408,8 +408,8 @@
    `(doom-modeline-buffer-modified ((,class (:foreground ,wine :background nil :weight normal))))
    `(doom-modeline-buffer-major-mode ((,class (:foreground ,magenta-bright :background nil :weight normal))))
    `(doom-modeline-highlight ((,class (:foreground ,magenta :background nil :weight normal))))
-   `(doom-modeline-panel ((,class (:foreground ,emerald-darkest :background ,emerald-bright :weight normal))))
-   `(doom-modeline-info ((,class (:foreground ,emerald :background nil :weight normal))))
+   `(doom-modeline-panel ((,class (:foreground ,mint-darkest :background ,mint-bright :weight normal))))
+   `(doom-modeline-info ((,class (:foreground ,mint :background nil :weight normal))))
    `(doom-modeline-warning ((,class (:foreground ,amber :background nil :weight normal))))
    `(doom-modeline-urgent ((,class (:foreground ,wine :background nil :weight normal))))
    `(doom-modeline-bar ((,class (:foreground nil :background nil :weight normal))))
@@ -424,10 +424,10 @@
    `(ediff-odd-diff-A  ((,class (:foreground nil :background ,fulvous-darkest))))
    `(ediff-current-diff-A  ((,class (:foreground ,background :background ,fulvous-darker))))
    `(ediff-fine-diff-A  ((,class (:foreground ,background :background ,fulvous))))
-   `(ediff-even-diff-B ((,class (:foreground nil :background ,emerald-darkest))))
-   `(ediff-odd-diff-B  ((,class (:foreground nil :background ,emerald-darkest))))
-   `(ediff-current-diff-B  ((,class (:foreground ,background :background ,emerald-darker))))
-   `(ediff-fine-diff-B  ((,class (:foreground ,background :background ,emerald))))
+   `(ediff-even-diff-B ((,class (:foreground nil :background ,mint-darkest))))
+   `(ediff-odd-diff-B  ((,class (:foreground nil :background ,mint-darkest))))
+   `(ediff-current-diff-B  ((,class (:foreground ,background :background ,mint-darker))))
+   `(ediff-fine-diff-B  ((,class (:foreground ,background :background ,mint))))
    `(ediff-even-diff-C ((,class (:foreground nil :background ,indigo-darkest))))
    `(ediff-odd-diff-C  ((,class (:foreground nil :background ,indigo-darkest))))
    `(ediff-current-diff-C  ((,class (:foreground ,background :background ,indigo-darker))))
@@ -474,13 +474,13 @@
    `(eshell-ls-missing ((,class (:foreground ,violet))))
    `(eshell-ls-product ((,class (:foreground ,amber))))
    `(eshell-ls-readonly ((,class (:foreground ,brown-light))))
-   `(eshell-ls-special ((,class (:foreground ,emerald))))
+   `(eshell-ls-special ((,class (:foreground ,mint))))
    `(eshell-ls-symlink ((,class (:foreground ,blue-bright))))
    `(eshell-ls-unreadable ((,class (:foreground ,grey-light))))
    `(eshell-prompt ((,class (:foreground ,wine))))
 
    ;;;; eval-sexp-fu
-   `(eval-sexp-fu-flash ((,class (:foreground nil :background ,emerald-dark))))
+   `(eval-sexp-fu-flash ((,class (:foreground nil :background ,mint-dark))))
 
    ;;;; fic-mode
    `(font-lock-fic-face ((,class (:background ,red :foreground ,red-darkest :weight bold))))
@@ -517,13 +517,13 @@
 
    ;;;; git-gutter
    `(git-gutter:modified ((,class (:foreground ,indigo-bright :weight bold))))
-   `(git-gutter:added ((,class (:foreground ,emerald-bright :weight bold))))
+   `(git-gutter:added ((,class (:foreground ,mint-bright :weight bold))))
    `(git-gutter:deleted ((,class (:foreground ,pink-bright :weight bold))))
    `(git-gutter:unchanged ((,class (:background ,amber))))
 
    ;;;; git-gutter-fringe
    `(git-gutter-fr:modified ((,class (:foreground ,indigo-bright :weight bold))))
-   `(git-gutter-fr:added ((,class (:foreground ,emerald-bright :weight bold))))
+   `(git-gutter-fr:added ((,class (:foreground ,mint-bright :weight bold))))
    `(git-gutter-fr:deleted ((,class (:foreground ,pink-bright :weight bold))))
 
    ;;;; gnus
@@ -582,7 +582,7 @@
 
    ;;;; google-translate
    `(google-translate-text-face ((,class (:foreground ,indigo :background nil :weight bold))))
-   `(google-translate-translation-face ((,class (:foreground ,emerald :background nil :weight bold))))
+   `(google-translate-translation-face ((,class (:foreground ,mint :background nil :weight bold))))
 
    ;;;; grep
    `(grep-context-face ((,class (:foreground ,faint))))
@@ -622,7 +622,7 @@
    ;;;; helm-swoop
    `(helm-swoop-line-number-face ((,class (:background nil :foreground ,wine-bright))))
    `(helm-swoop-target-line-face ((,class (:background ,lime-brightest :foreground ,background))))
-   `(helm-swoop-target-word-face ((,class (:background ,emerald-bright :foreground ,background))))
+   `(helm-swoop-target-word-face ((,class (:background ,mint-bright :foreground ,background))))
    `(helm-swoop-target-line-block-face ((,class (:background ,grey :foreground ,background))))
 
    ;;;; highlight-symbol
@@ -645,18 +645,21 @@
    `(hydra-face-teal ((,class (:foreground ,wine :weight bold))))
 
    ;;;; info
-   `(info-title-1 ((,class (:foreground ,pink-bright :weight bold))))
-   `(info-title-2 ((,class (:foreground ,fulvous :weight bold))))
-   `(info-title-3 ((,class (:foreground ,violet :weight bold))))
+   `(info-title-1 ((,class (:foreground ,wine :weight bold))))
+   `(info-title-2 ((,class (:foreground ,wine :weight bold))))
+   `(info-title-3 ((,class (:foreground ,wine :weight bold))))
    `(info-title-4 ((,class (:weight bold))))
    `(info-node ((,class (:foreground ,pink-light :slant italic :weight bold))))
    `(info-header-node ((,class (:inherit info-node))))
    `(info-header-xref ((,class (:inherit info-xref))))
    `(info-index-match ((,class (:inherit match))))
    `(info-menu-header ((,class (,coquelicot :weight bold))))
-   `(info-menu-star ((,class (:foreground ,coquelicot-bright))))
+   `(info-menu-star ((,class (:foreground ,grey-light))))
    `(info-xref ((,class (:inherit link))))
    `(info-xref-visited ((,class (:inherit (link-visited info-xref)))))
+   `(info-quoted-name ((,class (:foreground ,indigo))))
+   `(info-double-quoted-name ((,class (:foreground ,fulvous-light))))
+
 
    ;;;; icomplete
    `(icomplete-first-match ((,class (:foreground "white" :bold t))))
@@ -680,10 +683,10 @@
    `(ivy-minibuffer-match-face-4 ((,class (:inherit ivy-minibuffer-match-face-1))))
    `(ivy-virtual ((,class (:foreground ,indigo-bright))))
    `(ivy-action ((,class (:foreground ,wine))))
-   `(ivy-confirm-face ((,class (:foreground ,emerald))))
+   `(ivy-confirm-face ((,class (:foreground ,mint))))
    `(ivy-match-required-face ((,class (:foreground ,wine))))
    `(ivy-subdir ((,class (:foreground ,indigo-bright))))
-   `(ivy-remote ((,class (:foreground ,emerald))))
+   `(ivy-remote ((,class (:foreground ,mint))))
 
    ;;;; jabber
    `(jabber-title-large ((,class (:foreground ,pink-bright :height 1.0 :weight bold))))
@@ -762,7 +765,7 @@
    `(linum ((,class (:background ,alt-background))))
 
    ;;;; magit
-   `(magit-branch ((,class (:foreground ,emerald))))
+   `(magit-branch ((,class (:foreground ,mint))))
    `(magit-blame-heading ((,class (:foreground ,cerise-bright :background ,blue2-dark))))
    `(magit-header ((,class (:inherit nil :weight bold))))
    `(magit-item-highlight ((,class (:inherit highlight :background nil))))
@@ -775,7 +778,7 @@
    `(magit-log-head-label-remote ((,class (:foreground ,violet :box nil :weight bold))))
    `(magit-log-head-label-tags ((,class (:foreground ,cyan :box nil :weight bold))))
    `(magit-section-title ((,class (:foreground ,blue :weight bold))))
-   `(magit-popup-argument ((,class (:foreground ,emerald-darkest :background ,emerald))))
+   `(magit-popup-argument ((,class (:foreground ,mint-darkest :background ,mint))))
 
    ;;;; magit `next'
    `(magit-section ((,class (:inherit nil :weight bold))))
@@ -793,7 +796,7 @@
    `(magit-diff-context-highlight ((,class (:inherit magit-diff-context :foreground ,grey-light))))
    `(magit-diff-lines-boundary ((,class (:background ,coquelicot-bright))))
    `(magit-diff-lines-heading ((,class (:inherit magit-diff-hunk-heading-highlight :foreground ,coquelicot-bright))))
-   `(magit-diff-added ((,class (:foreground ,emerald))))
+   `(magit-diff-added ((,class (:foreground ,mint))))
    `(magit-diff-added-highlight ((,class (:inherit magit-diff-added :weight normal))))
    `(magit-diff-removed ((,class (:foreground ,wine))))
    `(magit-diff-removed-highlight ((,class (:inherit magit-diff-removed :weight normal))))
@@ -880,7 +883,7 @@
    `(org-document-info ((,class (:foreground ,pink))))
    `(org-document-info-keyword ((,class (:foreground ,pink-darker))))
    `(org-document-title ((,class (:weight bold :foreground ,white))))
-   `(org-done ((,class (:foreground ,emerald))))
+   `(org-done ((,class (:foreground ,mint))))
    `(org-ellipsis ((,class (:foreground ,faint))))
    `(org-footnote ((,class (:foreground ,cyan))))
    `(org-formula ((,class (:foreground ,coquelicot))))
@@ -988,6 +991,15 @@
    `(sml/not-modified ((,class (:foreground ,grey-light))))
    `(sml/numbers-separator ((,class (:foreground ,grey))))
 
+   ;;;;; smerge
+   `(smerge-base ((,class (:background ,fulvous-darkest))))
+   `(smerge-markers ((,class (:foreground ,cerise-bright :background ,blue2-dark))))
+   `(smerge-mine ((,class (:background ,pink-dark))))
+   `(smerge-other ((,class (:background ,mint-dark))))
+   `(smerge-refined-added ((,class (:background ,mint-darkest :foreground nil))))
+   `(smerge-refined-changed ((,class (:background ,indigo-darkest :foreground nil))))
+   `(smerge-refined-removed ((,class (:background ,pink-darkest :foreground nil))))
+
    ;;;; spaceline
    `(spaceline-flycheck-error  ((,class (:foreground , wine))))
    `(spaceline-flycheck-info   ((,class (:foreground ,indigo))))
@@ -999,10 +1011,10 @@
 
    ;;;; swiper
    `(swiper-line-face ((,class (:background ,lime-brightest :foreground ,background))))
-   `(swiper-match-face-1 ((,class (:background ,emerald-bright :foreground ,background))))
-   `(swiper-match-face-2 ((,class (:background ,emerald-bright :foreground ,background))))
-   `(swiper-match-face-3 ((,class (:background ,emerald-bright :foreground ,background))))
-   `(swiper-match-face-4 ((,class (:background ,emerald-bright :foreground ,background))))
+   `(swiper-match-face-1 ((,class (:background ,mint-bright :foreground ,background))))
+   `(swiper-match-face-2 ((,class (:background ,mint-bright :foreground ,background))))
+   `(swiper-match-face-3 ((,class (:background ,mint-bright :foreground ,background))))
+   `(swiper-match-face-4 ((,class (:background ,mint-bright :foreground ,background))))
 
    ;;;; term
    `(term-color-black ((,class (:background ,alt-background :foreground ,alt-background))))
@@ -1019,7 +1031,7 @@
    `(tldr-introduction ((,class (:foreground ,normal))))
    `(tldr-description ((,class (:foreground ,indigo))))
    `(tldr-command-itself ((,class (:foreground ,cerise-bright :weight bold :background ,blue2-dark))))
-   `(tldr-code-block ((,class (:foreground ,emerald-bright :weight bold  :background ,blue2-dark))))
+   `(tldr-code-block ((,class (:foreground ,mint-bright :weight bold  :background ,blue2-dark))))
    `(tldr-command-argument ((,class (:foreground ,normal  :background ,blue2-dark))))
    `(tldr-directory-path ((,class (:foreground ,green-bright))))
 
