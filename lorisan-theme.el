@@ -142,7 +142,7 @@
       (indigo-bright "#918BFF")
       (indigo "#A9A4FF")
       (indigo-darker "#7c78b9")
-      (indigo-darker- "#838299")
+      (indigo-darker- "#757399")
       (indigo-dark "#525078")
       (indigo-darkest "#2b293b")
       (blue2 "#5E55FF")
