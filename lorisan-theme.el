@@ -262,7 +262,7 @@
    `(font-lock-type-face ((,class (:weight normal :foreground ,pink))))
    `(font-lock-comment-face ((,class (:weight normal :foreground ,indigo-darker- :background nil :slant italic))))
    `(font-lock-comment-delimiter-face ((,class (:weight normal :foreground ,indigo-darker- :slant italic))))
-   `(font-lock-doc-face ((,class (:weight normal :foreground ,indigo-darker-))))
+   `(font-lock-doc-face ((,class (:weight normal :foreground ,indigo-darker- :slant italic))))
    `(font-lock-negation-char-face ((,class (:weight normal :foreground ,red-bright))))
    `(font-lock-preprocessor-face ((,class (:weight normal :foreground ,cerise))))
    `(font-lock-regexp-grouping-backslash ((,class (:weight normal :foreground ,turquoise-bright))))
