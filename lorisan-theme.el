@@ -687,6 +687,11 @@
    `(ivy-match-required-face ((,class (:foreground ,wine))))
    `(ivy-subdir ((,class (:foreground ,indigo-bright))))
    `(ivy-remote ((,class (:foreground ,mint))))
+   `(ivy-highlight-face ((,class (:foreground ,grey-light :background nil))))
+
+   ;;;; ivy-posframe
+   `(ivy-posframe ((,class (:foreground ,grey-light :background ,grey-darkester))))
+   `(ivy-posframe-cursor ((,class (:inherit cursor))))
 
    ;;;; jabber
    `(jabber-title-large ((,class (:foreground ,pink-bright :height 1.0 :weight bold))))
@@ -1005,6 +1010,10 @@
    `(spaceline-flycheck-info   ((,class (:foreground ,indigo))))
    `(spaceline-flycheck-warning((,class (:foreground ,amber))))
    `(spaceline-python-venv ((,class (:foreground ,magenta))))
+   `(spaceline-highlight-face ((,class (:foreground ,background :background ,indigo))))
+   `(spaceline-modified ((,class (:foreground ,background :background ,wine))))
+   `(spaceline-unmodified ((,class (:foreground ,indigo :background nil))))
+   `(spaceline-read-only ((,class (:foreground ,background :background ,grey))))
 
    ;;;; spacemacs
    `(spacemacs-emacs-face ((,class (:foreground ,cyan-darkest :background ,cyan-darker))))
