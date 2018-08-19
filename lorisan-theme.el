@@ -217,9 +217,9 @@
    `(link-visited ((,class (:foreground ,indigo-dark :underline t))))
 
    `(highlight ((,class (:inverse-video nil :background ,grey-darkest :foreground nil))))
-   `(isearch ((,class (:foreground ,amber-bright :background ,background :inverse-video t))))
+   `(isearch ((,class (:foreground ,fulvous :background ,background :inverse-video t))))
    `(isearch-fail ((,class (:foreground ,background :background ,coquelicot))))
-   `(lazy-highlight ((,class (:foreground ,green-bright :background ,background :inverse-video t))))
+   `(lazy-highlight ((,class (:foreground ,fulvous :background ,background :inverse-video t))))
    `(region ((,class (:background ,violet2-dark))))
    `(secondary-selection ((,class (:background ,indigo-darkest))))
    `(trailing-whitespace ((,class (:background ,grey-darkest :underline (:color ,red-bright :style wave)))))
@@ -1019,11 +1019,11 @@
    `(spacemacs-emacs-face ((,class (:foreground ,cyan-darkest :background ,cyan-darker))))
 
    ;;;; swiper
-   `(swiper-line-face ((,class (:background ,lime-brightest :foreground ,background))))
-   `(swiper-match-face-1 ((,class (:background ,mint-bright :foreground ,background))))
-   `(swiper-match-face-2 ((,class (:background ,mint-bright :foreground ,background))))
-   `(swiper-match-face-3 ((,class (:background ,mint-bright :foreground ,background))))
-   `(swiper-match-face-4 ((,class (:background ,mint-bright :foreground ,background))))
+   `(swiper-line-face ((,class (:background ,indigo-bright :foreground ,background))))
+   `(swiper-match-face-1 ((,class (:background ,fulvous :foreground ,background))))
+   `(swiper-match-face-2 ((,class (:background ,fulvous :foreground ,background))))
+   `(swiper-match-face-3 ((,class (:background ,fulvous :foreground ,background))))
+   `(swiper-match-face-4 ((,class (:background ,fulvous :foreground ,background))))
 
    ;;;; term
    `(term-color-black ((,class (:background ,alt-background :foreground ,alt-background))))
