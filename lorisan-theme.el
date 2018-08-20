@@ -234,7 +234,7 @@
    `(header-line ((,class (:inherit mode-line :foreground ,magenta :background nil))))
    `(minibuffer-prompt ((,class (:foreground ,blue))))
    `(fringe ((,class (:background ,alt-background))))
-   `(cursor ((,class (:background ,malachite))))
+   `(cursor ((,class (:background ,wine-bright))))
    `(border ((,class (:background ,alt-background :foreground ,grey-dark))))
    `(vertical-border ((,class (:background ,alt-background :foreground ,grey-dark))))
    `(widget-button ((,class (:underline t))))
@@ -1087,6 +1087,16 @@
    ;;;; hl-parens
    `(hl-paren-background-colors '("#777" "#555" "#333"))
    `(hl-paren-colors '("#FFF" "#DDD" "#BBB"))
+   
+;;;; evil-mode
+   `(evil-normal-state-cursor '(box ,wine-bright))
+   `(evil-motion-state-cursor '(box ,wine-bright))
+   `(evil-insert-state-cursor '(bar ,wine-bright))
+   `(evil-replace-state-cursor '(hbar ,wine-bright))
+   `(evil-operator-state-cursor '((hbar . ,(/ (window-pixel-height) (* (window-height) 2))) ,wine-bright))
+   `(evil-visual-state-cursor '(box ,turquoise-bright))
+   `(evil-emacs-state-cursor '(box ,mint-bright))
+
    ))
 
 ;;; PROVIDE THEME
