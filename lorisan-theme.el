@@ -681,7 +681,6 @@
    `(info-quoted-name ((,class (:foreground ,indigo))))
    `(info-double-quoted-name ((,class (:foreground ,fulvous-light))))
 
-
    ;;;; icomplete
    `(icomplete-first-match ((,class (:foreground "white" :bold t))))
 
@@ -693,8 +692,8 @@
    `(ido-virtual ((,class (:foreground ,faintest))))
 
    ;;;; iedit
-   `(iedit-occurrence ((,class (:inherit isearch))))
-   `(iedit-read-only-occurrence ((,class (:inherit isearch))))
+   `(iedit-occurrence ((,class (:background ,cerise :foreground ,cerise-darkest))))
+   `(iedit-read-only-occurrence ((,class (:background ,cerise :foreground ,cerise-darkest :underline (:color ,red-bright)))))
 
    ;;;; ivy
    `(ivy-current-match ((,class (:background ,indigo-bright :foreground ,background))))
