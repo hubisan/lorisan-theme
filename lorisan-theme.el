@@ -499,6 +499,12 @@
    `(evil-goggles-surround-face ((,class (:inherit evil-goggles-default-face))))
    `(evil-goggles-yank-face ((,class (:inherit evil-goggles-default-face))))
 
+   ;;;; evil-mc
+   `(evil-mc-cursor-default-face ((,class (:background ,cerise-bright :foreground ,cerise-darkest))))
+   `(evil-mc-cursor-bar-face ((,class (:background ,cerise-bright :foreground ,cerise-darkest :weight bold)))))
+   `(evil-mc-cursor-hbar-face ((,class (:inherit cursor))))
+   `(evil-mc-region-face ((,class (:inherit region :background ,violet-dark))))
+
    ;;;; evil-snipe
    `(evil-snipe-first-match-face ((,class (:background ,indigo-bright :foreground ,background))))
    `(evil-snipe-matches-face ((,class (:background ,mint-bright :foreground ,background))))
