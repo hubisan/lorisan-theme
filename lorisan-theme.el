@@ -501,7 +501,7 @@
 
    ;;;; evil-mc
    `(evil-mc-cursor-default-face ((,class (:background ,cerise-bright :foreground ,cerise-darkest))))
-   `(evil-mc-cursor-bar-face ((,class (:background ,cerise-bright :foreground ,cerise-darkest :weight bold)))))
+   `(evil-mc-cursor-bar-face ((,class (:background ,cerise-bright :foreground ,cerise-darkest :weight bold))))
    `(evil-mc-cursor-hbar-face ((,class (:inherit cursor))))
    `(evil-mc-region-face ((,class (:inherit region :background ,violet-dark))))
 
