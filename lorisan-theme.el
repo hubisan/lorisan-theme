@@ -376,6 +376,14 @@
    `(diff-hl-delete ((,class (:foreground ,pink-darker :background ,pink-bright))))
    `(diff-hl-insert ((,class (:foreground ,mint-darker :background ,mint-bright))))
 
+   ;;;; dired
+   `(dired-header ((,class (:foreground ,pink :underline t))))
+   `(dired-directory ((,class (:foreground ,wine))))
+   `(dired-mark ((,class (:foreground ,red-bright :weight bold))))
+   `(dired-marked ((,class (:inherit region))))
+   `(dired-flagged ((,class (:foreground ,red-bright :background ,red-darkest :underline nil))))
+   `(dired-symlink ((,class (:foreground ,grey-light))))
+
    ;;;; dired+
    `(diredp-compressed-file-suffix ((,class (:foreground ,turquoise-bright))))
    `(diredp-date-time ((,class (:foreground ,grey-darker))))
