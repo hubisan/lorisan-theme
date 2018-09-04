@@ -926,7 +926,7 @@
    `(org-ellipsis ((,class (:foreground ,faint))))
    `(org-footnote ((,class (:foreground ,cyan))))
    `(org-formula ((,class (:foreground ,coquelicot))))
-   `(org-hide ((,class (:foreground ,background :background ,background))))
+   `(org-hide ((,class (:foreground ,wine :weight bold))))
    `(org-level-1 ((,class (:foreground ,wine :weight bold))))
    `(org-level-2 ((,class (:foreground ,wine :weight bold))))
    `(org-level-3 ((,class (:foreground ,wine :weight bold))))
