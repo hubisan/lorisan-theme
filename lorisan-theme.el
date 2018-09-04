@@ -501,7 +501,7 @@
 
    ;;;; evil-mc
    `(evil-mc-cursor-default-face ((,class (:background ,cerise-bright :foreground ,cerise-darkest))))
-   `(evil-mc-cursor-bar-face ((,class (:background ,cerise-bright :foreground ,cerise-darkest :weight bold)))))
+   `(evil-mc-cursor-bar-face ((,class (:background ,cerise-bright :foreground ,cerise-darkest :weight bold))))
    `(evil-mc-cursor-hbar-face ((,class (:inherit cursor))))
    `(evil-mc-region-face ((,class (:inherit region :background ,violet-dark))))
 
@@ -1092,12 +1092,15 @@
    `(which-key-separator-face ((,class (:background nil :foreground ,grey-dark))))
    `(which-key-special-key-face ((,class (:foreground ,magenta))))
 
+   ;;;; whitespace
+   `(whitespace-trailing ((,class (:inherit trailing-whitespace))))
+   `(whitespace-line ((,class (:foreground nil :background ,grey-darkester))))
+
    ;;;; wiki-page-intro
    `(wiki-page-intro-title ((,class (:foreground ,wine :weight bold))))
    `(wiki-page-intro-text ((,class (:foreground ,grey-light))))
    `(wiki-page-intro-not-found ((,class (:foreground ,grey-light :underline (:style wave :color ,wine)))))
    `(wiki-page-intro-error ((,class (:inherit error))))
-
    )
 
 
@@ -1105,7 +1108,6 @@
 
   (custom-theme-set-variables
    'lorisan
-
    ;;;; pos-tip
    `(pos-tip-foreground-color ,grey-light)
    `(pos-tip-background-color ,blue2-darkest)
@@ -1113,8 +1115,8 @@
    ;;;; hl-parens
    `(hl-paren-background-colors '("#777" "#555" "#333"))
    `(hl-paren-colors '("#FFF" "#DDD" "#BBB"))
-   
-;;;; evil-mode
+
+   ;;;; evil-mode
    `(evil-normal-state-cursor '(box ,wine-bright))
    `(evil-motion-state-cursor '(box ,wine-bright))
    `(evil-insert-state-cursor '(bar ,wine-bright))
@@ -1122,7 +1124,6 @@
    `(evil-operator-state-cursor '((hbar . ,(/ (window-pixel-height) (* (window-height) 2))) ,wine-bright))
    `(evil-visual-state-cursor '(box ,turquoise-bright))
    `(evil-emacs-state-cursor '(box ,mint-bright))
-
    ))
 
 ;;; PROVIDE THEME
