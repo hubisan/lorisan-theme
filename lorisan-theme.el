@@ -219,7 +219,7 @@
    `(highlight ((,class (:inverse-video nil :background ,grey-darkest :foreground nil))))
    `(isearch ((,class (:foreground ,fulvous :background ,background :inverse-video t))))
    `(isearch-fail ((,class (:foreground ,background :background ,coquelicot))))
-   `(lazy-highlight ((,class (:foreground ,fulvous :background ,background :inverse-video t))))
+   `(lazy-highlight ((,class (:foreground ,indigo-bright :background ,background :inverse-video t))))
    `(region ((,class (:background ,violet2-dark))))
    `(secondary-selection ((,class (:background ,indigo-darkest))))
    `(trailing-whitespace ((,class (:background ,grey-darkest :underline (:color ,red-bright :style wave)))))
