@@ -376,6 +376,14 @@
    `(diff-hl-delete ((,class (:foreground ,pink-darker :background ,pink-bright))))
    `(diff-hl-insert ((,class (:foreground ,mint-darker :background ,mint-bright))))
 
+   ;;;; dired
+   `(dired-header ((,class (:foreground ,pink :underline t))))
+   `(dired-directory ((,class (:foreground ,wine))))
+   `(dired-mark ((,class (:foreground ,red-bright :weight bold))))
+   `(dired-marked ((,class (:inherit region))))
+   `(dired-flagged ((,class (:foreground ,red-bright :background ,red-darkest :underline nil))))
+   `(dired-symlink ((,class (:foreground ,grey-light))))
+
    ;;;; dired+
    `(diredp-compressed-file-suffix ((,class (:foreground ,turquoise-bright))))
    `(diredp-date-time ((,class (:foreground ,grey-darker))))
@@ -922,15 +930,15 @@
    `(org-ellipsis ((,class (:foreground ,faint))))
    `(org-footnote ((,class (:foreground ,cyan))))
    `(org-formula ((,class (:foreground ,coquelicot))))
-   `(org-hide ((,class (:foreground ,background :background ,background))))
-   `(org-level-1 ((,class (:foreground ,wine :weight bold))))
-   `(org-level-2 ((,class (:foreground ,wine :weight bold))))
-   `(org-level-3 ((,class (:foreground ,wine :weight bold))))
-   `(org-level-4 ((,class (:foreground ,wine :weight bold))))
-   `(org-level-5 ((,class (:foreground ,wine :weight bold))))
-   `(org-level-6 ((,class (:foreground ,wine :weight bold))))
-   `(org-level-7 ((,class (:foreground ,wine :weight bold))))
-   `(org-level-8 ((,class (:foreground ,wine :weight bold))))
+   `(org-hide ((,class (:foreground ,background))))
+   `(org-level-1 ((,class (:inherit outline-1))))
+   `(org-level-2 ((,class (:inherit outline-2))))
+   `(org-level-3 ((,class (:inherit outline-3))))
+   `(org-level-4 ((,class (:inherit outline-4))))
+   `(org-level-5 ((,class (:inherit outline-5))))
+   `(org-level-6 ((,class (:inherit outline-6))))
+   `(org-level-7 ((,class (:inherit outline-7))))
+   `(org-level-8 ((,class (:inherit outline-8))))
    `(org-link ((,class (:foreground ,turquoise-bright :underline nil))))
    `(org-scheduled ((,class (:foreground ,amber-bright))))
    `(org-scheduled-previously ((,class (:foreground ,amber-darker))))
@@ -944,31 +952,31 @@
    `(org-upcoming-deadline ((,class (:foreground ,amber))))
    `(org-verbatim ((,class (:foreground ,amber))))
    `(org-warning ((,class (:foreground ,amber-bright))))
-   `(org-priority ((,class (:foreground ,indigo))))
-   `(org-checkbox-statistics-todo ((,class (:foreground ,red-bright))))
-   `(org-checkbox-statistics-done ((,class (:foreground ,green))))
+   `(org-priority ((,class (:foreground ,grey-darker))))
+   `(org-checkbox-statistics-todo ((,class (:foreground ,pink-darker))))
+   `(org-checkbox-statistics-done ((,class (:foreground ,mint-darker))))
 
    ;;;; outline
-   `(outline-1 ((,class (:slant normal :foreground ,outline-1))))
-   `(outline-2 ((,class (:slant normal :foreground ,outline-2))))
-   `(outline-3 ((,class (:slant normal :foreground ,outline-3))))
-   `(outline-4 ((,class (:slant normal :foreground ,outline-4))))
-   `(outline-5 ((,class (:slant normal :foreground ,outline-5))))
-   `(outline-6 ((,class (:slant normal :foreground ,outline-6))))
-   `(outline-7 ((,class (:slant normal :foreground ,outline-7))))
-   `(outline-8 ((,class (:slant normal :foreground ,outline-8))))
-   `(outline-9 ((,class (:slant normal :foreground ,outline-9))))
+   `(outline-1 ((,class (:foreground ,wine :weight bold :height 1.1))))
+   `(outline-2 ((,class (:foreground ,indigo :weight bold))))
+   `(outline-3 ((,class (:foreground ,indigo :weight bold :slant italic))))
+   `(outline-4 ((,class (:foreground ,indigo :slant italic))))
+   `(outline-5 ((,class (:foreground ,indigo :slant italic))))
+   `(outline-6 ((,class (:foreground ,indigo :slant italic))))
+   `(outline-7 ((,class (:foreground ,indigo :slant italic))))
+   `(outline-8 ((,class (:foreground ,indigo :slant italic))))
+   `(outline-9 ((,class (:foreground ,indigo :slant italic))))
 
    ;;;; outshine
-   `(outshine-level-1 ((,class (:slant normal :weight bold :foreground ,white))))
-   `(outshine-level-2 ((,class (:slant normal :foreground ,white))))
-   `(outshine-level-3 ((,class (:slant italic :foreground ,white))))
-   `(outshine-level-4 ((,class (:slant italic :foreground ,grey-light))))
-   `(outshine-level-5 ((,class (:slant italic :foreground ,grey-light))))
-   `(outshine-level-6 ((,class (:slant italic :foreground ,grey-light))))
-   `(outshine-level-7 ((,class (:slant italic :foreground ,grey-light))))
-   `(outshine-level-8 ((,class (:slant italic :foreground ,grey-light))))
-   `(outshine-level-9 ((,class (:slant italic :foreground ,grey-light))))
+   `(outshine-level-1 ((,class (:inherit outline-1))))
+   `(outshine-level-2 ((,class (:inherit outline-2))))
+   `(outshine-level-3 ((,class (:inherit outline-3))))
+   `(outshine-level-4 ((,class (:inherit outline-4))))
+   `(outshine-level-5 ((,class (:inherit outline-5))))
+   `(outshine-level-6 ((,class (:inherit outline-6))))
+   `(outshine-level-7 ((,class (:inherit outline-7))))
+   `(outshine-level-8 ((,class (:inherit outline-8))))
+   `(outshine-level-9 ((,class (:inherit outline-9))))
 
    ;;;; parenface
    `(paren-face ((,class (:foreground ,faintest :background nil))))
@@ -1096,12 +1104,15 @@
    `(which-key-separator-face ((,class (:background nil :foreground ,grey-dark))))
    `(which-key-special-key-face ((,class (:foreground ,magenta))))
 
+   ;;;; whitespace
+   `(whitespace-trailing ((,class (:inherit trailing-whitespace))))
+   `(whitespace-line ((,class (:foreground nil :background ,grey-darkester))))
+
    ;;;; wiki-page-intro
    `(wiki-page-intro-title ((,class (:foreground ,wine :weight bold))))
    `(wiki-page-intro-text ((,class (:foreground ,grey-light))))
    `(wiki-page-intro-not-found ((,class (:foreground ,grey-light :underline (:style wave :color ,wine)))))
    `(wiki-page-intro-error ((,class (:inherit error))))
-
    )
 
 
@@ -1109,7 +1120,6 @@
 
   (custom-theme-set-variables
    'lorisan
-
    ;;;; pos-tip
    `(pos-tip-foreground-color ,grey-light)
    `(pos-tip-background-color ,blue2-darkest)
@@ -1117,8 +1127,8 @@
    ;;;; hl-parens
    `(hl-paren-background-colors '("#777" "#555" "#333"))
    `(hl-paren-colors '("#FFF" "#DDD" "#BBB"))
-   
-;;;; evil-mode
+
+   ;;;; evil-mode
    `(evil-normal-state-cursor '(box ,wine-bright))
    `(evil-motion-state-cursor '(box ,wine-bright))
    `(evil-insert-state-cursor '(bar ,wine-bright))
@@ -1126,7 +1136,6 @@
    `(evil-operator-state-cursor '((hbar . ,(/ (window-pixel-height) (* (window-height) 2))) ,wine-bright))
    `(evil-visual-state-cursor '(box ,turquoise-bright))
    `(evil-emacs-state-cursor '(box ,mint-bright))
-
    ))
 
 ;;; PROVIDE THEME
