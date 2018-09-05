@@ -926,6 +926,7 @@
    `(org-ellipsis ((,class (:foreground ,faint))))
    `(org-footnote ((,class (:foreground ,cyan))))
    `(org-formula ((,class (:foreground ,coquelicot))))
+   `(org-hide ((,class (:foreground ,background))))
    `(org-level-1 ((,class (:inherit outline-1))))
    `(org-level-2 ((,class (:inherit outline-2))))
    `(org-level-3 ((,class (:inherit outline-3))))
