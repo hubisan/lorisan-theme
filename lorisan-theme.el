@@ -517,6 +517,9 @@
    `(evil-snipe-first-match-face ((,class (:background ,indigo-bright :foreground ,background))))
    `(evil-snipe-matches-face ((,class (:background ,mint-bright :foreground ,background))))
 
+   ;;;; evil-visual-mark
+   `(evil-visual-mark-face ((,class (:background ,grey-dark :foreground ,background))))
+
    ;;;; fic-mode
    `(font-lock-fic-face ((,class (:background ,red :foreground ,red-darkest :weight bold))))
 
@@ -722,6 +725,7 @@
    `(ivy-subdir ((,class (:foreground ,indigo-bright))))
    `(ivy-remote ((,class (:foreground ,mint))))
    `(ivy-highlight-face ((,class (:foreground ,grey-light :background nil))))
+   `(ivy-modified-buffer ((,class (:foreground ,wine))))
 
    ;;;; ivy-posframe
    `(ivy-posframe ((,class (:foreground ,grey-light :background ,grey-darkester))))
