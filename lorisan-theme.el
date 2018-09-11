@@ -299,10 +299,10 @@
    `(auto-dim-other-buffers-face ((,class (:background "#0c0c0c"))))
 
    ;;;; avy
-   `(avy-lead-face ((,class (:slant normal :foreground ,grey-darkest :background ,wine-bright))))
-   `(avy-lead-face-0 ((,class (:slant normal :foreground ,grey-darkest :background ,cerise-bright))))
-   `(avy-lead-face-1 ((,class (:slant normal :foreground ,white :background ,grey-dark))))
-   `(avy-lead-face-2 ((,class (:slant normal :foreground ,grey-darkest :background ,wine-bright))))
+   `(avy-lead-face ((,class (:slant normal :foreground ,grey-darkest :background ,mint-bright))))
+   `(avy-lead-face-0 ((,class (:slant normal :foreground ,grey-darkest :background ,magenta-bright))))
+   `(avy-lead-face-1 ((,class (:slant normal :foreground ,grey-darkest :background ,indigo-bright))))
+   `(avy-lead-face-2 ((,class (:slant normal :foreground ,grey-darkest :background ,indigo-bright))))
 
    ;;;; bmkp bookmark+
    `(bmkp-heading ((,class (:foreground ,pink-bright))))
