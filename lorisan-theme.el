@@ -337,7 +337,7 @@
    `(company-preview-common ((,class (:background ,mint :foreground ,mint-darkest :underline t))))
    `(company-preview-search ((,class (:foreground ,darkest :background ,amber))))
    `(company-tooltip ((,class (:background ,blue2-dark :foreground ,white))))
-   `(company-tooltip-common ((,class (:inherit company-tooltip :background ,blue2-darkest :foreground ,grey))))
+   `(company-tooltip-common ((,class (:inherit company-tooltip :background ,blue2-dark :foreground ,white))))
    `(company-tooltip-common-selection ((,class (:inherit company-tooltip-selection))))
    `(company-tooltip-selection ((,class (:background ,coquelicot :foreground ,coquelicot-darkest))))
    `(company-scrollbar-bg ((,class (:background ,grey-darkest))))
