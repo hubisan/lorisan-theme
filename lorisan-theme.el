@@ -299,10 +299,10 @@
    `(auto-dim-other-buffers-face ((,class (:background "#0c0c0c"))))
 
    ;;;; avy
-   `(avy-lead-face ((,class (:slant normal :foreground ,grey-darkest :background ,wine-bright))))
-   `(avy-lead-face-0 ((,class (:slant normal :foreground ,grey-darkest :background ,cerise-bright))))
-   `(avy-lead-face-1 ((,class (:slant normal :foreground ,white :background ,grey-dark))))
-   `(avy-lead-face-2 ((,class (:slant normal :foreground ,grey-darkest :background ,wine-bright))))
+   `(avy-lead-face ((,class (:slant normal :foreground ,grey-darkest :background ,mint-bright))))
+   `(avy-lead-face-0 ((,class (:slant normal :foreground ,grey-darkest :background ,magenta-bright))))
+   `(avy-lead-face-1 ((,class (:slant normal :foreground ,grey-darkest :background ,indigo-bright))))
+   `(avy-lead-face-2 ((,class (:slant normal :foreground ,grey-darkest :background ,indigo-bright))))
 
    ;;;; bmkp bookmark+
    `(bmkp-heading ((,class (:foreground ,pink-bright))))
@@ -957,7 +957,7 @@
    `(org-checkbox-statistics-done ((,class (:foreground ,mint-darker))))
 
    ;;;; outline
-   `(outline-1 ((,class (:foreground ,wine :weight bold :height 1.1))))
+   `(outline-1 ((,class (:foreground ,wine :weight bold :height 110))))
    `(outline-2 ((,class (:foreground ,indigo :weight bold))))
    `(outline-3 ((,class (:foreground ,indigo :weight bold :slant italic))))
    `(outline-4 ((,class (:foreground ,indigo :slant italic))))
@@ -968,15 +968,15 @@
    `(outline-9 ((,class (:foreground ,indigo :slant italic))))
 
    ;;;; outshine
-   `(outshine-level-1 ((,class (:inherit outline-1))))
-   `(outshine-level-2 ((,class (:inherit outline-2))))
-   `(outshine-level-3 ((,class (:inherit outline-3))))
-   `(outshine-level-4 ((,class (:inherit outline-4))))
-   `(outshine-level-5 ((,class (:inherit outline-5))))
-   `(outshine-level-6 ((,class (:inherit outline-6))))
-   `(outshine-level-7 ((,class (:inherit outline-7))))
-   `(outshine-level-8 ((,class (:inherit outline-8))))
-   `(outshine-level-9 ((,class (:inherit outline-9))))
+   `(outshine-level-1 ((,class (:inherit outline-1 :foreground ,mint-bright :height 100 :underline t))))
+   `(outshine-level-2 ((,class (:inherit outline-2 :foreground ,mint-bright))))
+   `(outshine-level-3 ((,class (:inherit outline-3 :foreground ,mint-bright))))
+   `(outshine-level-4 ((,class (:inherit outline-4 :foreground ,mint-bright))))
+   `(outshine-level-5 ((,class (:inherit outline-5 :foreground ,mint-bright))))
+   `(outshine-level-6 ((,class (:inherit outline-6 :foreground ,mint-bright))))
+   `(outshine-level-7 ((,class (:inherit outline-7 :foreground ,mint-bright))))
+   `(outshine-level-8 ((,class (:inherit outline-8 :foreground ,mint-bright))))
+   `(outshine-level-9 ((,class (:inherit outline-9 :foreground ,mint-bright))))
 
    ;;;; parenface
    `(paren-face ((,class (:foreground ,faintest :background nil))))
