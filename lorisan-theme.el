@@ -337,7 +337,7 @@
    `(company-preview-common ((,class (:background ,mint :foreground ,mint-darkest :underline t))))
    `(company-preview-search ((,class (:foreground ,darkest :background ,amber))))
    `(company-tooltip ((,class (:background ,blue2-dark :foreground ,white))))
-   `(company-tooltip-common ((,class (:inherit company-tooltip :background ,blue2-darkest :foreground ,grey))))
+   `(company-tooltip-common ((,class (:background ,blue2-dark :foreground ,white))))
    `(company-tooltip-common-selection ((,class (:inherit company-tooltip-selection))))
    `(company-tooltip-selection ((,class (:background ,coquelicot :foreground ,coquelicot-darkest))))
    `(company-scrollbar-bg ((,class (:background ,grey-darkest))))
@@ -372,9 +372,9 @@
    `(diff-refine-changed ((,class (:foreground ,fulvous-bright :background ,fulvous-darkest))))
 
    ;;;; diff-hl
-   `(diff-hl-change ((,class (:foreground ,indigo-darker :background ,indigo-bright))))
-   `(diff-hl-delete ((,class (:foreground ,pink-darker :background ,pink-bright))))
-   `(diff-hl-insert ((,class (:foreground ,mint-darker :background ,mint-bright))))
+   `(diff-hl-change ((,class (:foreground ,indigo :background ,indigo-darkest))))
+   `(diff-hl-delete ((,class (:foreground ,pink :background ,pink-darkest))))
+   `(diff-hl-insert ((,class (:foreground ,mint :background ,mint-darkest))))
 
    ;;;; dired
    `(dired-header ((,class (:foreground ,pink :underline t))))
@@ -537,9 +537,9 @@
    `(flycheck-error-list-highlight ((,class (:background ,blue2-dark))))
 
    ;;;; flymake
-   `(flymake-warnline ((,class (:underline ,amber :background ,background))))
-   `(flymake-errline ((,class (:underline ,red-bright :background ,background))))
-   `(flymake-infoline ((,class (:underline ,blue-bright :background ,background))))
+   `(flymake-error ((,class (:underline (:style wave :color ,wine-darker)))))
+   `(flymake-warning  ((,class (:underline (:style wave :color ,amber-low)))))
+   `(flymake-note ((,class (:underline (:style wave :color ,indigo-darker)))))
 
    ;;;; flyspell
    `(flyspell-incorrect ((,class (:underline (:style wave :color ,red-bright)))))
