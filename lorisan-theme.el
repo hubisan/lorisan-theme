@@ -667,13 +667,16 @@
    `(highlight-symbol-face ((,class (:background ,amber-dark))))
 
    ;;;; hightlight-indentation
-   `(highlight-indentation-face ((,class (:background "#0B0B0B"))))
+   `(highlight-indentation-face ((,class (:background ,grey-darkester))))
    `(highlight-indentation-current-column-face ((,class (:background ,grey-darkest))))
 
    ;;;; highlight-indent-guides
    `(highlight-indent-guides-odd-face ((,class (:background "#1B1B1B"))))
    `(highlight-indent-guides-even-face ((,class (:background "#1B1B1B"))))
-   `(highlight-indent-guides-character-face ((,class (:background nil :foreground "#1B1B1B"))))
+   `(highlight-indent-guides-character-face ((,class (:foreground "#1B1B1B"))))
+
+   ;;;; highlight-parentheses
+   `(hl-paren-face ((,class (:underline t))))
 
    ;;;; hydra (use one color for all)
    `(hydra-face-amaranth ((,class (:foreground ,wine :weight bold))))
@@ -1034,7 +1037,7 @@
    `(sml/not-modified ((,class (:foreground ,grey-light))))
    `(sml/numbers-separator ((,class (:foreground ,grey))))
 
-   ;;;;; smerge
+   ;;;; smerge
    `(smerge-base ((,class (:background ,fulvous-darkest))))
    `(smerge-markers ((,class (:foreground ,cerise-bright :background ,blue2-dark))))
    `(smerge-mine ((,class (:background ,pink-dark))))
@@ -1135,7 +1138,6 @@
    `(wiki-page-intro-error ((,class (:inherit error))))
    )
 
-
   ;;; CUSTOM VARIABLES
 
   (custom-theme-set-variables
@@ -1145,8 +1147,8 @@
    `(pos-tip-background-color ,blue2-darkest)
 
    ;;;; hl-parens
-   `(hl-paren-background-colors '("#777" "#555" "#333"))
-   `(hl-paren-colors '("#FFF" "#DDD" "#BBB"))
+   `(hl-paren-background-colors '(,indigo-darkest))
+   `(hl-paren-colors '(,indigo-bright))
 
    ;;;; evil-mode
    `(evil-normal-state-cursor '(box ,wine-bright))
