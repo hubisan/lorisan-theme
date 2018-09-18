@@ -1082,6 +1082,26 @@
    `(tldr-command-argument ((,class (:foreground ,normal  :background ,blue2-dark))))
    `(tldr-directory-path ((,class (:foreground ,green-bright))))
 
+   ;;;; treemacs
+   `(treemacs-directory-collapsed-face ((,class (:inherit treemacs-directory-face))))
+   `(treemacs-directory-face ((,class (:background nil :foreground ,indigo))))
+   `(treemacs-file-face ((,class (:background nil :foreground ,normal))))
+   `(treemacs-fringe-indicator-face ((,class (:background nil :foreground ,wine-bright))))
+   ;; `(treemacs-git-added-face ((,class (:background nil :foreground nil))))
+   ;; `(treemacs-git-conflict-face ((,class (:background nil :foreground nil))))
+   ;; `(treemacs-git-ignored-face ((,class (:background nil :foreground nil))))
+   ;; `(treemacs-git-modified-face ((,class (:background nil :foreground nil))))
+   ;; `(treemacs-git-renamed-face ((,class (:background nil :foreground nil))))
+   ;; `(treemacs-git-unmodified-face ((,class (:background nil :foreground nil))))
+   ;; `(treemacs-git-untracked-face ((,class (:background nil :foreground nil))))
+   `(treemacs-help-column-face ((,class (:background nil :foreground ,wine))))
+   `(treemacs-help-title-face ((,class (:background nil :foreground ,grey-dark))))
+   `(treemacs-on-failure-pulse-face ((,class (:background ,wine-bright))))
+   `(treemacs-on-success-pulse-face ((,class (:background ,mint-bright))))
+   `(treemacs-root-face ((,class (:background nil :foreground ,pink :underline t))))
+   ;; `(treemacs-tags-face ((,class (:background ,red :foreground ,red))))
+   `(treemacs-term-node-face ((,class (:inherit treemacs-directory-face))))
+
    ;;;; undo-tree
    `(undo-tree-visualizer-current-face ((,class (:foreground ,pink-bright))))
    `(undo-tree-visualizer-default-face ((,class (:foreground ,grey-light))))
@@ -1143,7 +1163,7 @@
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
   (add-to-list 'custom-theme-load-path
-               (file-name-as-directory (file-name-directory load-file-name))))
+	       (file-name-as-directory (file-name-directory load-file-name))))
 
 (provide-theme 'lorisan)
 
