@@ -1000,8 +1000,8 @@
    `(rainbow-delimiters-depth-7-face ((,class (:foreground ,paren1))))
    `(rainbow-delimiters-depth-8-face ((,class (:foreground ,paren2))))
    `(rainbow-delimiters-depth-9-face ((,class (:foreground ,paren3))))
-   `(rainbow-delimiters-unmatched-face ((,class (:weight bold :foreground ,background :background ,red-bright))))
-   `(rainbow-delimiters-mismatched-face ((,class (:weight bold :foreground ,background :background ,red-bright))))
+   `(rainbow-delimiters-unmatched-face ((,class (:weight bold :foreground ,red-bright))))
+   `(rainbow-delimiters-mismatched-face ((,class (:weight bold :foreground ,red-bright))))
 
    ;;;; regex-tool
    `(regex-tool-matched-face ((,class (:foreground nil :background nil :inherit match))))
