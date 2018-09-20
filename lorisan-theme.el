@@ -984,6 +984,18 @@
    ;;;; parenface
    `(paren-face ((,class (:foreground ,faintest :background nil))))
 
+   ;;;; popup
+   `(popup-face ((,class (:background ,blue2-dark :foreground ,white))))
+   ;; `(popup-isearch-match ((,class (:background nil :foreground nil))))
+   ;; `(popup-menu-face ((,class (:background nil :foreground nil))))
+   ;; `(popup-menu-mouse-face ((,class (:background nil :foreground nil))))
+   `(popup-menu-selection-face ((,class (:background ,mint-bright :foreground ,mint-darkest))))
+   `(popup-scroll-bar-background-face ((,class (:background ,grey-darkest))))
+   `(popup-scroll-bar-foreground-face ((,class (:background ,grey))))
+   ;; `(popup-menu-summary-face ((,class (:background nil :foreground nil))))
+   ;; `(popup-summary-face ((,class (:background nil :foreground nil))))
+   ;; `(popup-tip-face ((,class (:background nil :foreground nil))))
+
    ;;;; powerline
    `(powerline-active1 ((,class (:inherit mode-line))))
    `(powerline-active2 ((,class (:inherit mode-line))))
