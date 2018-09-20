@@ -543,7 +543,7 @@
 
    ;;;; flyspell
    `(flyspell-incorrect ((,class (:underline (:style wave :color ,wine-darker)))))
-   `(flyspell-duplicate ((,class (:underline (:style wave :color ,indigo-darker)))))
+   `(flyspell-duplicate ((,class (:underline (:style wave :color ,indigo-dark)))))
 
    ;;;; git
    `(git-commit-comment-action ((,class (:foreground ,white))))
