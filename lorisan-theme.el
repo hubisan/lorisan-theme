@@ -233,7 +233,7 @@
 
    `(header-line ((,class (:inherit mode-line :foreground ,magenta :background nil))))
    `(minibuffer-prompt ((,class (:foreground ,blue))))
-   `(fringe ((,class (:background ,alt-background))))
+   `(fringe ((,class (:background ,alt-background :foreground ,grey-darker))))
    `(cursor ((,class (:background ,wine-bright))))
    `(border ((,class (:background ,alt-background :foreground ,grey-dark))))
    `(vertical-border ((,class (:background ,alt-background :foreground ,grey-dark))))
@@ -554,15 +554,15 @@
    `(git-commit-summary ((,class (:foreground ,grey-light))))
 
    ;;;; git-gutter
-   `(git-gutter:modified ((,class (:foreground ,indigo-bright :weight bold))))
-   `(git-gutter:added ((,class (:foreground ,mint-bright :weight bold))))
-   `(git-gutter:deleted ((,class (:foreground ,pink-bright :weight bold))))
-   `(git-gutter:unchanged ((,class (:background ,amber))))
+   `(git-gutter:modified ((,class (:foreground ,indigo-darker))))
+   `(git-gutter:added ((,class (:foreground ,mint-darker))))
+   `(git-gutter:deleted ((,class (:foreground ,wine))))
+   `(git-gutter:unchanged ((,class (:background ,grey-darker))))
 
    ;;;; git-gutter-fringe
-   `(git-gutter-fr:modified ((,class (:foreground ,indigo-bright :weight bold))))
-   `(git-gutter-fr:added ((,class (:foreground ,mint-bright :weight bold))))
-   `(git-gutter-fr:deleted ((,class (:foreground ,pink-bright :weight bold))))
+   `(git-gutter-fr:modified ((,class (:foreground ,indigo-darker))))
+   `(git-gutter-fr:added ((,class (:foreground ,mint-darker))))
+   `(git-gutter-fr:deleted ((,class (:foreground ,wine))))
 
    ;;;; gnus
    `(gnus-cite-1 ((,class (:inherit outline-1 :foreground nil))))
@@ -1124,6 +1124,11 @@
    `(undo-tree-visualizer-unmodified-face ((,class (:foreground ,brown-light))))
    `(undo-tree-visualizer-register-face ((,class (:foreground ,magenta-bright))))
 
+   ;;;; vimish-fol
+   `(vimish-fold-fringe ((,class (:foreground ,grey))))
+   `(vimish-fold-overlay ((,class (:background ,wine-darkest))))
+   `(vimish-fold-mouse-face ((,class (:background ,wine-dark))))
+
    ;;;; web-mode
    `(web-mode-html-tag-face ((,class (:foreground ,wine))))
    `(web-mode-html-attr-name-face ((,class (:foreground ,cyan-bright))))
@@ -1148,6 +1153,11 @@
    `(wiki-page-intro-text ((,class (:foreground ,grey-light))))
    `(wiki-page-intro-not-found ((,class (:foreground ,grey-light :underline (:style wave :color ,wine)))))
    `(wiki-page-intro-error ((,class (:inherit error))))
+
+   ;;;; window-divider
+   `(window-divider ((,class (:foreground ,grey-dark))))
+   `(window-divider-first-pixel ((,class (:foreground ,grey-dark))))
+   `(window-divider-last-pixel ((,class (:foreground ,grey-dark))))
    )
 
   ;;; CUSTOM VARIABLES
