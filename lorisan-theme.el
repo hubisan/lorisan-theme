@@ -987,7 +987,7 @@
    ;;;; popup
    `(popup-face ((,class (:background ,blue2-dark :foreground ,white))))
    ;; `(popup-isearch-match ((,class (:background nil :foreground nil))))
-   ;; `(popup-menu-face ((,class (:background nil :foreground nil))))
+   ;; `(popup-menu-face ((,class (:background ,blue2-dark :foreground ,white))))
    ;; `(popup-menu-mouse-face ((,class (:background nil :foreground nil))))
    `(popup-menu-selection-face ((,class (:background ,mint-bright :foreground ,mint-darkest))))
    `(popup-scroll-bar-background-face ((,class (:background ,grey-darkest))))
@@ -1063,7 +1063,7 @@
    `(spaceline-flycheck-info   ((,class (:foreground ,indigo))))
    `(spaceline-flycheck-warning((,class (:foreground ,amber))))
    `(spaceline-python-venv ((,class (:foreground ,magenta))))
-   `(spaceline-highlight-face ((,class (:foreground ,background :background ,indigo))))
+   `(spaceline-highlight-face ((,class (:foreground ,mint))))
    `(spaceline-modified ((,class (:foreground ,background :background ,wine))))
    `(spaceline-unmodified ((,class (:foreground ,indigo :background nil))))
    `(spaceline-read-only ((,class (:foreground ,background :background ,grey))))
