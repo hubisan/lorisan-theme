@@ -343,8 +343,8 @@
    `(company-scrollbar-bg ((,class (:background ,grey-darkest))))
    `(company-scrollbar-fg ((,class (:background ,grey))))
    `(company-tooltip-annotation ((,class (:inherit company-tooltip :foreground ,coquelicot-light))))
-   `(company-tooltip-search-selection ((,class (:foreground ,amber-bright :background ,background :inverse-video t))))
-   `(company-tooltip-search ((,class (:foreground ,green-bright :background ,background :inverse-video t))))
+   `(company-tooltip-search-selection ((,class (:foreground ,fulvous :background ,background :inverse-video t))))
+   `(company-tooltip-search ((,class (:foreground ,fulvous-bright))))
 
    ;;;; compilation
    `(compilation-column-number ((,class (:foreground ,amber))))
