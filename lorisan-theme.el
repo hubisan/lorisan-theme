@@ -219,6 +219,7 @@
    `(highlight ((,class (:inverse-video nil :background ,grey-darkest :foreground nil))))
    `(isearch ((,class (:foreground ,fulvous :background ,background :inverse-video t))))
    `(isearch-fail ((,class (:foreground ,background :background ,coquelicot))))
+   `(match ((,class (:foreground ,fulvous :background ,background :inverse-video t))))
    `(lazy-highlight ((,class (:foreground ,indigo-bright :background ,background :inverse-video t))))
    `(region ((,class (:background ,violet2-dark))))
    `(secondary-selection ((,class (:background ,indigo-darkest))))
@@ -626,8 +627,7 @@
    `(grep-context-face ((,class (:foreground ,faint))))
    `(grep-error-face ((,class (:foreground ,red :weight bold :underline t))))
    `(grep-hit-face ((,class (:foreground ,blue))))
-   `(grep-match-face ((,class (:foreground nil :background nil :inherit match))))
-
+   `(grep-match-face ((,class (:foreground ,fulvous :background ,background :inverse-video t))))
    ;;;; helm
    `(helm-M-x-key ((,class (:foreground ,blue :underline t))))
    `(helm-match ((,class (:foreground ,fulvous))))
