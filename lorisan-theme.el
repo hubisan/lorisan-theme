@@ -224,7 +224,7 @@
    `(region ((,class (:background ,violet2-dark))))
    `(secondary-selection ((,class (:background ,indigo-darkest))))
    `(trailing-whitespace ((,class (:background ,grey-darkest :underline (:color ,red-bright :style wave)))))
-   `(hl-line ((,class (:background ,blue2-darkest))))
+   `(hl-line ((,class (:background ,indigo-darkest))))
 
    `(mode-line ((t (:foreground ,indigo-darker :background ,blue2-dark))))
    `(mode-line-inactive ((t (:foreground ,grey :background ,grey-darkester :weight light :box nil :inherit (mode-line )))))
@@ -234,7 +234,7 @@
 
    `(header-line ((,class (:inherit mode-line :foreground ,magenta :background nil))))
    `(minibuffer-prompt ((,class (:foreground ,blue))))
-   `(fringe ((,class (:background ,alt-background :foreground ,grey-darker))))
+   `(fringe ((,class (:background ,alt-background :foreground ,grey-light))))
    `(cursor ((,class (:background ,wine-bright))))
    `(border ((,class (:background ,alt-background :foreground ,grey-dark))))
    `(vertical-border ((,class (:background ,alt-background :foreground ,grey-dark))))
