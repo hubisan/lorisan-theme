@@ -807,6 +807,10 @@
    `(font-latex-verbatim-face ((,class (:foreground ,blue2 :background nil))))
    `(font-latex-warning-face ((,class (:inherit warning))))
 
+   ;;;; line-number
+   `(line-number ((,class (:background ,alt-background :foreground ,grey-darker))))
+   `(line-number-current-line ((,class (:background ,alt-background :foreground ,wine))))
+
    ;;;; linum
    `(linum ((,class (:background ,alt-background))))
 
