@@ -1146,7 +1146,7 @@
 
    ;;;; whitespace
    `(whitespace-trailing ((,class (:inherit trailing-whitespace))))
-   `(whitespace-line ((,class (:foreground nil :background ,grey-darkester))))
+   `(whitespace-line ((,class (:foreground nil :background ,magenta-darkest))))
 
    ;;;; wiki-page-intro
    `(wiki-page-intro-title ((,class (:foreground ,wine :weight bold))))
