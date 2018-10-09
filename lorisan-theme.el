@@ -1067,7 +1067,7 @@
    `(spaceline-flycheck-info   ((,class (:foreground ,indigo))))
    `(spaceline-flycheck-warning((,class (:foreground ,amber))))
    `(spaceline-python-venv ((,class (:foreground ,magenta))))
-   `(spaceline-highlight-face ((,class (:foreground ,mint))))
+   `(spaceline-highlight-face ((,class (:foreground ,mint :background ,indigo-dark))))
    `(spaceline-modified ((,class (:foreground ,background :background ,wine))))
    `(spaceline-unmodified ((,class (:foreground ,indigo :background nil))))
    `(spaceline-read-only ((,class (:foreground ,background :background ,grey))))
