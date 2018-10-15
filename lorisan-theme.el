@@ -234,7 +234,7 @@
 
    `(header-line ((,class (:inherit mode-line :foreground ,magenta :background nil))))
    `(minibuffer-prompt ((,class (:foreground ,blue))))
-   `(fringe ((,class (:background ,alt-background :foreground ,grey-light))))
+   `(fringe ((,class (:background ,alt-background :foreground ,orange-darker))))
    `(cursor ((,class (:background ,wine-bright))))
    `(border ((,class (:background ,alt-background :foreground ,grey-dark))))
    `(vertical-border ((,class (:background ,alt-background :foreground ,grey-dark))))
@@ -1159,9 +1159,10 @@
    `(wiki-page-intro-error ((,class (:inherit error))))
 
    ;;;; hl-line-fringe
-   `(hl-line-fringe-line ((,class (:background ,wine))))
-   `(hl-line-fringe-indicator ((,class (:foreground ,white))))
-   `(hl-line-fringe-indicator-inactive ((,class (:foreground ,magenta-bright))))
+   `(hl-line-fringe-line ((,class (:background ,blue2-darkest))))
+   `(hl-line-fringe-line-inactive ((,class (:background ,grey-darkest))))
+   `(hl-line-fringe-indicator ((,class (:foreground ,wine))))
+   `(hl-line-fringe-indicator-inactive ((,class (:foreground ,white))))
 
    ;;;; window-divider
    `(window-divider ((,class (:foreground ,grey-dark))))
