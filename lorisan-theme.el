@@ -1158,6 +1158,11 @@
    `(wiki-page-intro-not-found ((,class (:foreground ,grey-light :underline (:style wave :color ,wine)))))
    `(wiki-page-intro-error ((,class (:inherit error))))
 
+   ;;;; hl-line-fringe
+   `(hl-line-fringe-line ((,class (:background ,wine))))
+   `(hl-line-fringe-indicator ((,class (:foreground ,white))))
+   `(hl-line-fringe-indicator-inactive ((,class (:foreground ,magenta-bright))))
+
    ;;;; window-divider
    `(window-divider ((,class (:foreground ,grey-dark))))
    `(window-divider-first-pixel ((,class (:foreground ,grey-dark))))
