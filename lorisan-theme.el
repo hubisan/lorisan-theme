@@ -1161,7 +1161,7 @@
    ;;;; hl-line-fringe
    `(hl-line-fringe-line ((,class (:background ,blue2-darkest))))
    `(hl-line-fringe-line-inactive ((,class (:background ,grey-darkest))))
-   `(hl-line-fringe-indicator ((,class (:foreground ,wine))))
+   `(hl-line-fringe-indicator ((,class (:foreground ,magenta-bright))))
    `(hl-line-fringe-indicator-inactive ((,class (:foreground ,white))))
 
    ;;;; window-divider
