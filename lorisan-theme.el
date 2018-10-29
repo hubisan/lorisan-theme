@@ -1159,10 +1159,10 @@
    `(wiki-page-intro-error ((,class (:inherit error))))
 
    ;;;; hl-line-fringe
-   ;; `(hl-line-fringe-line ((,class (:background ,blue2-darkest))))
-   ;; `(hl-line-fringe-line-inactive ((,class (:background ,grey-darkest))))
-   ;; `(hl-line-fringe-indicator ((,class (:foreground ,magenta-bright))))
-   ;; `(hl-line-fringe-indicator-inactive ((,class (:foreground ,white))))
+   `(hl-line-fringe-line ((,class (:background ,blue2-darkest))))
+   `(hl-line-fringe-line-inactive ((,class (:background ,grey-darkest))))
+   `(hl-line-fringe-indicator ((,class (:foreground ,wine-bright))))
+   `(hl-line-fringe-indicator-inactive ((,class (:foreground ,indigo-bright))))
 
    ;;;; window-divider
    `(window-divider ((,class (:foreground ,grey-dark))))
