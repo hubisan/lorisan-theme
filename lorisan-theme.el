@@ -1150,7 +1150,7 @@
 
    ;;;; whitespace
    `(whitespace-trailing ((,class (:inherit trailing-whitespace))))
-   `(whitespace-line ((,class (:foreground nil :background ,magenta-darkest))))
+   `(whitespace-line ((,class (:foreground nil :background ,magenta-darkest :underline (:color ,background)))))
 
    ;;;; wiki-page-intro
    `(wiki-page-intro-title ((,class (:foreground ,wine :weight bold))))
@@ -1162,7 +1162,7 @@
    `(hl-line-fringe-line ((,class (:background ,blue2-darkest))))
    `(hl-line-fringe-line-inactive ((,class (:background ,grey-darkest))))
    `(hl-line-fringe-indicator ((,class (:foreground ,wine-bright))))
-   `(hl-line-fringe-indicator-inactive ((,class (:foreground ,indigo-bright))))
+   `(hl-line-fringe-indicator-inactive ((,class (:foreground ,wine-bright))))
 
    ;;;; window-divider
    `(window-divider ((,class (:foreground ,grey-dark))))
