@@ -679,7 +679,7 @@
    `(hl-paren-face ((,class (:underline t))))
 
    ;;;; highlight-quoted
-   `(highlight-quoted-quote ((,class (:inherit default))))
+   `(highlight-quoted-quote ((,class (:inherit font-lock-type-face))))
    `(highlight-quoted-symbol ((,class (:inherit font-lock-constant-face))))
 
    ;;;; hydra (use one color for all)
