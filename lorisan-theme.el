@@ -679,8 +679,8 @@
    `(hl-paren-face ((,class (:underline t))))
 
    ;;;; highlight-quoted
-   `(highlight-quoted-quote ((,class (:inherit font-lock-type-face))))
-   `(highlight-quoted-symbol ((,class (:inherit font-lock-constant-face))))
+   `(highlight-quoted-quote ((,class (:inherit font-lock-keyword-face))))
+   `(highlight-quoted-symbol ((,class (:inherit default))))
 
    ;;;; hydra (use one color for all)
    `(hydra-face-amaranth ((,class (:foreground ,wine :weight normal))))
