@@ -967,7 +967,7 @@
    `(org-checkbox-statistics-done ((,class (:foreground ,mint-darker))))
 
    ;;;; outline
-   `(outline-1 ((,class (:foreground ,wine :weight bold :height 110))))
+   `(outline-1 ((,class (:foreground ,wine :weight bold))))
    `(outline-2 ((,class (:foreground ,indigo :weight bold))))
    `(outline-3 ((,class (:foreground ,indigo :weight bold :slant italic))))
    `(outline-4 ((,class (:foreground ,indigo :slant italic))))
@@ -978,7 +978,7 @@
    `(outline-9 ((,class (:foreground ,indigo :slant italic))))
 
    ;;;; outshine
-   `(outshine-level-1 ((,class (:inherit outline-1 :foreground ,mint-bright :height 100 :underline t))))
+   `(outshine-level-1 ((,class (:inherit outline-1 :foreground ,mint-bright :underline t))))
    `(outshine-level-2 ((,class (:inherit outline-2 :foreground ,mint-bright))))
    `(outshine-level-3 ((,class (:inherit outline-3 :foreground ,mint-bright))))
    `(outshine-level-4 ((,class (:inherit outline-4 :foreground ,mint-bright))))
