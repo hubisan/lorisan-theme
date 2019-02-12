@@ -234,7 +234,7 @@
 
    `(header-line ((,class (:inherit mode-line :foreground ,magenta :background nil))))
    `(minibuffer-prompt ((,class (:foreground ,blue))))
-   `(fringe ((,class (:background ,alt-background :foreground ,orange-darker))))
+   `(fringe ((,class (:background ,alt-background :foreground ,wine))))
    `(cursor ((,class (:background ,wine-bright))))
    `(border ((,class (:background ,alt-background :foreground ,grey-dark))))
    `(vertical-border ((,class (:background ,alt-background :foreground ,grey-dark))))
