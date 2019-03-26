@@ -928,7 +928,7 @@
 
    ;;;; org
    `(org-agenda-structure ((,class (:foreground ,blue))))
-   `(org-agenda-date ((,class (:foreground ,indigo-dark-))))
+   `(org-agenda-date ((,class (:foreground ,indigo-darker-))))
    `(org-agenda-done ((,class (:foreground ,green-darker))))
    `(org-agenda-dimmed-todo-face ((,class (:foreground ,faint))))
    `(org-archived ((,class (:foreground ,indigo-dark :weight bold))))
