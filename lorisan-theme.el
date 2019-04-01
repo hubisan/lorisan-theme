@@ -410,6 +410,7 @@
    `(diredp-read-priv ((,class (:foreground ,indigo :background nil))))
    `(diredp-symlink ((,class (:foreground ,grey-light))))
    `(diredp-write-priv ((,class (:foreground ,indigo :background nil))))
+   `(diredp-omit-file-name ((,class (:foreground ,grey-darker :background nil))))
 
    ;;;; doom-modeline
    `(doom-modeline-buffer-file ((,class (:foreground ,cyan-bright :background nil :weight normal))))
