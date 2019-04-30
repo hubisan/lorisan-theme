@@ -220,7 +220,7 @@
    `(isearch ((,class (:foreground ,fulvous :background ,background :inverse-video t))))
    `(isearch-fail ((,class (:foreground ,background :background ,coquelicot))))
    `(match ((,class (:foreground ,fulvous :background ,background :inverse-video t))))
-   `(lazy-highlight ((,class (:foreground ,indigo-bright :background ,background :inverse-video t))))
+   `(lazy-highlight ((,class (:foreground ,wine :background ,background :inverse-video t))))
    `(region ((,class (:background ,violet2-dark))))
    `(secondary-selection ((,class (:background ,indigo-darkest))))
    `(trailing-whitespace ((,class (:background ,grey-darkest :underline (:color ,red-bright :style wave)))))
@@ -1091,10 +1091,10 @@
 
    ;;;; swiper
    `(swiper-line-face ((,class (:background ,fulvous :foreground ,background))))
-   `(swiper-match-face-1 ((,class (:background ,indigo :foreground ,background))))
-   `(swiper-match-face-2 ((,class (:background ,indigo :foreground ,background))))
-   `(swiper-match-face-3 ((,class (:background ,indigo :foreground ,background))))
-   `(swiper-match-face-4 ((,class (:background ,indigo :foreground ,background))))
+   `(swiper-match-face-1 ((,class (:background ,wine :foreground ,background))))
+   `(swiper-match-face-2 ((,class (:background ,wine :foreground ,background))))
+   `(swiper-match-face-3 ((,class (:background ,wine :foreground ,background))))
+   `(swiper-match-face-4 ((,class (:background ,wine :foreground ,background))))
 
    ;;;; term
    `(term-color-black ((,class (:background ,alt-background :foreground ,alt-background))))
