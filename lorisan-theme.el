@@ -300,10 +300,10 @@
    `(auto-dim-other-buffers-face ((,class (:background "#0c0c0c"))))
 
    ;;;; avy
-   `(avy-lead-face ((,class (:slant normal :foreground ,grey-darkest :background ,mint-bright))))
-   `(avy-lead-face-0 ((,class (:slant normal :foreground ,grey-darkest :background ,magenta-bright))))
-   `(avy-lead-face-1 ((,class (:slant normal :foreground ,grey-darkest :background ,indigo-bright))))
-   `(avy-lead-face-2 ((,class (:slant normal :foreground ,grey-darkest :background ,indigo-bright))))
+   `(avy-lead-face ((,class (:slant normal :foreground ,background :background ,mint-bright))))
+   `(avy-lead-face-0 ((,class (:slant normal :foreground ,background :background ,magenta-bright))))
+   `(avy-lead-face-1 ((,class (:slant normal :foreground ,background :background ,indigo-bright))))
+   `(avy-lead-face-2 ((,class (:slant normal :foreground ,background :background ,indigo-bright))))
 
    ;;;; bmkp bookmark+
    `(bmkp-heading ((,class (:foreground ,pink-bright))))
@@ -663,6 +663,9 @@
    `(helm-swoop-target-line-face ((,class (:background ,lime-brightest :foreground ,background))))
    `(helm-swoop-target-word-face ((,class (:background ,mint-bright :foreground ,background))))
    `(helm-swoop-target-line-block-face ((,class (:background ,grey :foreground ,background))))
+
+   ;;;; helpful
+   `(helpful-heading ((,class (:foreground ,white :weight bold))))
 
    ;;;; highlight-symbol
    `(highlight-symbol-face ((,class (:background ,amber-dark))))
@@ -1087,11 +1090,11 @@
    `(spacemacs-emacs-face ((,class (:foreground ,cyan-darkest :background ,cyan-darker))))
 
    ;;;; swiper
-   `(swiper-line-face ((,class (:background ,indigo-bright :foreground ,background))))
-   `(swiper-match-face-1 ((,class (:background ,fulvous :foreground ,background))))
-   `(swiper-match-face-2 ((,class (:background ,fulvous :foreground ,background))))
-   `(swiper-match-face-3 ((,class (:background ,fulvous :foreground ,background))))
-   `(swiper-match-face-4 ((,class (:background ,fulvous :foreground ,background))))
+   `(swiper-line-face ((,class (:background ,fulvous :foreground ,background))))
+   `(swiper-match-face-1 ((,class (:background ,indigo :foreground ,background))))
+   `(swiper-match-face-2 ((,class (:background ,indigo :foreground ,background))))
+   `(swiper-match-face-3 ((,class (:background ,indigo :foreground ,background))))
+   `(swiper-match-face-4 ((,class (:background ,indigo :foreground ,background))))
 
    ;;;; term
    `(term-color-black ((,class (:background ,alt-background :foreground ,alt-background))))
