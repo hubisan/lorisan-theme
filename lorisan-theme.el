@@ -280,6 +280,10 @@
    `(aw-leading-char-face ((,class (:foreground ,wine-darkest :background ,wine-bright :weight bold))))
    `(aw-background-face ((,class (:background ,background :foreground ,grey-dark))))
 
+   ;;;; ag
+   `(ag-hit-face ((,class (:inherit lazy-highlight))))
+   `(ag-match-face ((,class (:inherit lazy-highlight))))
+
    ;;;; asorted faces
    `(csv-separator-face ((,class (:foreground ,coquelicot))))
    `(border-glyph ((,class (nil))))
@@ -1036,6 +1040,9 @@
    ;;;; regex-tool
    `(regex-tool-matched-face ((,class (:foreground nil :background nil :inherit match))))
    `(regex-tool-matched-face ((,class (:foreground nil :background nil :inherit match))))
+
+   ;;;; rg
+   ;; TODO
 
    ;;;; sh-script
    `(sh-heredoc ((,class (:foreground nil :inherit font-lock-string-face))))
