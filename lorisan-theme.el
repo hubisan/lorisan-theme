@@ -683,10 +683,10 @@
    `(highlight-quoted-symbol ((,class (:inherit font-lock-variable-name-face))))
 
    ;;;; hydra (use one color for all)
-   `(hydra-face-amaranth ((,class (:foreground ,wine :weight bold))))
+   `(hydra-face-amaranth ((,class (:foreground ,pink :weight bold))))
    `(hydra-face-blue ((,class (:foreground ,wine :weight bold))))
-   `(hydra-face-pink ((,class (:foreground ,wine :weight bold))))
-   `(hydra-face-red ((,class (:foreground ,wine :weight bold))))
+   `(hydra-face-pink ((,class (:foreground ,pink :weight bold))))
+   `(hydra-face-red ((,class (:foreground ,pink :weight bold))))
    `(hydra-face-teal ((,class (:foreground ,wine :weight bold))))
    ;; Custom faces added in my init
    `(hydra-face-header-virtual-head ((,class (:foreground ,indigo :weight bold))))
