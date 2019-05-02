@@ -304,10 +304,10 @@
    `(auto-dim-other-buffers-face ((,class (:background "#0c0c0c"))))
 
    ;;;; avy
-   `(avy-lead-face ((,class (:slant normal :foreground ,background :background ,mint-bright))))
-   `(avy-lead-face-0 ((,class (:slant normal :foreground ,background :background ,magenta-bright))))
-   `(avy-lead-face-1 ((,class (:slant normal :foreground ,background :background ,indigo-bright))))
-   `(avy-lead-face-2 ((,class (:slant normal :foreground ,background :background ,indigo-bright))))
+   `(avy-lead-face ((,class (:foreground ,background :background ,orange))))
+   `(avy-lead-face-0 ((,class (:foreground ,background :background ,blue2))))
+   `(avy-lead-face-1 ((,class (:foreground ,background :background ,mint))))
+   `(avy-lead-face-2 ((,class (:foreground ,background :background ,wine))))
 
    ;;;; bmkp bookmark+
    `(bmkp-heading ((,class (:foreground ,pink-bright))))
