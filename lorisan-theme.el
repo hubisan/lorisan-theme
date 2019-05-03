@@ -1205,6 +1205,10 @@
    `(pos-tip-foreground-color ,grey-light)
    `(pos-tip-background-color ,blue2-darkest)
 
+   ;;;; hl-parens
+   `(hl-paren-background-colors '(,indigo-darkest))
+   `(hl-paren-colors '(,indigo-bright))
+
    ;;;; evil-mode
    `(evil-normal-state-cursor '(box ,wine-bright))
    `(evil-motion-state-cursor '(box ,wine-bright))
