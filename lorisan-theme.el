@@ -390,6 +390,14 @@
    `(dired-flagged ((,class (:foreground ,red-bright :background ,red-darkest :underline nil))))
    `(dired-symlink ((,class (:foreground ,grey-light))))
 
+   ;;;; dired-subtree
+   `(dired-subtree-depth-1-face ((,class (:background nil))))
+   `(dired-subtree-depth-2-face ((,class (:background nil))))
+   `(dired-subtree-depth-3-face ((,class (:background nil))))
+   `(dired-subtree-depth-4-face ((,class (:background nil))))
+   `(dired-subtree-depth-5-face ((,class (:background nil))))
+   `(dired-subtree-depth-6-face ((,class (:background nil))))
+
    ;;;; dired+
    `(diredp-compressed-file-suffix ((,class (:foreground ,turquoise-bright))))
    `(diredp-date-time ((,class (:foreground ,grey-darker))))
