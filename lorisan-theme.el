@@ -246,7 +246,7 @@
    `(warning ((,class (:foreground ,coquelicot-bright))))
    `(error ((,class (:foreground ,red-bright))))
 
-   `(show-paren-match ((,class (:weight normal :foreground ,indigo-light :background ,indigo-dark :underline t))))
+   `(show-paren-match ((,class (:weight normal :foreground ,background :background ,indigo-light :underline nil))))
    `(show-paren-mismatch ((,class (:weight bold :foreground ,red-bright))))
 
    `(custom-variable-tag ((,class (:foreground ,blue))))
