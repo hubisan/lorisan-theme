@@ -699,6 +699,21 @@
    `(helm-grep-match ((,class (:foreground ,amber))))
    `(helm-grep-running ((,class (:foreground ,pink-bright))))
 
+   ;;;; helm-rg
+   `(helm-rg-active-arg-face ((,class (:background nil :foreground ,mint-bright))))
+   `(helm-rg-base-rg-cmd-face ((,class (:background nil :foreground nil))))
+   `(helm-rg-colon-separator-ripgrep-output-face ((,class (:inherit font-lock-comment-face))))
+   `(helm-rg-directory-cmd-face ((,class (:background nil :foreground ,cerise-bright))))
+   `(helm-rg-directory-header-face ((,class (:background nil :foreground ,mint-bright))))
+   `(helm-rg-error-message ((,class (:background nil :foreground ,red))))
+   `(helm-rg-extra-arg-face ((,class (:background nil :foreground ,cerise-bright))))
+   `(helm-rg-file-match-face ((,class (:background ,wine-bright :foreground ,background))))
+   `(helm-rg-inactive-arg-face ((,class (:background nil :foreground ,grey))))
+   `(helm-rg-line-number-match-face ((,class (:inherit font-lock-comment-face))))
+   `(helm-rg-match-text-face ((,class (:background ,indigo :foreground ,background))))
+   `(helm-rg-preview-line-highlight ((,class (:background ,fulvous :foreground ,background))))
+   `(helm-rg-title-face ((,class (:background nil :foreground nil))))
+
    ;;;; helm-swoop
    `(helm-swoop-line-number-face ((,class (:background nil :foreground ,wine-bright))))
    `(helm-swoop-target-line-face ((,class (:background ,lime-brightest :foreground ,background))))
