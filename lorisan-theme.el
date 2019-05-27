@@ -579,6 +579,13 @@
    `(flycheck-error-list-column-number ((,class (:foreground ,grey-darker))))
    `(flycheck-error-list-highlight ((,class (:background ,blue2-dark))))
 
+   ;;;; flycheck-posframe
+   `(flycheck-posframe-background-face ((,class (:background ,grey-darkest))))
+   `(flycheck-posframe-face ((,class (:foreground ,grey-light :background ,grey-darkest))))
+   `(flycheck-posframe-info-face ((,class (:foreground ,grey-light :background ,grey-darkest))))
+   `(flycheck-posframe-warning-face ((,class (:foreground ,amber :background ,amber-darkest))))
+   `(flycheck-posframe-error-face ((,class (:foreground ,red-dark :background ,red-darkest))))
+
    ;;;; flymake
    `(flymake-error ((,class (:underline (:style wave :color ,wine-darker)))))
    `(flymake-warning  ((,class (:underline (:style wave :color ,amber-low)))))
