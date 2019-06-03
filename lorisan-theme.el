@@ -246,7 +246,7 @@
    `(warning ((,class (:foreground ,coquelicot-bright))))
    `(error ((,class (:foreground ,red-bright))))
 
-   `(show-paren-match ((,class (:weight normal :foreground ,white :background ,indigo-darkest :underline nil :weight bold))))
+   `(show-paren-match ((,class (:weight normal :foreground ,white :background nil :underline nil :weight bold))))
    `(show-paren-mismatch ((,class (:weight bold :foreground ,red-bright))))
 
    `(custom-variable-tag ((,class (:foreground ,blue))))
@@ -1272,6 +1272,9 @@
    `(wiki-page-intro-text ((,class (:foreground ,grey-light))))
    `(wiki-page-intro-not-found ((,class (:foreground ,grey-light :underline (:style wave :color ,wine)))))
    `(wiki-page-intro-error ((,class (:inherit error))))
+
+   ;;;; yasnippet
+   `(yas-field-highlight-face ((,class (:background ,blue2-darkest))))
 
    ;;;; hl-line-fringe
    `(hl-line-fringe-line ((,class (:background ,blue2-darkest))))
