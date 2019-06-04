@@ -305,10 +305,10 @@
    `(auto-dim-other-buffers-face ((,class (:background "#0c0c0c"))))
 
    ;;;; avy
-   `(avy-lead-face ((,class (:foreground ,background :background ,orange))))
-   `(avy-lead-face-0 ((,class (:foreground ,background :background ,blue2))))
-   `(avy-lead-face-1 ((,class (:foreground ,background :background ,mint))))
-   `(avy-lead-face-2 ((,class (:foreground ,background :background ,wine))))
+   `(avy-lead-face ((,class (:foreground ,wine :background ,blue2-darkest :weight bold))))
+   `(avy-lead-face-0 ((,class (:foreground ,turquoise-darker :background ,blue2-darkest :weight bold))))
+   `(avy-lead-face-1 ((,class (:foreground ,mint :background ,blue2-darkest :weight bold))))
+   `(avy-lead-face-2 ((,class (:foreground ,fulvous-darker :background ,blue2-darkest :weight bold))))
 
    ;;;; bmkp bookmark+
    `(bmkp-heading ((,class (:foreground ,pink-bright))))
