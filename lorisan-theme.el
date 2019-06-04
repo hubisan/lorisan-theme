@@ -1273,6 +1273,9 @@
    `(wiki-page-intro-not-found ((,class (:foreground ,grey-light :underline (:style wave :color ,wine)))))
    `(wiki-page-intro-error ((,class (:inherit error))))
 
+   ;;;; yasnippet
+   `(yas-field-highlight-face ((,class (:background ,blue2-darkest))))
+
    ;;;; hl-line-fringe
    `(hl-line-fringe-line ((,class (:background ,blue2-darkest))))
    `(hl-line-fringe-line-inactive ((,class (:background ,grey-darkest))))
