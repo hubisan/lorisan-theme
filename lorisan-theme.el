@@ -1130,7 +1130,23 @@
    `(regex-tool-matched-face ((,class (:foreground nil :background nil :inherit match))))
 
    ;;;; rg
-   ;; TODO
+   `(rg-column-number-face ((,class (:inherit font-lock-comment-face))))
+   ;; not seen yet
+   `(rg-context-face ((,class (:foreground ,background :background ,red))))
+   `(rg-error-face ((,class (:foreground ,wine :background nil))))
+   ;; not seen yet
+   `(rg-file-tag-face ((,class (:foreground ,background :background ,red))))
+   `(rg-filename-face ((,class (:foreground ,indigo :background nil))))
+   `(rg-info-face ((,class (:foreground ,indigo :background ,nil))))
+   `(rg-line-number-face ((,class (:inherit font-lock-comment-face))))
+   ;; not seen yet
+   `(rg-literal-face ((,class (:foreground ,background :background ,red))))
+   `(rg-match-face ((,class (:foreground ,fulvous))))
+   `(rg-match-position-face ((,class (:inherit font-lock-comment-face))))
+   `(rg-regexp-face ((,class (:foreground ,indigo :background nil))))
+   `(rg-toggle-off-face ((,class (:foreground ,wine :background nil))))
+   `(rg-toggle-on-face ((,class (:foreground ,mint :background nil))))
+   `(rg-warning-face ((,class (:foreground nil :background nil))))
 
    ;;;; sh-script
    `(sh-heredoc ((,class (:foreground nil :inherit font-lock-string-face))))
