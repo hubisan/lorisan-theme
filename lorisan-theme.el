@@ -613,7 +613,7 @@
    `(flycheck-posframe-face ((,class (:foreground ,grey-light :background ,grey-darkest))))
    `(flycheck-posframe-info-face ((,class (:foreground ,grey-light :background ,grey-darkest))))
    `(flycheck-posframe-warning-face ((,class (:foreground ,amber :background ,amber-darkest))))
-   `(flycheck-posframe-error-face ((,class (:foreground ,red-dark :background ,red-darkest))))
+   `(flycheck-posframe-error-face ((,class (:foreground ,red :background ,red-darkest))))
 
    ;;;; flymake
    `(flymake-error ((,class (:underline (:style wave :color ,wine-darker)))))
@@ -1281,7 +1281,7 @@
 
    ;;;; whitespace
    `(whitespace-trailing ((,class (:inherit trailing-whitespace))))
-   `(whitespace-line ((,class (:foreground nil :background ,magenta-darkest :underline (:color ,background)))))
+   `(whitespace-line ((,class (:foreground nil :background nil :underline (:color ,wine-dark)))))
 
    ;;;; wiki-page-intro
    `(wiki-page-intro-title ((,class (:foreground ,wine :weight bold))))
