@@ -246,7 +246,7 @@
    `(warning ((,class (:foreground ,coquelicot-bright))))
    `(error ((,class (:foreground ,red-bright))))
 
-   `(show-paren-match ((,class (:weight normal :foreground ,white :background ,indigo-darkest :underline nil :weight bold))))
+   `(show-paren-match ((,class (:weight normal :foreground ,indigo-darkest :background ,indigo-bright :underline nil :weight bold))))
    `(show-paren-mismatch ((,class (:weight bold :foreground ,red-bright))))
 
    `(custom-variable-tag ((,class (:foreground ,blue))))
@@ -373,9 +373,9 @@
    `(diff-header ((,class (:foreground ,cyan :background nil))))
    `(diff-file-header ((,class (:inherit magit-diff-file-heading))))
    `(diff-hunk-header ((,class (:inherit magit-diff-hunk-heading))))
-   `(diff-refine-removed ((,class (:foreground ,wine-light :background ,wine-darkest))))
-   `(diff-refine-added ((,class (:foreground ,mint-bright :background ,mint-darkest))))
-   `(diff-refine-changed ((,class (:foreground ,fulvous-bright :background ,fulvous-darkest))))
+   `(diff-refine-removed ((,class (:foreground ,white :background ,wine-dark))))
+   `(diff-refine-added ((,class (:foreground ,white :background ,mint-dark))))
+   `(diff-refine-changed ((,class (:foreground ,white :background ,fulvous-dark))))
 
    ;;;; diff-hl
    `(diff-hl-change ((,class (:foreground ,indigo :background ,indigo-darkest))))
@@ -949,9 +949,9 @@
    `(magit-diff-context-highlight ((,class (:inherit magit-diff-context :foreground ,grey-light))))
    `(magit-diff-lines-boundary ((,class (:background ,coquelicot-bright))))
    `(magit-diff-lines-heading ((,class (:inherit magit-diff-hunk-heading-highlight :foreground ,coquelicot-bright))))
-   `(magit-diff-added ((,class (:foreground ,mint))))
+   `(magit-diff-added ((,class (:foreground ,mint :background ,mint-darkest))))
    `(magit-diff-added-highlight ((,class (:inherit magit-diff-added :weight normal))))
-   `(magit-diff-removed ((,class (:foreground ,wine))))
+   `(magit-diff-removed ((,class (:foreground ,wine :background ,wine-darkest))))
    `(magit-diff-removed-highlight ((,class (:inherit magit-diff-removed :weight normal))))
 
    ;;;; markdown
