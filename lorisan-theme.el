@@ -1131,11 +1131,9 @@
 
    ;;;; rg
    `(rg-column-number-face ((,class (:inherit font-lock-comment-face))))
-   ;; not seen yet
-   `(rg-context-face ((,class (:foreground ,background :background ,red))))
+   `(rg-context-face ((,class (:foreground ,mint-bright :weight bold :background nil))))
    `(rg-error-face ((,class (:foreground ,wine :background nil))))
-   ;; not seen yet
-   `(rg-file-tag-face ((,class (:foreground ,background :background ,red))))
+   `(rg-file-tag-face ((,class (:foreground ,grey :background nil :slant italic))))
    `(rg-filename-face ((,class (:foreground ,indigo :background nil))))
    `(rg-info-face ((,class (:foreground ,indigo :background ,nil))))
    `(rg-line-number-face ((,class (:inherit font-lock-comment-face))))
