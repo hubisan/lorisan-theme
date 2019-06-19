@@ -309,6 +309,7 @@
    `(avy-lead-face-0 ((,class (:foreground ,turquoise-darker :background ,blue2-darkest :weight bold))))
    `(avy-lead-face-1 ((,class (:foreground ,mint :background ,blue2-darkest :weight bold))))
    `(avy-lead-face-2 ((,class (:foreground ,fulvous-darker :background ,blue2-darkest :weight bold))))
+   `(avy-background-face ((,class (:foreground ,grey-darker :background nil))))
 
    ;;;; bmkp bookmark+
    `(bmkp-heading ((,class (:foreground ,pink-bright))))
