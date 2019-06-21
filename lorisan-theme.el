@@ -821,7 +821,7 @@
    `(iedit-read-only-occurrence ((,class (:background ,cerise :foreground ,cerise-darkest :underline (:color ,red-bright)))))
 
    ;;;; ivy
-   `(ivy-current-match ((,class (:background ,indigo-bright :foreground ,background))))
+   `(ivy-current-match ((,class (:background ,indigo-darkest :foreground nil))))
    `(ivy-minibuffer-match-face-1 ((,class (:foreground ,fulvous))))
    `(ivy-minibuffer-match-face-2 ((,class (:foreground ,fulvous))))
    `(ivy-minibuffer-match-face-3 ((,class (:foreground ,fulvous))))
