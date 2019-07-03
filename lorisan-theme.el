@@ -368,6 +368,9 @@
    `(css-property ((,class (:foreground ,cyan))))
    `(css-proprietary-property ((,class (:foreground ,mint))))
 
+   ;;;; dired-git-info
+   `(dgi-commit-message-face ((,class (:foreground ,indigo))))
+
    ;;;; diff
    `(diff-added ((,class (:inherit magit-diff-added))))
    `(diff-changed ((,class (:foreground ,fulvous-bright))))
