@@ -214,7 +214,7 @@
    `(underline ((,class (:underline t))))
    `(shadow ((,class (:foreground ,grey-light))))
    `(link ((,class (:foreground ,indigo :underline t))))
-   `(link-visited ((,class (:foreground ,indigo-dark :underline t))))
+   `(link-visited ((,class (:foreground ,indigo-bright :underline t))))
 
    `(highlight ((,class (:inverse-video nil :background ,grey-darkest :foreground nil))))
    `(isearch ((,class (:foreground ,fulvous :background ,background :inverse-video t))))
@@ -805,7 +805,7 @@
    `(info-menu-header ((,class (,coquelicot :weight bold))))
    `(info-menu-star ((,class (:foreground ,grey-light))))
    `(info-xref ((,class (:inherit link))))
-   `(info-xref-visited ((,class (:inherit (link-visited info-xref)))))
+   `(info-xref-visited ((,class (:inherit link-visited))))
    `(info-quoted-name ((,class (:foreground ,indigo))))
    `(info-double-quoted-name ((,class (:foreground ,fulvous-light))))
 
