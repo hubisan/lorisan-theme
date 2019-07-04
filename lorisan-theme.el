@@ -213,8 +213,8 @@
    `(bold-italic ((,class (:slant italic :weight bold))))
    `(underline ((,class (:underline t))))
    `(shadow ((,class (:foreground ,grey-light))))
-   `(link ((,class (:foreground ,indigo :underline t))))
-   `(link-visited ((,class (:foreground ,indigo-bright :underline t))))
+   `(link ((,class (:foreground ,indigo :underline nil))))
+   `(link-visited ((,class (:foreground ,indigo-bright :underline nil))))
 
    `(highlight ((,class (:inverse-video nil :background ,grey-darkest :foreground nil))))
    `(isearch ((,class (:foreground ,fulvous :background ,background :inverse-video t))))
