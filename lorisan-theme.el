@@ -1057,7 +1057,7 @@
    `(org-level-6 ((,class (:inherit outline-6))))
    `(org-level-7 ((,class (:inherit outline-7))))
    `(org-level-8 ((,class (:inherit outline-8))))
-   `(org-link ((,class (:foreground ,turquoise-bright :underline nil))))
+   `(org-link ((,class (:foreground ,turquoise :underline nil))))
    `(org-scheduled ((,class (:foreground ,mint))))
    `(org-scheduled-previously ((,class (:foreground ,red))))
    `(org-scheduled-today ((,class (:foreground ,indigo-light))))
