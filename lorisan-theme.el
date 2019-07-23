@@ -917,7 +917,7 @@
 
    ;;;; langtool
    `(langtool-correction-face ((,class (:foreground ,mint-bright))))
-   `(langtool-errline ((,class (:background ,wine-darkest :underline (:color ,wine-darker)))))
+   `(langtool-errline ((,class (:foreground ,wine-light :underline (:color ,wine-darker)))))
 
    ;;;; line-number
    `(line-number ((,class (:background ,alt-background :foreground ,grey-darker))))
