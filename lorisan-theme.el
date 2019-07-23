@@ -915,6 +915,10 @@
    `(font-latex-verbatim-face ((,class (:foreground ,blue2 :background nil))))
    `(font-latex-warning-face ((,class (:inherit warning))))
 
+   ;;;; langtool
+   `(langtool-correction-face ((,class (:foreground ,mint-bright))))
+   `(langtool-errline ((,class (:background ,wine-darkest :underline (:color ,wine-darker)))))
+
    ;;;; line-number
    `(line-number ((,class (:background ,alt-background :foreground ,grey-darker))))
    `(line-number-current-line ((,class (:background ,alt-background :foreground ,wine))))
@@ -1109,7 +1113,7 @@
    `(popup-scroll-bar-foreground-face ((,class (:background ,grey))))
    ;; `(popup-menu-summary-face ((,class (:background nil :foreground nil))))
    ;; `(popup-summary-face ((,class (:background nil :foreground nil))))
-   ;; `(popup-tip-face ((,class (:background nil :foreground nil))))
+   `(popup-tip-face ((,class (:background ,blue-dark :foreground nil))))
 
    ;;;; powerline
    `(powerline-active1 ((,class (:inherit mode-line))))
