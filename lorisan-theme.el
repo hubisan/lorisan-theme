@@ -1297,7 +1297,7 @@
    `(wiki-page-intro-error ((,class (:inherit error))))
 
    ;;;; yasnippet
-   `(yas-field-highlight-face ((,class (:background ,blue2-darkest))))
+   `(yas-field-highlight-face ((,class (:background ,wine-dark))))
 
    ;;;; hl-line-fringe
    `(hl-line-fringe-line ((,class (:background ,blue2-darkest))))
