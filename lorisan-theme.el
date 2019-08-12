@@ -600,6 +600,9 @@
    ;;;; fic-mode
    `(font-lock-fic-face ((,class (:background ,red :foreground ,red-darkest :weight bold))))
 
+   ;;;; fill-column-indicator
+   `(fill-column-indicator ((,class (:foreground ,grey-darkest))))
+
    ;;;; flycheck
    `(flycheck-error ((,class (:underline (:style wave :color ,wine-darker)))))
    `(flycheck-warning ((,class (:underline (:style wave :color ,amber-low)))))
