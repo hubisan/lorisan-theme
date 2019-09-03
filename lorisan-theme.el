@@ -980,6 +980,7 @@
    `(markdown-header-delimiter-face ((,class (:foreground ,wine))))
    `(markdown-header-rule-face ((,class (:foreground ,wine))))
    `(markdown-pre-face ((,class (:foreground ,pink))))
+   `(markdown-code-face ((,class (:foreground ,pink))))
    `(markdown-inline-code-face ((,class (:foreground ,pink))))
    `(markdown-markup-face ((,class (:foreground ,blue2 :weight bold))))
    `(markdown-bold-face ((,class (:foreground ,grey-light :weight bold))))
