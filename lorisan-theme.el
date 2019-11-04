@@ -1193,8 +1193,8 @@
    ;;;; smerge
    `(smerge-base ((,class (:background ,fulvous-darkest))))
    `(smerge-markers ((,class (:foreground ,cerise-bright :background ,blue2-dark))))
-   `(smerge-mine ((,class (:background ,wine-darkest))))
-   `(smerge-other ((,class (:background ,mint-darkest))))
+   `(smerge-mine ((,class (:background ,violet-darkest))))
+   `(smerge-other ((,class (:background ,turquoise-darkest))))
    `(smerge-refined-added ((,class (:background ,mint-darker :foreground ,background))))
    `(smerge-refined-changed ((,class (:background ,indigo-darker :foreground ,background))))
    `(smerge-refined-removed ((,class (:background ,wine-darker :foreground ,background))))
