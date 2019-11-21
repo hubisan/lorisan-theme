@@ -786,6 +786,16 @@
    `(highlight-quoted-quote ((,class (:inherit font-lock-keyword-face))))
    `(highlight-quoted-symbol ((,class (:inherit font-lock-variable-name-face))))
 
+   ;;;; hl-line-fringe
+   ;; WIP
+   `(hl-line-fringe-line ((,class (:background ,blue2-darkest))))
+   `(hl-line-fringe-line-inactive ((,class (:background ,grey-darkest))))
+   `(hl-line-fringe-indicator ((,class (:foreground ,wine-bright))))
+   `(hl-line-fringe-indicator-inactive ((,class (:foreground ,wine-bright))))
+
+   ;;;; hl-todo
+   `(hl-todo ((,class (:background ,wine-darkest :foreground ,wine-light))))
+
    ;;;; hydra (use one color for all)
    `(hydra-face-amaranth ((,class (:foreground ,pink :weight bold))))
    `(hydra-face-blue ((,class (:foreground ,wine :weight bold))))
@@ -1303,12 +1313,6 @@
 
    ;;;; yasnippet
    `(yas-field-highlight-face ((,class (:background ,wine-darkest :slant italic))))
-
-   ;;;; hl-line-fringe
-   `(hl-line-fringe-line ((,class (:background ,blue2-darkest))))
-   `(hl-line-fringe-line-inactive ((,class (:background ,grey-darkest))))
-   `(hl-line-fringe-indicator ((,class (:foreground ,wine-bright))))
-   `(hl-line-fringe-indicator-inactive ((,class (:foreground ,wine-bright))))
 
    ;;;; window-divider
    `(window-divider ((,class (:foreground ,grey-dark))))
