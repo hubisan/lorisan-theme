@@ -486,7 +486,7 @@
     ;; doom-modeline-highlight
    `(doom-modeline-highlight ((,class (:foreground ,magenta :background nil :weight normal))))
     ;; doom-modeline-inactive-bar
-   `(doom-modeline-inactive-bar ((,class (:foreground nil :background nil :weight normal))))
+   `(doom-modeline-bar-inactive ((,class (:foreground nil :background nil :weight normal))))
     ;; doom-modeline-info
    `(doom-modeline-info ((,class (:foreground ,mint :background nil :weight normal))))
     ;; doom-modeline-panel
