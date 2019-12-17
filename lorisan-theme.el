@@ -1151,6 +1151,14 @@
    `(rainbow-delimiters-unmatched-face ((,class (:weight bold :foreground ,red-bright))))
    `(rainbow-delimiters-mismatched-face ((,class (:weight bold :foreground ,red-bright))))
 
+   ;;;; rb-builder
+   `(reb-match-0 ((,class (:background ,grey-dark))))
+   `(reb-match-1 ((,class (:background ,indigo-darkest))))
+   `(reb-match-2 ((,class (:background ,wine-darkest))))
+   `(reb-match-3 ((,class (:background ,mint-darkest))))
+   `(reb-regexp-grouping-backslash ((,class (:foreground ,grey-darker))))
+   `(reb-regexp-grouping-construct ((,class (:foreground ,wine))))
+
    ;;;; regex-tool
    `(regex-tool-matched-face ((,class (:foreground nil :background nil :inherit match))))
    `(regex-tool-matched-face ((,class (:foreground nil :background nil :inherit match))))
