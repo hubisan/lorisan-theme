@@ -810,7 +810,7 @@
    `(info-title-1 ((,class (:foreground ,wine :weight bold))))
    `(info-title-2 ((,class (:foreground ,wine :weight bold))))
    `(info-title-3 ((,class (:foreground ,wine :weight bold))))
-   `(info-title-4 ((,class (:weight bold))))
+   `(info-title-4 ((,class (:foreground ,wine :weight bold))))
    `(info-node ((,class (:foreground ,pink-light :slant italic :weight bold))))
    `(info-header-node ((,class (:inherit info-node))))
    `(info-header-xref ((,class (:inherit info-xref))))
