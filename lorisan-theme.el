@@ -463,7 +463,6 @@
    `(doom-modeline-eldoc-bar ((,class (:foreground ,red-dark :background ,green :weight normal))))
    `(doom-modeline-eyebrowse ((,class (:foreground ,green-dark :background ,green :weight normal))))
    `(doom-modeline-bracket ((,class (:foreground ,green-dark :background ,green :weight normal))))
-
     ;; doom-modeline-bar
    `(doom-modeline-bar ((,class (:foreground nil :background nil :weight normal))))
     ;; doom-modeline-buffer-file
@@ -1246,9 +1245,17 @@
    `(swiper-match-face-4 ((,class (:background ,indigo :foreground ,background))))
 
    ;;;; tab-bar
-   `(tab-bar ((,class (:background ,blue2-dark :foreground ,red))))
-   `(tab-bar-tab ((,class (:background ,blue2-dark :foreground ,red))))
-   `(tab-bar-inactive ((,class (:background ,blue2-dark :foreground ,red))))
+   `(tab-bar ((,class (:background ,blue2-dark :foreground ,indigo-darker))))
+   `(tab-bar-tab ((,class (:background ,blue2-dark :foreground ,indigo))))
+   `(tab-bar-tab-inactive ((,class (:background ,blue2-dark :foreground ,indigo-dark))))
+
+   ;;;; tab-line
+   `(tab-line ((,class (:background ,blue2-dark :foreground ,indigo-darker))))
+   `(tab-line-close-highlight ((,class (:background ,blue2-darker :foreground ,indigo))))
+   `(tab-line-highlight ((,class (:background ,blue2-darker :foreground ,indigo))))
+   `(tab-line-tab ((,class (:background ,blue2-dark :foreground ,indigo))))
+   `(tab-line-tab-current ((,class (:background ,blue2-dark :foreground ,indigo))))
+   `(tab-line-tab-inactive ((,class (:background ,blue2-dark :foreground ,indigo-dark))))
 
    ;;;; term
    `(term-color-black ((,class (:background ,alt-background :foreground ,alt-background))))
