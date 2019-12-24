@@ -1245,6 +1245,11 @@
    `(swiper-match-face-3 ((,class (:background ,indigo :foreground ,background))))
    `(swiper-match-face-4 ((,class (:background ,indigo :foreground ,background))))
 
+   ;;;; tab-bar
+   `(tab-bar ((,class (:background ,blue2-dark :foreground ,red))))
+   `(tab-bar-tab ((,class (:background ,blue2-dark :foreground ,red))))
+   `(tab-bar-inactive ((,class (:background ,blue2-dark :foreground ,red))))
+
    ;;;; term
    `(term-color-black ((,class (:background ,alt-background :foreground ,alt-background))))
    `(term-color-blue ((,class (:background ,blue :foreground ,blue))))
