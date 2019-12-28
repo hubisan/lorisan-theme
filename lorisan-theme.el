@@ -378,9 +378,9 @@
    `(diff-header ((,class (:foreground ,cyan :background nil))))
    `(diff-file-header ((,class (:inherit magit-diff-file-heading))))
    `(diff-hunk-header ((,class (:inherit magit-diff-hunk-heading))))
-   `(diff-refine-removed ((,class (:foreground ,background :background ,wine-darker))))
-   `(diff-refine-added ((,class (:foreground ,background :background ,mint-darker))))
-   `(diff-refine-changed ((,class (:foreground ,background :background ,fulvous-darker))))
+   `(diff-refine-removed ((,class (:foreground ,wine-light :background ,wine-darkest :weight bold))))
+   `(diff-refine-added ((,class (:foreground ,mint-light :background ,mint-darkest :weight bold))))
+   `(diff-refine-changed ((,class (:foreground ,indigo-light :background ,indigo-darkest :weight bold))))
 
    ;;;; diff-hl
    `(diff-hl-change ((,class (:foreground ,indigo :background ,indigo-darkest))))
@@ -1214,9 +1214,9 @@
    `(smerge-markers ((,class (:foreground ,cerise-bright :background ,blue2-dark))))
    `(smerge-mine ((,class (:background ,violet-darkest))))
    `(smerge-other ((,class (:background ,turquoise-darkest))))
-   `(smerge-refined-added ((,class (:background ,mint-darker :foreground ,background))))
-   `(smerge-refined-changed ((,class (:background ,indigo-darker :foreground ,background))))
-   `(smerge-refined-removed ((,class (:background ,wine-darker :foreground ,background))))
+   `(smerge-refined-added ((,class (:foreground ,mint-light :background ,mint-darkest :weight bold))))
+   `(smerge-refined-changed ((,class (:foreground ,indigo-light :background ,indigo-darkest :weight bold))))
+   `(smerge-refined-added ((,class (:foreground ,wine-light :background ,wine-darkest :weight bold))))
 
    ;;;; spaceline
    `(spaceline-flycheck-error  ((,class (:foreground , wine))))
