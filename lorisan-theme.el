@@ -1316,6 +1316,13 @@
    `(web-mode-block-delimiter-face ((,class (:foreground ,blue-bright))))
    `(web-mode-function-call-face ((,class (:foreground ,fulvous))))
 
+   ;;;; wgrep
+   `(wgrep-face ((,class (:foreground ,nil :background ,indigo-darkest))))
+   `(wgrep-done-face ((,class (:foreground ,nil :background ,mint-darkest))))
+   `(wgrep-delete-face ((,class (:foreground ,nil :background ,wine-darkest))))
+   `(wgrep-file-face ((,class (:foreground ,pink :background ,wine-darkest))))
+   ;; wgrep-reject-face
+
    ;;;; which-key
    `(which-key-command-description-face ((,class (:foreground ,normal))))
    `(which-key-group-description-face ((,class (:foreground ,indigo-darker))))
