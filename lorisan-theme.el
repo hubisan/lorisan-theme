@@ -496,6 +496,7 @@
     ;; doom-modeline-project-dir
     ;; doom-modeline-project-parent-dir
     ;; doom-modeline-project-root-dir
+   `(doom-modeline-buffer-timemachine ((,class (:foreground ,fulvous :background nil :weight bold))))
     ;; doom-modeline-unread-number
     ;; doom-modeline-urgent
    `(doom-modeline-urgent ((,class (:foreground ,wine :background nil :weight normal))))
