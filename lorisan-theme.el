@@ -373,7 +373,7 @@
 
    ;;;; diff
    `(diff-added ((,class (:inherit magit-diff-added))))
-   `(diff-changed ((,class (:foreground ,fulvous-bright))))
+   `(diff-changed ((,class (:foreground ,indigo-bright))))
    `(diff-removed ((,class (:inherit magit-diff-removed))))
    `(diff-header ((,class (:foreground ,cyan :background nil))))
    `(diff-file-header ((,class (:inherit magit-diff-file-heading))))
@@ -1304,7 +1304,7 @@
    `(undo-tree-visualizer-unmodified-face ((,class (:foreground ,brown-light))))
    `(undo-tree-visualizer-register-face ((,class (:foreground ,magenta-bright))))
 
-   ;;;; vimish-fol
+   ;;;; vimish-fold
    `(vimish-fold-fringe ((,class (:foreground ,grey))))
    `(vimish-fold-overlay ((,class (:background ,wine-darkest))))
    `(vimish-fold-mouse-face ((,class (:background ,wine-dark))))
@@ -1321,7 +1321,7 @@
    `(wgrep-face ((,class (:foreground ,nil :background ,indigo-darkest))))
    `(wgrep-done-face ((,class (:foreground ,nil :background ,mint-darkest))))
    `(wgrep-delete-face ((,class (:foreground ,nil :background ,wine-darkest))))
-   `(wgrep-file-face ((,class (:foreground ,pink :background ,wine-darkest))))
+   `(wgrep-file-face ((,class (:foreground ,indigo-bright :background ,indigo-darkest))))
    ;; wgrep-reject-face
 
    ;;;; which-key
