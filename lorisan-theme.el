@@ -1310,9 +1310,10 @@
    `(vimish-fold-mouse-face ((,class (:background ,wine-dark))))
 
    ;;;; web-mode
-   `(web-mode-html-tag-face ((,class (:foreground ,wine))))
-   `(web-mode-html-attr-name-face ((,class (:foreground ,cyan-bright))))
-   `(web-mode-html-attr-value-face ((,class (:foreground ,coquelicot-light))))
+   `(web-mode-html-tag-face ((,class (:foreground ,wine :weight normal))))
+   `(web-mode-html-tag-bracket-face ((,class (:foreground ,wine :weight normal))))
+   `(web-mode-html-attr-name-face ((,class (:foreground ,cyan :weight normal))))
+   `(web-mode-html-attr-value-face ((,class (:foreground ,indigo-bright :weight normal))))
    `(web-mode-doctype-face ((,class (:inherit font-lock-builtin-face))))
    `(web-mode-block-delimiter-face ((,class (:foreground ,blue-bright))))
    `(web-mode-function-call-face ((,class (:foreground ,fulvous))))
