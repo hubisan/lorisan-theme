@@ -612,7 +612,7 @@
    `(flycheck-fringe-warning ((,class (:background nil :foreground ,amber))))
    `(flycheck-fringe-info ((,class (:background nil :foreground ,indigo))))
    `(flycheck-error-list-warning ((,class (:foreground ,amber))))
-   `(flycheck-error-list-error ((,class (:background ,red-bright :foreground ,red-dark))))
+   `(flycheck-error-list-error ((,class (:foreground ,red-bright))))
    `(flycheck-error-list-line-number ((,class (:foreground ,grey-darker))))
    `(flycheck-error-list-column-number ((,class (:foreground ,grey-darker))))
    `(flycheck-error-list-highlight ((,class (:background ,blue2-dark))))
