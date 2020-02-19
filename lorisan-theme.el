@@ -1321,10 +1321,10 @@
 
    ;;;; wgrep
    `(wgrep-face ((,class (:foreground ,nil :background ,indigo-darkest))))
-   `(wgrep-done-face ((,class (:foreground ,nil :background ,mint-darkest))))
-   `(wgrep-delete-face ((,class (:foreground ,nil :background ,wine-darkest))))
+   `(wgrep-done-face ((,class (:foreground ,mint :background nil))))
+   `(wgrep-delete-face ((,class (:foreground ,wine :background nil))))
+   `(wgrep-reject-face ((,class (:foreground ,wine :background ,wine-darkest))))
    `(wgrep-file-face ((,class (:foreground ,indigo-bright :background ,indigo-darkest))))
-   ;; wgrep-reject-face
 
    ;;;; which-key
    `(which-key-command-description-face ((,class (:foreground ,normal))))
