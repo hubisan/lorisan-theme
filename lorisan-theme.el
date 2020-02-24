@@ -939,6 +939,9 @@
    ;;;; linum
    `(linum ((,class (:background ,alt-background))))
 
+   ;;;; lispy
+   `(lispy-face-hint ((,class (:background ,darkest :foreground ,fulvous-light))))
+
    ;;;; magit
    `(magit-branch ((,class (:foreground ,mint))))
    `(magit-blame-heading ((,class (:foreground ,cerise-bright :background ,blue2-dark))))
