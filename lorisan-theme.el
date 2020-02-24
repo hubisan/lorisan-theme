@@ -943,6 +943,9 @@
    ;;;; lispy
    `(lispy-face-hint ((,class (:background ,darkest :foreground ,fulvous-light))))
 
+   ;;;; lsp
+   `(lsp-ui-doc-background ((,class (:background ,darkest))))
+
    ;;;; magit
    `(magit-branch ((,class (:foreground ,mint))))
    `(magit-blame-heading ((,class (:foreground ,cerise-bright :background ,blue2-dark))))
@@ -1385,5 +1388,9 @@
 	       (file-name-as-directory (file-name-directory load-file-name))))
 
 (provide-theme 'lorisan)
+
+;; Local Variables:
+;; no-byte-compile: t
+;; End:
 
 ;;; lorisan-theme.el ends here
