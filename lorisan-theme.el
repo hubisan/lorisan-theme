@@ -1386,8 +1386,4 @@
 
 (provide-theme 'lorisan)
 
-;; Local Variables:
-;; no-byte-compile: t
-;; End:
-
 ;;; lorisan-theme.el ends here
