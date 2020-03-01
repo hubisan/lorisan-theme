@@ -215,6 +215,7 @@
    `(underline ((,class (:underline t))))
    `(shadow ((,class (:foreground ,grey-lighter))))
    `(link ((,class (:foreground ,indigo :underline nil))))
+   `(button ((,class (:foreground ,indigo :underline nil))))
    `(link-visited ((,class (:foreground ,indigo-bright :underline nil))))
 
    `(highlight ((,class (:inverse-video nil :background ,grey-darkest :foreground nil))))
@@ -1320,7 +1321,7 @@
    `(web-mode-html-tag-face ((,class (:foreground ,wine))))
    `(web-mode-html-tag-bracket-face ((,class (:foreground ,wine))))
    `(web-mode-html-attr-name-face ((,class (:foreground ,cyan))))
-   `(web-mode-html-attr-value-face ((,class (:foreground ,grey-lighter))))
+   `(web-mode-html-attr-value-face ((,class (:foreground ,indigo))))
    `(web-mode-doctype-face ((,class (:inherit font-lock-builtin-face))))
    `(web-mode-block-delimiter-face ((,class (:foreground ,blue-bright))))
    `(web-mode-function-call-face ((,class (:foreground ,fulvous))))
