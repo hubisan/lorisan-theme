@@ -1241,9 +1241,9 @@
    `(spacemacs-emacs-face ((,class (:foreground ,cyan-darkest :background ,cyan-darker))))
 
    ;;;; smartparens
-   `(sp-show-pair-enclosing ((,class (:foreground ,background :background ,indigo))))
+   `(sp-show-pair-enclosing ((,class (:foreground ,background :background ,indigo-darker-))))
    `(sp-show-pair-match-content-face ((,class (:foreground nil :background ,nil))))
-   `(sp-show-pair-match-face ((,class (:background nil :foreground nil :weight bold :underline t))))
+   `(sp-show-pair-match-face ((,class (:foreground ,background :background ,indigo-darker-))))
    `(sp-show-pair-mismatch-face ((,class (:inherit show-paren-mismatch))))
 
    ;;;; swiper
