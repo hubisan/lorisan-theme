@@ -1243,7 +1243,7 @@
    ;;;; smartparens
    `(sp-show-pair-enclosing ((,class (:foreground ,background :background ,indigo))))
    `(sp-show-pair-match-content-face ((,class (:foreground nil :background ,nil))))
-   `(sp-show-pair-match-face ((,class (:inherit show-paren-match))))
+   `(sp-show-pair-match-face ((,class (:background nil :foreground nil :weight bold :underline t))))
    `(sp-show-pair-mismatch-face ((,class (:inherit show-paren-mismatch))))
 
    ;;;; swiper
