@@ -1325,6 +1325,8 @@
    `(web-mode-doctype-face ((,class (:inherit font-lock-builtin-face))))
    `(web-mode-block-delimiter-face ((,class (:foreground ,blue-bright))))
    `(web-mode-function-call-face ((,class (:foreground ,fulvous))))
+   `(web-mode-current-element-highlight-face ((,class (:background ,wine-dark))))
+   `(web-mode-current-column-highlight-face ((,class (:background "#1b1b1b"))))
 
    ;;;; wgrep
    `(wgrep-face ((,class (:foreground ,nil :background ,indigo-darkest))))
