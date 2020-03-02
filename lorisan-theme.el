@@ -215,6 +215,7 @@
    `(underline ((,class (:underline t))))
    `(shadow ((,class (:foreground ,grey-lighter))))
    `(link ((,class (:foreground ,indigo :underline nil))))
+   `(button ((,class (:foreground ,indigo :underline nil))))
    `(link-visited ((,class (:foreground ,indigo-bright :underline nil))))
 
    `(highlight ((,class (:inverse-video nil :background ,grey-darkest :foreground nil))))
@@ -944,7 +945,7 @@
    `(lispy-face-hint ((,class (:background ,darkest :foreground ,fulvous-light))))
 
    ;;;; lsp
-   `(lsp-ui-doc-background ((,class (:background ,blue2-dark))))
+   `(lsp-ui-doc-background ((,class (:background ,blue2-darkest))))
 
    ;;;; magit
    `(magit-branch ((,class (:foreground ,mint))))
@@ -1240,9 +1241,9 @@
    `(spacemacs-emacs-face ((,class (:foreground ,cyan-darkest :background ,cyan-darker))))
 
    ;;;; smartparens
-   `(sp-show-pair-enclosing ((,class (:foreground ,background :background ,indigo))))
+   `(sp-show-pair-enclosing ((,class (:foreground ,background :background ,indigo-darker-))))
    `(sp-show-pair-match-content-face ((,class (:foreground nil :background ,nil))))
-   `(sp-show-pair-match-face ((,class (:inherit show-paren-match))))
+   `(sp-show-pair-match-face ((,class (:foreground ,background :background ,indigo-darker-))))
    `(sp-show-pair-mismatch-face ((,class (:inherit show-paren-mismatch))))
 
    ;;;; swiper
@@ -1320,7 +1321,7 @@
    `(web-mode-html-tag-face ((,class (:foreground ,wine))))
    `(web-mode-html-tag-bracket-face ((,class (:foreground ,wine))))
    `(web-mode-html-attr-name-face ((,class (:foreground ,cyan))))
-   `(web-mode-html-attr-value-face ((,class (:foreground ,grey-lighter))))
+   `(web-mode-html-attr-value-face ((,class (:foreground ,indigo))))
    `(web-mode-doctype-face ((,class (:inherit font-lock-builtin-face))))
    `(web-mode-block-delimiter-face ((,class (:foreground ,blue-bright))))
    `(web-mode-function-call-face ((,class (:foreground ,fulvous))))
