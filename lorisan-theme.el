@@ -944,7 +944,7 @@
    `(lispy-face-hint ((,class (:background ,darkest :foreground ,fulvous-light))))
 
    ;;;; lsp
-   `(lsp-ui-doc-background ((,class (:background ,darkest))))
+   `(lsp-ui-doc-background ((,class (:background ,blue2-dark))))
 
    ;;;; magit
    `(magit-branch ((,class (:foreground ,mint))))
