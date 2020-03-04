@@ -1088,6 +1088,7 @@
    `(org-level-7 ((,class (:inherit outline-7))))
    `(org-level-8 ((,class (:inherit outline-8))))
    `(org-link ((,class (:foreground ,turquoise :underline nil))))
+   `(org-list-dt ((,class (:foreground ,cerise :weight bold))))
    `(org-priority ((,class (:foreground ,indigo-darker-))))
    `(org-property-value ((,class (:foreground ,indigo-darker-))))
    `(org-scheduled ((,class (:foreground ,mint))))
