@@ -1104,6 +1104,10 @@
    `(org-warning ((,class (:foreground ,red))))
    `(org-verbatim ((,class (:foreground ,pink-light))))
 
+   ;;;; org-roam
+   `(org-roam-link ((,class (:foreground ,cerise))))
+   `(org-roam-backlink ((,class (:foreground ,cerise))))
+
    ;;;; outline
    `(outline-1 ((,class (:foreground ,indigo-bright :weight bold))))
    `(outline-2 ((,class (:foreground ,indigo-bright :weight bold))))
