@@ -370,6 +370,15 @@
    `(css-property ((,class (:foreground ,cyan))))
    `(css-proprietary-property ((,class (:foreground ,mint))))
 
+   ;;;; deft
+   `(deft-header-face ((,class (:foreground ,wine))))
+   `(deft-title-face ((,class (:foreground ,mint-bright :weight bold))))
+   `(deft-separator-face ((,class (:foreground ,indigo-dark))))
+   `(deft-summary-face ((,class (:foreground ,indigo-darker))))
+   `(deft-time-face ((,class (:foreground ,indigo-light))))
+   `(deft-filter-string-face ((,class (:foreground ,white :weight bold))))
+   `(deft-filter-string-error-face ((,class (:foreground ,wine :weight bold))))
+
    ;;;; dired-git-info
    `(dgi-commit-message-face ((,class (:foreground ,indigo))))
 
