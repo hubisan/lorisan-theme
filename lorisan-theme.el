@@ -209,6 +209,7 @@
    ;;; STANDARD FACES
 
    `(default ((,class (:foreground ,grey-lighter :background ,background))))
+   ;; `(variable-pitch ((,class (:family "DejaVu Serif" :height 100 :weight normal))))
    `(bold ((,class (:weight bold))))
    `(italic ((,class (:slant italic))))
    `(bold-italic ((,class (:slant italic :weight bold))))
@@ -1097,7 +1098,7 @@
    `(org-level-7 ((,class (:inherit outline-7))))
    `(org-level-8 ((,class (:inherit outline-8))))
    `(org-link ((,class (:foreground ,turquoise :underline nil))))
-   `(org-list-dt ((,class (:foreground ,cerise :weight bold))))
+   `(org-list-dt ((,class (:foreground ,cerise))))
    `(org-priority ((,class (:foreground ,indigo-darker-))))
    `(org-property-value ((,class (:foreground ,indigo-darker-))))
    `(org-scheduled ((,class (:foreground ,mint))))
@@ -1114,7 +1115,7 @@
    `(org-verbatim ((,class (:foreground ,pink-light))))
 
    ;;;; org-roam
-   `(org-roam-link ((,class (:foreground ,cerise))))
+   `(org-roam-link ((,class (:foreground ,mint-bright))))
    `(org-roam-backlink ((,class (:foreground ,cerise))))
 
    ;;;; outline
