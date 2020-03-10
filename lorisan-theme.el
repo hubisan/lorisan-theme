@@ -1098,7 +1098,7 @@
    `(org-level-7 ((,class (:inherit outline-7))))
    `(org-level-8 ((,class (:inherit outline-8))))
    `(org-link ((,class (:foreground ,turquoise :underline nil))))
-   `(org-list-dt ((,class (:foreground ,cerise))))
+   `(org-list-dt ((,class (:foreground ,cerise-bright))))
    `(org-priority ((,class (:foreground ,indigo-darker-))))
    `(org-property-value ((,class (:foreground ,indigo-darker-))))
    `(org-scheduled ((,class (:foreground ,mint))))
@@ -1115,8 +1115,8 @@
    `(org-verbatim ((,class (:foreground ,pink-light))))
 
    ;;;; org-roam
-   `(org-roam-link ((,class (:foreground ,mint-bright))))
-   `(org-roam-backlink ((,class (:foreground ,cerise))))
+   `(org-roam-link ((,class (:foreground ,cerise :slant italic))))
+   `(org-roam-backlink ((,class (:foreground ,cerise :slant italic))))
 
    ;;;; outline
    `(outline-1 ((,class (:foreground ,indigo-bright :weight bold))))
