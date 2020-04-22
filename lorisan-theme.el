@@ -990,9 +990,9 @@
    `(magit-diff-lines-boundary ((,class (:background ,coquelicot-bright))))
    `(magit-diff-lines-heading ((,class (:inherit magit-diff-hunk-heading-highlight :foreground ,coquelicot-bright))))
    `(magit-diff-added ((,class (:foreground ,mint :background ,mint-darkest))))
-   `(magit-diff-added-highlight ((,class (:inherit magit-diff-added :weight normal))))
+   `(magit-diff-added-highlight ((,class (:inherit magit-diff-added :weight bold))))
    `(magit-diff-removed ((,class (:foreground ,wine :background ,wine-darkest))))
-   `(magit-diff-removed-highlight ((,class (:inherit magit-diff-removed :weight normal))))
+   `(magit-diff-removed-highlight ((,class (:inherit magit-diff-removed :weight bold))))
 
    ;;;; markdown
    `(markdown-url-face ((,class (:foreground ,turquoise :underline nil))))
@@ -1326,6 +1326,17 @@
    `(undo-tree-visualizer-active-branch-face ((,class (:foreground ,indigo-bright))))
    `(undo-tree-visualizer-unmodified-face ((,class (:foreground ,brown-light))))
    `(undo-tree-visualizer-register-face ((,class (:foreground ,magenta-bright))))
+
+   ;;;; vdiff
+   `(vdiff-addition-face ((,class (:foreground ,mint :background ,mint-darkest))))
+   `(vdiff-refine-added ((,class (:foreground ,mint :background ,mint-darkest  :weight bold))))
+   `(vdiff-change-face ((,class (:foreground ,indigo :background ,indigo-darkest))))
+   `(vdiff-refine-changed ((,class (:foreground ,indigo :background ,indigo-darkest :weight bold))))
+   `(vdiff-subtraction-face ((,class (:foreground ,wine :background ,wine-darkest))))
+   `(vdiff-subtraction-fringe-face ((,class (:foreground ,wine-light :background ,wine-darkest))))
+   ;; `(vdiff-target-face ((,class (:foreground ,pink-bright))))
+   ;; `(vdiff-closed-fold-face ((,class (:foreground ,pink-bright))))
+   ;; `(vdiff-open-fold-face ((,class (:foreground ,pink-bright))))
 
    ;;;; vimish-fold
    `(vimish-fold-fringe ((,class (:foreground ,grey))))
