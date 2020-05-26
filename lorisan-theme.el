@@ -1114,9 +1114,17 @@
    `(org-warning ((,class (:foreground ,red))))
    `(org-verbatim ((,class (:foreground ,pink-light))))
 
+   ;;;; org-ref
+   `(org-ref-acronym-face ((,class (:inherit org-link))))
+   `(org-ref-cite-face ((,class (:inherit org-link))))
+   `(org-ref-glossary-face ((,class (:inherit org-link))))
+   `(org-ref-label-face ((,class (:inherit org-link))))
+   `(org-ref-ref-face ((,class (:inherit org-link))))
+
    ;;;; org-roam
-   `(org-roam-link ((,class (:foreground ,cerise :slant italic))))
-   `(org-roam-backlink ((,class (:foreground ,cerise :slant italic))))
+   `(org-roam-link ((,class (:foreground ,orange-light))))
+   `(org-roam-link-current ((,class (:inherit org-roam-link))))
+   `(org-roam-invalid ((,class (:foreground ,wine :background ,wine-darkest))))
 
    ;;;; outline
    `(outline-1 ((,class (:foreground ,indigo-bright :weight bold))))
