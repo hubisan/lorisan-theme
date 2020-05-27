@@ -831,6 +831,7 @@
    `(info-menu-star ((,class (:foreground ,grey-lighter))))
    `(info-xref ((,class (:inherit link))))
    `(info-xref-visited ((,class (:inherit link-visited))))
+   `(Info-quoted ((,class (:inherit font-lock-string-face))))
    `(info-quoted-name ((,class (:foreground ,indigo))))
    `(info-double-quoted-name ((,class (:foreground ,fulvous-light))))
 
