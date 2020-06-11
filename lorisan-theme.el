@@ -1085,7 +1085,7 @@
    `(org-document-title ((,class (:weight bold :foreground ,white))))
    `(org-done ((,class (:foreground ,mint-darker :weight bold))))
    `(org-drawer ((,class (:foreground ,indigo-darker-))))
-   `(org-ellipsis ((,class (:foreground ,faint))))
+   `(org-ellipsis ((,class (:foreground ,indigo-dark))))
    `(org-footnote ((,class (:foreground ,cyan))))
    `(org-formula ((,class (:foreground ,coquelicot))))
    `(org-headline-done ((,class (:foreground ,indigo-darker- :weight bold))))
