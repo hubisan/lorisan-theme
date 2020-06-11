@@ -514,7 +514,9 @@
    `(doom-modeline-urgent ((,class (:foreground ,wine :background nil :weight normal))))
     ;; doom-modeline-warning
    `(doom-modeline-warning ((,class (:foreground ,amber :background nil :weight normal))))
-
+   `(doom-modeline-warning ((,class (:foreground ,amber :background nil :weight normal))))
+   `(doom-modeline-vspc-face ((,class (:foreground ,nil :background nil))))
+   `(doom-modeline-spc-face ((,class (:foreground ,nil :background nil))))
 
    ;;;; ediff
    `(ediff-even-diff-A ((,class (:foreground nil :background ,fulvous-darkest))))
