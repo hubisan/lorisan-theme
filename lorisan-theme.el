@@ -227,7 +227,7 @@
    `(region ((,class (:background ,violet2-dark))))
    `(secondary-selection ((,class (:background ,indigo-darkest))))
    `(trailing-whitespace ((,class (:background ,grey-darkest :underline (:color ,red-bright :style wave)))))
-   `(hl-line ((,class (:background ,indigo-darkest))))
+   `(hl-line ((,class (:background "#070711"))))
 
    `(mode-line ((t (:foreground ,indigo-darker :background ,blue2-dark))))
    `(mode-line-inactive ((t (:foreground ,grey :background ,grey-darkester :weight light :box nil :inherit (mode-line )))))
