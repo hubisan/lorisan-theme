@@ -1091,7 +1091,7 @@
    `(org-footnote ((,class (:foreground ,cyan))))
    `(org-formula ((,class (:foreground ,coquelicot))))
    `(org-headline-done ((,class (:foreground ,indigo-darker- :weight bold))))
-   `(org-hide ((,class (:foreground ,background))))
+   `(org-hide ((,class (:foreground ,indigo-darkest))))
    `(org-level-1 ((,class (:inherit outline-1))))
    `(org-level-2 ((,class (:inherit outline-2))))
    `(org-level-3 ((,class (:inherit outline-3))))
