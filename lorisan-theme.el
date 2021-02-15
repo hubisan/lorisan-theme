@@ -238,7 +238,7 @@
 
    `(header-line ((,class (:inherit mode-line :foreground ,magenta :background nil))))
    `(minibuffer-prompt ((,class (:foreground ,blue))))
-   `(fringe ((,class (:background ,alt-background :foreground ,wine))))
+   `(fringe ((,class (:background ,background :foreground ,grey-darkest))))
    `(cursor ((,class (:background ,wine-bright))))
    `(border ((,class (:background ,alt-background :foreground ,grey-dark))))
    `(vertical-border ((,class (:background ,alt-background :foreground ,grey-dark))))
@@ -1393,9 +1393,9 @@
    `(yas-field-highlight-face ((,class (:background ,wine-darkest :slant italic))))
 
    ;;;; window-divider
-   `(window-divider ((,class (:foreground ,grey-dark))))
-   `(window-divider-first-pixel ((,class (:foreground ,grey-dark))))
-   `(window-divider-last-pixel ((,class (:foreground ,grey-dark))))
+   `(window-divider ((,class (:foreground ,alt-background))))
+   `(window-divider-first-pixel ((,class (:foreground ,alt-background))))
+   `(window-divider-last-pixel ((,class (:foreground ,alt-background))))
    )
 
   ;;; CUSTOM VARIABLES
