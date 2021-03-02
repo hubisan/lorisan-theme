@@ -238,7 +238,7 @@
 
    `(header-line ((,class (:inherit mode-line :foreground ,magenta :background nil))))
    `(minibuffer-prompt ((,class (:foreground ,blue))))
-   `(fringe ((,class (:background ,background :foreground ,grey-dark))))
+   `(fringe ((,class (:background ,background :foreground ,grey-darkest))))
    `(cursor ((,class (:background ,wine-bright))))
    `(border ((,class (:background ,alt-background :foreground ,grey-dark))))
    `(vertical-border ((,class (:background ,alt-background :foreground ,grey-dark))))
@@ -655,15 +655,15 @@
    `(git-commit-summary ((,class (:foreground ,grey-lighter))))
 
    ;;;; git-gutter
-   `(git-gutter:modified ((,class (:foreground ,indigo-darker))))
-   `(git-gutter:added ((,class (:foreground ,mint-darker))))
-   `(git-gutter:deleted ((,class (:foreground ,wine))))
-   `(git-gutter:unchanged ((,class (:background ,grey-darker))))
+   `(git-gutter:modified ((,class (:foreground ,indigo-dark))))
+   `(git-gutter:added ((,class (:foreground ,mint-dark))))
+   `(git-gutter:deleted ((,class (:foreground ,wine-dark))))
+   `(git-gutter:unchanged ((,class (:background ,grey-dark))))
 
    ;;;; git-gutter-fringe
-   `(git-gutter-fr:modified ((,class (:foreground ,indigo-darker))))
-   `(git-gutter-fr:added ((,class (:foreground ,mint-darker))))
-   `(git-gutter-fr:deleted ((,class (:foreground ,wine))))
+   `(git-gutter-fr:modified ((,class (:foreground ,indigo-dark))))
+   `(git-gutter-fr:added ((,class (:foreground ,mint-dark))))
+   `(git-gutter-fr:deleted ((,class (:foreground ,wine-dark))))
 
    ;;;; gnus
    `(gnus-cite-1 ((,class (:inherit outline-1 :foreground nil))))
