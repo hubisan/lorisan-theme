@@ -230,8 +230,9 @@
    `(hl-line ((,class (:background ,indigo-darkest))))
 
    `(mode-line ((t (:foreground ,indigo-darker :background ,blue2-dark))))
-   `(mode-line-inactive ((t (:foreground ,grey :background ,grey-darkester :weight light :box nil :inherit (mode-line )))))
+   `(mode-line-inactive ((t (:foreground ,grey :background ,grey-darkester :box nil :inherit (mode-line )))))
    `(mode-line-buffer-id ((t (:foreground ,cyan-bright))))
+
    `(mode-line-emphasis ((,class (:foreground ,magenta))))
    `(mode-line-highlight ((,class (:foreground ,magenta :background nil :weight normal))))
    `(which-func ((,class (:foreground ,blue :background nil :weight bold))))
@@ -283,6 +284,7 @@
    ;;;; ace-window
    `(aw-leading-char-face ((,class (:foreground ,wine-darkest :background ,wine-bright :weight bold))))
    `(aw-background-face ((,class (:background ,background :foreground ,grey-dark))))
+   `(aw-mode-line-face ((,class (:background nil :foreground ,indigo-darker))))
 
    ;;;; ag
    `(ag-hit-face ((,class (:inherit lazy-highlight))))
@@ -475,45 +477,38 @@
    `(doom-modeline-eldoc-bar ((,class (:foreground ,red-dark :background ,green :weight normal))))
    `(doom-modeline-eyebrowse ((,class (:foreground ,green-dark :background ,green :weight normal))))
    `(doom-modeline-bracket ((,class (:foreground ,green-dark :background ,green :weight normal))))
-    ;; doom-modeline-bar
+   ;; doom-modeline-bar
    `(doom-modeline-bar ((,class (:foreground nil :background nil :weight normal))))
-    ;; doom-modeline-buffer-file
-   `(doom-modeline-buffer-file ((,class (:foreground ,cyan-bright :background nil :weight normal))))
-    ;; doom-modeline-buffer-major-mode
-   `(doom-modeline-buffer-major-mode ((,class (:foreground ,magenta-bright :background nil :weight normal))))
-    ;; doom-modeline-buffer-minor-mode
-    ;; doom-modeline-buffer-modified
+   ;; doom-modeline-buffer-file
+   `(doom-modeline-buffer-file ((,class (:foreground ,cyan :background nil :weight normal))))
+   ;; doom-modeline-buffer-major-mode
+   `(doom-modeline-buffer-major-mode ((,class (:foreground ,indigo-darker :background nil :weight normal))))
+   ;; doom-modeline-buffer-minor-mode
+   ;; doom-modeline-buffer-modified
    `(doom-modeline-buffer-modified ((,class (:foreground ,wine :background nil :weight normal))))
-    ;; doom-modeline-buffer-path
+   ;; doom-modeline-buffer-path
    `(doom-modeline-buffer-path ((,class (:foreground ,indigo-bright :background nil :weight normal))))
-    ;; doom-modeline-debug
-    ;; doom-modeline-evil-emacs-state
-    ;; doom-modeline-evil-insert-state
-    ;; doom-modeline-evil-motion-state
-    ;; doom-modeline-evil-normal-state
-    ;; doom-modeline-evil-operator-state
-    ;; doom-modeline-evil-replace-state
-    ;; doom-modeline-evil-visual-state
-    ;; doom-modeline-highlight
+   ;; doom-modeline-debug
+   `(doom-modeline-evil-emacs-state ((,class (:foreground ,indigo-darker :background nil :weight normal))))
+   `(doom-modeline-evil-insert-state ((,class (:foreground ,indigo-darker :background nil :weight normal))))
+   `(doom-modeline-evil-motion-state ((,class (:foreground ,indigo-darker :background nil :weight normal))))
+   `(doom-modeline-evil-normal-state ((,class (:foreground ,indigo-darker :background nil :weight normal))))
+   `(doom-modeline-evil-operator-state ((,class (:foreground ,indigo-darker :background nil :weight normal))))
+   `(doom-modeline-evil-replace-state ((,class (:foreground ,indigo-darker :background nil :weight normal))))
+   `(doom-modeline-evil-visual-state ((,class (:foreground ,indigo-darker :background nil :weight normal))))
    `(doom-modeline-highlight ((,class (:foreground ,magenta :background nil :weight normal))))
-    ;; doom-modeline-inactive-bar
    `(doom-modeline-bar-inactive ((,class (:foreground nil :background nil :weight normal))))
-    ;; doom-modeline-info
-   `(doom-modeline-info ((,class (:foreground ,mint :background nil :weight normal))))
-    ;; doom-modeline-panel
+   `(doom-modeline-info ((,class (:foreground ,indigo-darker :background nil :weight normal))))
    `(doom-modeline-panel ((,class (:foreground ,mint-darkest :background ,mint-bright :weight normal))))
-    ;; doom-modeline-persp-buffer-not-in-persp
-    ;; doom-modeline-persp-name
+   ;; doom-modeline-persp-buffer-not-in-persp
+   ;; doom-modeline-persp-name
    `(doom-modeline-persp ((,class (:foreground ,green-dark :background ,green :weight normal))))
-    ;; doom-modeline-project-dir
-    ;; doom-modeline-project-parent-dir
-    ;; doom-modeline-project-root-dir
+   ;; doom-modeline-project-dir
+   ;; doom-modeline-project-parent-dir
+   ;; doom-modeline-project-root-dir
    `(doom-modeline-buffer-timemachine ((,class (:foreground ,fulvous :background nil :weight bold))))
-    ;; doom-modeline-unread-number
-    ;; doom-modeline-urgent
+   ;; doom-modeline-unread-number
    `(doom-modeline-urgent ((,class (:foreground ,wine :background nil :weight normal))))
-    ;; doom-modeline-warning
-   `(doom-modeline-warning ((,class (:foreground ,amber :background nil :weight normal))))
    `(doom-modeline-warning ((,class (:foreground ,amber :background nil :weight normal))))
    `(doom-modeline-vspc-face ((,class (:foreground ,nil :background nil))))
    `(doom-modeline-spc-face ((,class (:foreground ,nil :background nil))))
@@ -1425,7 +1420,7 @@
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
   (add-to-list 'custom-theme-load-path
-	       (file-name-as-directory (file-name-directory load-file-name))))
+               (file-name-as-directory (file-name-directory load-file-name))))
 
 (provide-theme 'lorisan)
 
