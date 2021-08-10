@@ -480,7 +480,7 @@
    ;; doom-modeline-bar
    ;; For some reason using nil stopped working.
    `(doom-modeline-bar ((,class (:foreground ,blue2-dark :background ,blue2-dark :weight normal))))
-   `(doom-modeline-bar-inactive ((,class (:foreground ,blue2-dark :background ,blue2-dark :weight normal))))
+   `(doom-modeline-bar-inactive ((,class (:foreground ,grey-darkester :background ,blue2-dark :weight normal))))
    ;; doom-modeline-buffer-file
    `(doom-modeline-buffer-file ((,class (:foreground ,cyan :background nil :weight normal))))
    ;; doom-modeline-buffer-major-mode
