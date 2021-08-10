@@ -478,7 +478,9 @@
    `(doom-modeline-eyebrowse ((,class (:foreground ,green-dark :background ,green :weight normal))))
    `(doom-modeline-bracket ((,class (:foreground ,green-dark :background ,green :weight normal))))
    ;; doom-modeline-bar
-   `(doom-modeline-bar ((,class (:foreground nil :background nil :weight normal))))
+   ;; For some reason using nil stopped working.
+   `(doom-modeline-bar ((,class (:foreground ,blue2-dark :background ,blue2-dark :weight normal))))
+   `(doom-modeline-bar-inactive ((,class (:foreground ,blue2-dark :background ,blue2-dark :weight normal))))
    ;; doom-modeline-buffer-file
    `(doom-modeline-buffer-file ((,class (:foreground ,cyan :background nil :weight normal))))
    ;; doom-modeline-buffer-major-mode
@@ -497,7 +499,6 @@
    `(doom-modeline-evil-replace-state ((,class (:foreground ,indigo-darker :background nil :weight normal))))
    `(doom-modeline-evil-visual-state ((,class (:foreground ,indigo-darker :background nil :weight normal))))
    `(doom-modeline-highlight ((,class (:foreground ,magenta :background nil :weight normal))))
-   `(doom-modeline-bar-inactive ((,class (:foreground nil :background nil :weight normal))))
    `(doom-modeline-info ((,class (:foreground ,indigo-darker :background nil :weight normal))))
    `(doom-modeline-panel ((,class (:foreground ,mint-darkest :background ,mint-bright :weight normal))))
    ;; doom-modeline-persp-buffer-not-in-persp
