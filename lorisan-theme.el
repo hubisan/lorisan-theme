@@ -1063,6 +1063,12 @@
    `(nxml-delimiter-face ((,class (:foreground unspecified :inherit font-lock-keyword-face))))
    `(nxml-delimited-data-face ((,class (:foreground unspecified :inherit font-lock-string-face))))
 
+   ;;;; orderless
+   `(orderless-match-face-0 ((,class (:foreground ,fulvous))))
+   `(orderless-match-face-1 ((,class (:foreground ,fulvous))))
+   `(orderless-match-face-2 ((,class (:foreground ,fulvous))))
+   `(orderless-match-face-3 ((,class (:foreground ,fulvous))))
+
    ;;;; org
    `(org-agenda-structure ((,class (:foreground ,blue))))
    `(org-agenda-date ((,class (:foreground ,indigo-darker-))))
