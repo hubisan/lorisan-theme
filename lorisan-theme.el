@@ -397,9 +397,9 @@
    `(diff-refine-changed ((,class (:foreground ,indigo-light :background ,indigo-darkest :weight bold))))
 
    ;;;; diff-hl
-   `(diff-hl-change ((,class (:foreground ,indigo :background ,indigo-dark))))
-   `(diff-hl-delete ((,class (:foreground ,pink :background ,wine-dark))))
-   `(diff-hl-insert ((,class (:foreground ,mint :background ,mint-dark))))
+   `(diff-hl-change ((,class (:foreground ,indigo-dark :background nil))))
+   `(diff-hl-delete ((,class (:foreground ,wine-dark :background nil))))
+   `(diff-hl-insert ((,class (:foreground ,mint-dark :background nil))))
 
    ;;;; dired
    `(dired-header ((,class (:foreground ,pink :underline t))))
