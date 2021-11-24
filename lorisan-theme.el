@@ -943,6 +943,12 @@
    `(langtool-correction-face ((,class (:foreground ,mint-bright))))
    `(langtool-errline ((,class (:foreground ,wine-light :underline (:color ,wine-darker)))))
 
+   ;;;; languagetool
+   `(languagetool-default-face ((,class (:foreground ,wine-light :underline (:color ,wine-darker)))))
+   `(languagetool-misspelling-face ((,class (:foreground ,wine-light :underline (:color ,wine-darker)))))
+   `(languagetool-style-face ((,class (:foreground ,wine-light :underline (:color ,wine-darker)))))
+   `(languagetool-gramar-face ((,class (:foreground ,wine-light :underline (:color ,wine-darker)))))
+
    ;;;; line-number
    `(line-number ((,class (:background ,alt-background :foreground ,grey-darker))))
    `(line-number-current-line ((,class (:background ,alt-background :foreground ,wine))))
