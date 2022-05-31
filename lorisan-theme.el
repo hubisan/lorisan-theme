@@ -1226,6 +1226,10 @@
    `(sh-heredoc ((,class (:foreground nil :inherit font-lock-string-face))))
    `(sh-quoted-exec ((,class (:foreground nil :inherit font-lock-preprocessor-face))))
 
+   ;;;; shortdoc
+   `(shortdoc-heading ((,class (:inherit outline-1))))
+   `(shortdoc-section ((,class (:inherit default))))
+
    ;;;; shr
    `(shr-link ((,class (:foreground ,turquoise-bright :underline t))))
 
