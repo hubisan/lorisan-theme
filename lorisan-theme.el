@@ -369,8 +369,8 @@
    `(compilation-info ((,class (:foreground ,turquoise))))
 
    ;;;; css
-   `(css-selector ((,class (:foreground ,wine))))
-   `(css-property ((,class (:foreground ,cyan))))
+   `(css-selector ((,class (:foreground ,cerise))))
+   `(css-property ((,class (:foreground ,indigo))))
    `(css-proprietary-property ((,class (:foreground ,mint))))
 
    ;;;; deft
