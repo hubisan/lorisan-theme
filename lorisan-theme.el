@@ -482,24 +482,24 @@
    `(doom-modeline-bar ((,class (:foreground nil :background ,blue2-dark :weight normal))))
    `(doom-modeline-bar-inactive ((,class (:foreground nil :background ,grey-darkester :weight normal))))
    ;; doom-modeline-buffer-file
-   `(doom-modeline-buffer-file ((,class (:foreground ,cyan :background nil :weight normal))))
+   `(doom-modeline-buffer-file ((,class (:foreground ,cyan :background unspecified :weight normal))))
    ;; doom-modeline-buffer-major-mode
-   `(doom-modeline-buffer-major-mode ((,class (:foreground ,indigo-darker :background nil :weight normal))))
+   `(doom-modeline-buffer-major-mode ((,class (:foreground ,indigo-darker :background unspecified :weight normal))))
    ;; doom-modeline-buffer-minor-mode
    ;; doom-modeline-buffer-modified
-   `(doom-modeline-buffer-modified ((,class (:foreground ,wine :background nil :weight normal))))
+   `(doom-modeline-buffer-modified ((,class (:foreground ,wine :background unspecified :weight normal))))
    ;; doom-modeline-buffer-path
-   `(doom-modeline-buffer-path ((,class (:foreground ,indigo-bright :background nil :weight normal))))
+   `(doom-modeline-buffer-path ((,class (:foreground ,indigo-bright :background unspecified :weight normal))))
    ;; doom-modeline-debug
-   `(doom-modeline-evil-emacs-state ((,class (:foreground ,indigo-darker :background nil :weight normal))))
-   `(doom-modeline-evil-insert-state ((,class (:foreground ,indigo-darker :background nil :weight normal))))
-   `(doom-modeline-evil-motion-state ((,class (:foreground ,indigo-darker :background nil :weight normal))))
-   `(doom-modeline-evil-normal-state ((,class (:foreground ,indigo-darker :background nil :weight normal))))
-   `(doom-modeline-evil-operator-state ((,class (:foreground ,indigo-darker :background nil :weight normal))))
-   `(doom-modeline-evil-replace-state ((,class (:foreground ,indigo-darker :background nil :weight normal))))
-   `(doom-modeline-evil-visual-state ((,class (:foreground ,indigo-darker :background nil :weight normal))))
-   `(doom-modeline-highlight ((,class (:foreground ,magenta :background nil :weight normal))))
-   `(doom-modeline-info ((,class (:foreground ,indigo-darker :background nil :weight normal))))
+   `(doom-modeline-evil-emacs-state ((,class (:foreground ,indigo-darker :background unspecified :weight normal))))
+   `(doom-modeline-evil-insert-state ((,class (:foreground ,indigo-darker :background unspecified :weight normal))))
+   `(doom-modeline-evil-motion-state ((,class (:foreground ,indigo-darker :background unspecified :weight normal))))
+   `(doom-modeline-evil-normal-state ((,class (:foreground ,indigo-darker :background unspecified :weight normal))))
+   `(doom-modeline-evil-operator-state ((,class (:foreground ,indigo-darker :background unspecified :weight normal))))
+   `(doom-modeline-evil-replace-state ((,class (:foreground ,indigo-darker :background unspecified :weight normal))))
+   `(doom-modeline-evil-visual-state ((,class (:foreground ,indigo-darker :background unspecified :weight normal))))
+   `(doom-modeline-highlight ((,class (:foreground ,magenta :background unspecified :weight normal))))
+   `(doom-modeline-info ((,class (:foreground ,indigo-darker :background unspecified :weight normal))))
    `(doom-modeline-panel ((,class (:foreground ,mint-darkest :background ,mint-bright :weight normal))))
    ;; doom-modeline-persp-buffer-not-in-persp
    ;; doom-modeline-persp-name
@@ -507,12 +507,12 @@
    ;; doom-modeline-project-dir
    ;; doom-modeline-project-parent-dir
    ;; doom-modeline-project-root-dir
-   `(doom-modeline-buffer-timemachine ((,class (:foreground ,fulvous :background nil :weight bold))))
+   `(doom-modeline-buffer-timemachine ((,class (:foreground ,fulvous :background unspecified :weight bold))))
    ;; doom-modeline-unread-number
-   `(doom-modeline-urgent ((,class (:foreground ,wine :background nil :weight normal))))
-   `(doom-modeline-warning ((,class (:foreground ,amber :background nil :weight normal))))
-   `(doom-modeline-vspc-face ((,class (:foreground ,nil :background nil))))
-   `(doom-modeline-spc-face ((,class (:foreground ,nil :background nil))))
+   `(doom-modeline-urgent ((,class (:foreground ,wine :background unspecified :weight normal))))
+   `(doom-modeline-warning ((,class (:foreground ,amber :background unspecified :weight normal))))
+   `(doom-modeline-vspc-face ((,class (:foreground ,nil :background unspecified))))
+   `(doom-modeline-spc-face ((,class (:foreground ,nil :background unspecified))))
 
    ;;;; ediff
    `(ediff-even-diff-A ((,class (:foreground nil :background ,fulvous-darkest))))
