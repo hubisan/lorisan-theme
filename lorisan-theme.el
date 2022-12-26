@@ -359,6 +359,13 @@
    `(company-tooltip-search-selection ((,class (:foreground ,fulvous :background ,background :inverse-video t))))
    `(company-tooltip-search ((,class (:foreground ,fulvous-bright))))
 
+   `(completions-first-difference ((,class (:background unspecified :foreground ,grey-lighter))))
+   `(completions-common-part((,class (:background unspecified :foreground ,fulvous))))
+   ;; `(completions-group-title((,class (:background ,blue2-dark :foreground ,white))))
+   ;; `(completions-group-separator ((,class (:background ,blue2-dark :foreground ,white))))
+   ;; `(completions-annotations ((,class (:background unspecified :foreground ,grey :height 0.8))))
+   ;; `(completions-highlight ((,class (:background ,blue2-dark :foreground ,white))))
+
    ;;;; compilation
    `(compilation-column-number ((,class (:foreground ,amber))))
    `(compilation-line-number ((,class (:foreground ,amber))))
@@ -367,6 +374,16 @@
    `(compilation-mode-line-fail ((,class (:foreground ,red))))
    `(compilation-mode-line-run ((,class (:foreground ,blue))))
    `(compilation-info ((,class (:foreground ,turquoise))))
+
+   ;;;; corfu
+   `(corfu-default ((,class (:background ,blue2-dark :foreground ,grey-lighter))))
+   `(corfu-current ((,class (:background ,grey-dark :foreground ,grey-lighter))))
+   `(corfu-bar ((,class (:background ,grey :foreground unspecified))))
+   `(corfu-border ((,class (:background ,background :foreground unspecified))))
+   `(corfu-echo ((,class (:inherit completions-annotations))))
+   `(corfu-annotations ((,class (:background unspecified :foreground ,grey :height 0.8))))
+   `(corfu-deprecated ((,class (:background unspecified :foreground unspecified :strike-through t))))
+   `(corfu-indexed ((,class (:background unspecified :foreground ,grey-darker))))
 
    ;;;; css
    `(css-selector ((,class (:foreground ,cerise))))
@@ -1147,6 +1164,17 @@
    `(outline-7 ((,class (:foreground ,indigo-bright :weight bold :slant italic))))
    `(outline-8 ((,class (:foreground ,indigo-bright :weight bold :slant italic))))
    `(outline-9 ((,class (:foreground ,indigo-bright :weight bold :slant italic))))
+
+   ;;;; outline
+   `(outline-minor-1 ((,class (:foreground ,indigo-bright :weight bold))))
+   `(outline-minor-2 ((,class (:foreground ,indigo-bright :weight bold))))
+   `(outline-minor-3 ((,class (:foreground ,indigo-bright :weight bold :slant italic))))
+   `(outline-minor-4 ((,class (:foreground ,indigo-bright :weight bold :slant italic))))
+   `(outline-minor-5 ((,class (:foreground ,indigo-bright :weight bold :slant italic))))
+   `(outline-minor-6 ((,class (:foreground ,indigo-bright :weight bold :slant italic))))
+   `(outline-minor-7 ((,class (:foreground ,indigo-bright :weight bold :slant italic))))
+   `(outline-minor-8 ((,class (:foreground ,indigo-bright :weight bold :slant italic))))
+   `(outline-minor-9 ((,class (:foreground ,indigo-bright :weight bold :slant italic))))
 
    ;;;; outshine
    `(outshine-level-1 ((,class (:inherit outline-1 :foreground ,mint-bright :underline t))))
