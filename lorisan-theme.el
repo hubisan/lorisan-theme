@@ -356,9 +356,11 @@
    `(company-scrollbar-bg ((,class (:background ,grey-darkest))))
    `(company-scrollbar-fg ((,class (:background ,grey))))
    `(company-tooltip-annotation ((,class (:inherit company-tooltip :foreground ,coquelicot-light))))
+   `(company-tooltip-annotation-selection ((,class (:inherit company-tooltip-selection))))
    `(company-tooltip-search-selection ((,class (:foreground ,fulvous :background ,background :inverse-video t))))
    `(company-tooltip-search ((,class (:foreground ,fulvous-bright))))
 
+   ;;;; completions
    `(completions-first-difference ((,class (:background unspecified :foreground ,grey-lighter))))
    `(completions-common-part((,class (:background unspecified :foreground ,fulvous))))
    ;; `(completions-group-title((,class (:background ,blue2-dark :foreground ,white))))
