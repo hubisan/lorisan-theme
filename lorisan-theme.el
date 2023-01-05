@@ -386,6 +386,7 @@
    `(corfu-annotations ((,class (:background unspecified :foreground ,grey :height 0.8))))
    `(corfu-deprecated ((,class (:background unspecified :foreground unspecified :strike-through t))))
    `(corfu-indexed ((,class (:background unspecified :foreground ,grey-darker))))
+   `(corfu-popupinfo ((,class (:background ,blue2-dark :foreground ,grey-lighter))))
 
    ;;;; css
    `(css-selector ((,class (:foreground ,cerise))))
