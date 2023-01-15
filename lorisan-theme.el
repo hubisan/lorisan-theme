@@ -1311,7 +1311,7 @@
 
    ;;;; smartparens
    `(sp-show-pair-enclosing ((,class (:foreground ,background :background ,indigo-darker-))))
-   `(sp-show-pair-match-content-face ((,class (:foreground unspecified :background ,nil))))
+   `(sp-show-pair-match-content-face ((,class (:foreground unspecified :background unspecified))))
    `(sp-show-pair-match-face ((,class (:foreground ,background :background ,indigo-darker-))))
    `(sp-show-pair-mismatch-face ((,class (:inherit show-paren-mismatch))))
 
