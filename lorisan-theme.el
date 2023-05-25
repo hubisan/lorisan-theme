@@ -42,7 +42,8 @@
       (contrast-background "#331133")
       (malachite "#3aff83")
       (normal "#BDC0C6")
-      (background "#06000C")
+      ;; (background "#06000C")
+      (background "#090517")
       (brown-light "#b69191")
       (grey-lighter "#e1e2e5")
       (grey-light "#BDC0C6")
@@ -1323,9 +1324,10 @@
    `(swiper-match-face-4 ((,class (:background ,indigo :foreground ,background))))
 
    ;;;; tab-bar
-   `(tab-bar ((,class (:background ,blue2-dark :foreground ,indigo-darker))))
-   `(tab-bar-tab ((,class (:background ,blue2-dark :foreground ,indigo))))
-   `(tab-bar-tab-inactive ((,class (:background ,blue2-dark :foreground ,indigo-dark))))
+   ;; Using the color of waybar to make it unobtrusive.
+   `(tab-bar ((,class (:background ,background :foreground ,grey-dark))))
+   `(tab-bar-tab ((,class (:background unspecified :foreground ,indigo-darker))))
+   `(tab-bar-tab-inactive ((,class (:background unspecified :foreground ,grey-dark))))
 
    ;;;; tab-line
    `(tab-line ((,class (:background ,blue2-dark :foreground ,indigo-darker))))
@@ -1436,9 +1438,9 @@
    `(yas-field-highlight-face ((,class (:background ,wine-darkest :slant italic))))
 
    ;;;; window-divider
-   `(window-divider ((,class (:foreground ,alt-background))))
-   `(window-divider-first-pixel ((,class (:foreground ,alt-background))))
-   `(window-divider-last-pixel ((,class (:foreground ,alt-background))))
+   `(window-divider ((,class (:foreground ,grey-darkester))))
+   `(window-divider-first-pixel ((,class (:foreground ,grey-darkester))))
+   `(window-divider-last-pixel ((,class (:foreground ,grey-darkester))))
    )
 
   ;;; CUSTOM VARIABLES
