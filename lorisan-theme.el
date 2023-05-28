@@ -376,7 +376,9 @@
    `(compilation-mode-line-exit ((,class (:foreground ,green))))
    `(compilation-mode-line-fail ((,class (:foreground ,red))))
    `(compilation-mode-line-run ((,class (:foreground ,blue))))
-   `(compilation-info ((,class (:foreground ,turquoise))))
+   `(compilation-error ((,class (:background unspecified :foreground ,wine-bright))))
+   `(compilation-warning ((,class (:background unspecified :foreground ,amber))))
+   `(compilation-info ((,class (:background unspecified :foreground ,indigo))))
 
    ;;;; corfu
    `(corfu-default ((,class (:background ,blue2-dark :foreground ,grey-lighter))))
