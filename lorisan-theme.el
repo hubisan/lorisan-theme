@@ -1151,6 +1151,10 @@
    `(org-warning ((,class (:foreground ,red))))
    `(org-verbatim ((,class (:foreground ,pink-light))))
 
+   ;;;; org-modern
+   `(org-modern-block-name ((,class (:height 1.0))))
+   `(org-modern-horizontal-rule ((,class (:strike-through ,grey-dark))))
+
    ;;;; org-ref
    `(org-ref-acronym-face ((,class (:inherit org-link))))
    `(org-ref-cite-face ((,class (:inherit org-link))))
