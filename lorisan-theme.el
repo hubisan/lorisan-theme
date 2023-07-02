@@ -815,7 +815,7 @@
    `(highlight-indent-guides-character-face ((,class (:foreground "#1B1B1B"))))
 
    ;;;; highlight-parentheses
-   `(hl-paren-face ((,class (:underline t))))
+   `(highlight-parentheses-highlight ((,class (:underline t))))
 
    ;;;; highlight-quoted
    `(highlight-quoted-quote ((,class (:inherit font-lock-keyword-face))))
@@ -991,6 +991,7 @@
    `(magit-branch ((,class (:foreground ,mint))))
    `(magit-blame-heading ((,class (:foreground ,cerise-bright :background ,blue2-dark))))
    `(magit-header ((,class (:inherit nil :weight bold))))
+   `(magit-header-line ((,class (:background ,background))))
    `(magit-item-highlight ((,class (:inherit highlight :background unspecified))))
    `(magit-log-graph ((,class (:foreground ,faintest))))
    `(magit-log-sha1 ((,class (:foreground ,amber))))
@@ -1461,8 +1462,8 @@
    `(pos-tip-background-color ,blue2-darkest)
 
    ;;;; hl-parens
-   `(hl-paren-background-colors '(,indigo-darkest))
-   `(hl-paren-colors '(,indigo-bright))
+   `(highlight-parentheses-background-colors '(,indigo-darkest))
+   `(highlight-parentheses-colors '(,indigo-bright))
 
    ;;;; evil-mode
    `(evil-normal-state-cursor '(box ,wine-bright))
