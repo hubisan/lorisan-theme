@@ -8,7 +8,7 @@ Theme is not available on melpa.
 
 Install with straight and leaf for instance:
 
-```lisp
+```emacs-lisp
 (leaf lorisan-theme
   :straight (lorisan-theme :type git :host github :repo "hubisan/lorisan-theme")
   :url "https://github.com/hubisan/lorisan-theme"
