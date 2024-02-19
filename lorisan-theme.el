@@ -212,7 +212,7 @@
    ;;; STANDARD FACES
 
    `(default ((,class (:foreground ,grey-lighter :background ,background))))
-   ;; `(variable-pitch ((,class (:family "DejaVu Serif" :height 100 :weight normal))))
+   ;; `(variable-pitch ((,class (:family "DejaVu Serif" :height 100))))
    `(bold ((,class (:weight bold))))
    `(italic ((,class (:slant italic))))
    `(bold-italic ((,class (:slant italic :weight bold))))
@@ -233,11 +233,11 @@
    `(hl-line ((,class (:background ,indigo-darkest))))
 
    `(mode-line ((t (:foreground ,indigo-darker :background ,blue2-dark))))
-   `(mode-line-inactive ((t (:foreground ,grey :background ,grey-darkester :box nil :inherit (mode-line )))))
+   `(mode-line-inactive ((t (:foreground ,grey :background ,grey-darkester :box nil :inherit (mode-line)))))
    `(mode-line-buffer-id ((t (:foreground ,cyan-bright))))
 
    `(mode-line-emphasis ((,class (:foreground ,magenta))))
-   `(mode-line-highlight ((,class (:foreground ,magenta :background unspecified :weight normal))))
+   `(mode-line-highlight ((,class (:foreground ,magenta :background unspecified))))
    `(which-func ((,class (:foreground ,blue :background unspecified :weight bold))))
 
    `(header-line ((,class (:foreground ,magenta :background ,background))))
@@ -253,7 +253,7 @@
    `(warning ((,class (:foreground ,coquelicot-bright))))
    `(error ((,class (:foreground ,red-bright))))
 
-   `(show-paren-match ((,class (:weight normal :foreground ,indigo-darkest :background ,indigo-bright :underline nil :weight bold))))
+   `(show-paren-match ((,class ( :foreground ,indigo-darkest :background ,indigo-bright :underline nil :weight bold))))
    `(show-paren-mismatch ((,class (:weight bold :foreground ,red-bright))))
 
    `(custom-variable-tag ((,class (:foreground ,blue))))
@@ -262,21 +262,21 @@
 
    ;;; GENERAL FONT LOCK FACES
 
-   `(font-lock-keyword-face ((,class (:weight normal :foreground ,wine))))
-   `(font-lock-function-name-face ((,class (:weight normal :foreground ,mint))))
-   `(font-lock-variable-name-face ((,class (:weight normal :foreground ,indigo))))
-   `(font-lock-string-face ((,class (:weight normal :foreground ,fulvous-light))))
-   `(font-lock-builtin-face ((,class (:weight normal :foreground ,cerise))))
-   `(font-lock-constant-face ((,class (:weight normal :foreground ,cyan))))
-   `(font-lock-type-face ((,class (:weight normal :foreground ,pink))))
-   `(font-lock-comment-face ((,class (:weight normal :foreground ,indigo-darker- :background unspecified :slant normal))))
-   `(font-lock-comment-delimiter-face ((,class (:weight normal :foreground ,indigo-darker- :slant normal))))
-   `(font-lock-doc-face ((,class (:weight normal :foreground ,indigo-darker- :slant normal))))
-   `(font-lock-negation-char-face ((,class (:weight normal :foreground ,red-bright))))
-   `(font-lock-preprocessor-face ((,class (:weight normal :foreground ,cerise))))
-   `(font-lock-regexp-grouping-backslash ((,class (:weight normal :foreground ,turquoise-bright))))
-   `(font-lock-regexp-grouping-construct ((,class (:weight normal :foreground ,violet-bright))))
-   `(font-lock-warning-face ((,class (:weight normal :foreground ,coquelicot))))
+   `(font-lock-keyword-face ((,class ( :foreground ,wine))))
+   `(font-lock-function-name-face ((,class ( :foreground ,mint))))
+   `(font-lock-variable-name-face ((,class ( :foreground ,indigo))))
+   `(font-lock-string-face ((,class ( :foreground ,fulvous-light))))
+   `(font-lock-builtin-face ((,class (:foreground ,cerise))))
+   `(font-lock-constant-face ((,class ( :foreground ,cyan))))
+   `(font-lock-type-face ((,class ( :foreground ,pink))))
+   `(font-lock-comment-face ((,class ( :foreground ,indigo-darker- :background unspecified :slant normal))))
+   `(font-lock-comment-delimiter-face ((,class ( :foreground ,indigo-darker- :slant normal))))
+   `(font-lock-doc-face ((,class ( :foreground ,indigo-darker- :slant normal))))
+   `(font-lock-negation-char-face ((,class ( :foreground ,red-bright))))
+   `(font-lock-preprocessor-face ((,class ( :foreground ,cerise))))
+   `(font-lock-regexp-grouping-backslash ((,class ( :foreground ,turquoise-bright))))
+   `(font-lock-regexp-grouping-construct ((,class ( :foreground ,violet-bright))))
+   `(font-lock-warning-face ((,class ( :foreground ,coquelicot))))
 
    ;;; MODE SPECIFIC FACES
 
@@ -499,43 +499,43 @@
    `(diredfl-tagged-autofile-name ((,class (:foreground ,indigo :background ,red))))
 
    ;;;; doom-modeline
-   `(doom-modeline-eldoc-bar ((,class (:foreground ,red-dark :background ,green :weight normal))))
-   `(doom-modeline-eyebrowse ((,class (:foreground ,green-dark :background ,green :weight normal))))
-   `(doom-modeline-bracket ((,class (:foreground ,green-dark :background ,green :weight normal))))
+   `(doom-modeline-eldoc-bar ((,class (:foreground ,red-dark :background ,green))))
+   `(doom-modeline-eyebrowse ((,class (:foreground ,green-dark :background ,green))))
+   `(doom-modeline-bracket ((,class (:foreground ,green-dark :background ,green))))
    ;; doom-modeline-bar
    ;; For some reason using nil stopped working.
-   `(doom-modeline-bar ((,class (:foreground unspecified :background ,blue2-dark :weight normal))))
-   `(doom-modeline-bar-inactive ((,class (:foreground unspecified :background ,grey-darkester :weight normal))))
+   `(doom-modeline-bar ((,class (:foreground unspecified :background ,blue2-dark))))
+   `(doom-modeline-bar-inactive ((,class (:foreground unspecified :background ,grey-darkester))))
    ;; doom-modeline-buffer-file
-   `(doom-modeline-buffer-file ((,class (:foreground ,cyan :background unspecified :weight normal))))
+   `(doom-modeline-buffer-file ((,class (:foreground ,cyan :background unspecified))))
    ;; doom-modeline-buffer-major-mode
-   `(doom-modeline-buffer-major-mode ((,class (:foreground ,indigo-darker :background unspecified :weight normal))))
+   `(doom-modeline-buffer-major-mode ((,class (:foreground ,indigo-darker :background unspecified))))
    ;; doom-modeline-buffer-minor-mode
    ;; doom-modeline-buffer-modified
-   `(doom-modeline-buffer-modified ((,class (:foreground ,wine :background unspecified :weight normal))))
+   `(doom-modeline-buffer-modified ((,class (:foreground ,wine :background unspecified))))
    ;; doom-modeline-buffer-path
-   `(doom-modeline-buffer-path ((,class (:foreground ,indigo-bright :background unspecified :weight normal))))
+   `(doom-modeline-buffer-path ((,class (:foreground ,indigo-bright :background unspecified))))
    ;; doom-modeline-debug
-   `(doom-modeline-evil-emacs-state ((,class (:foreground ,indigo-darker :background unspecified :weight normal))))
-   `(doom-modeline-evil-insert-state ((,class (:foreground ,indigo-darker :background unspecified :weight normal))))
-   `(doom-modeline-evil-motion-state ((,class (:foreground ,indigo-darker :background unspecified :weight normal))))
-   `(doom-modeline-evil-normal-state ((,class (:foreground ,indigo-darker :background unspecified :weight normal))))
-   `(doom-modeline-evil-operator-state ((,class (:foreground ,indigo-darker :background unspecified :weight normal))))
-   `(doom-modeline-evil-replace-state ((,class (:foreground ,indigo-darker :background unspecified :weight normal))))
-   `(doom-modeline-evil-visual-state ((,class (:foreground ,indigo-darker :background unspecified :weight normal))))
-   `(doom-modeline-highlight ((,class (:foreground ,magenta :background unspecified :weight normal))))
-   `(doom-modeline-info ((,class (:foreground ,indigo-darker :background unspecified :weight normal))))
-   `(doom-modeline-panel ((,class (:foreground ,mint-darkest :background ,mint-bright :weight normal))))
+   `(doom-modeline-evil-emacs-state ((,class (:foreground ,indigo-darker :background unspecified))))
+   `(doom-modeline-evil-insert-state ((,class (:foreground ,indigo-darker :background unspecified))))
+   `(doom-modeline-evil-motion-state ((,class (:foreground ,indigo-darker :background unspecified))))
+   `(doom-modeline-evil-normal-state ((,class (:foreground ,indigo-darker :background unspecified))))
+   `(doom-modeline-evil-operator-state ((,class (:foreground ,indigo-darker :background unspecified))))
+   `(doom-modeline-evil-replace-state ((,class (:foreground ,indigo-darker :background unspecified))))
+   `(doom-modeline-evil-visual-state ((,class (:foreground ,indigo-darker :background unspecified))))
+   `(doom-modeline-highlight ((,class (:foreground ,magenta :background unspecified))))
+   `(doom-modeline-info ((,class (:foreground ,indigo-darker :background unspecified))))
+   `(doom-modeline-panel ((,class (:foreground ,mint-darkest :background ,mint-bright))))
    ;; doom-modeline-persp-buffer-not-in-persp
    ;; doom-modeline-persp-name
-   `(doom-modeline-persp ((,class (:foreground ,green-dark :background ,green :weight normal))))
+   `(doom-modeline-persp ((,class (:foreground ,green-dark :background ,green))))
    ;; doom-modeline-project-dir
    ;; doom-modeline-project-parent-dir
    ;; doom-modeline-project-root-dir
    `(doom-modeline-buffer-timemachine ((,class (:foreground ,fulvous :background unspecified :weight bold))))
    ;; doom-modeline-unread-number
-   `(doom-modeline-urgent ((,class (:foreground ,wine :background unspecified :weight normal))))
-   `(doom-modeline-warning ((,class (:foreground ,amber :background unspecified :weight normal))))
+   `(doom-modeline-urgent ((,class (:foreground ,wine :background unspecified))))
+   `(doom-modeline-warning ((,class (:foreground ,amber :background unspecified))))
    `(doom-modeline-vspc-face ((,class (:foreground ,nil :background unspecified))))
    `(doom-modeline-spc-face ((,class (:foreground ,nil :background unspecified))))
 
@@ -945,7 +945,7 @@
    `(js3-private-function-call-face ((,class (:foreground ,red))))
 
    ;;;; latex
-   `(font-latex-bold-face ((,class (:foreground ,grey-lighter :background unspecified :weight bold ))))
+   `(font-latex-bold-face ((,class (:foreground ,grey-lighter :background unspecified :weight bold))))
    `(font-latex-doctex-documentation-face ((,class (:foreground ,brown-light :background unspecified))))
    `(font-latex-doctex-preprocessor-face ((,class (:foreground ,orange :background unspecified))))
    `(font-latex-italic-face ((,class (:foreground ,grey-lighter :background unspecified :slant italic))))
