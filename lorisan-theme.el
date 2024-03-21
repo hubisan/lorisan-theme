@@ -247,7 +247,7 @@
    `(border ((,class (:background ,alt-background :foreground ,grey-dark))))
    `(vertical-border ((,class (:background ,alt-background :foreground ,grey-dark))))
    `(widget-button ((,class (:underline t))))
-   `(widget-field ((,class (:background ,alt-background :box (:line-width 1 :color ,grey-lighter)))))
+   `(widget-field ((,class (:background ,alt-background :box (:line-width 1 :color ,grey)))))
 
    `(success ((,class (:foreground ,green-bright))))
    `(warning ((,class (:foreground ,coquelicot-bright))))
@@ -397,6 +397,11 @@
    `(css-selector ((,class (:foreground ,cerise))))
    `(css-property ((,class (:foreground ,indigo))))
    `(css-proprietary-property ((,class (:foreground ,mint))))
+
+   ;;;; custom-button
+   `(custom-button ((,class (:foreground ,grey-lighter :background ,grey-dark :box (:line-width 2 :color ,grey-dark :style nil)))))
+   `(custom-button-mouse ((,class (:inherit custom-button :foreground ,white :background ,grey-darker :box (:color ,grey-darker)))))
+   `(custom-button-pressed ((,class (:inherit custom-button-mouse))))
 
    ;;;; deft
    `(deft-header-face ((,class (:foreground ,wine))))
@@ -798,6 +803,9 @@
    `(helm-swoop-target-line-face ((,class (:background ,lime-brightest :foreground ,background))))
    `(helm-swoop-target-word-face ((,class (:background ,mint-bright :foreground ,background))))
    `(helm-swoop-target-line-block-face ((,class (:background ,grey :foreground ,background))))
+
+   ;;;; help
+   `(help-key-binding ((,class (:foreground ,mint-low :background nil))))
 
    ;;;; helpful
    `(helpful-heading ((,class (:foreground ,white :weight bold))))
