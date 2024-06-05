@@ -541,8 +541,8 @@
    ;; doom-modeline-unread-number
    `(doom-modeline-urgent ((,class (:foreground ,wine :background unspecified))))
    `(doom-modeline-warning ((,class (:foreground ,amber :background unspecified))))
-   `(doom-modeline-vspc-face ((,class (:foreground ,nil :background unspecified))))
-   `(doom-modeline-spc-face ((,class (:foreground ,nil :background unspecified))))
+   `(doom-modeline-vspc-face ((,class (:foreground unspecified :background unspecified))))
+   `(doom-modeline-spc-face ((,class (:foreground unspecified :background unspecified))))
 
    ;;;; ediff
    `(ediff-even-diff-A ((,class (:foreground unspecified :background ,fulvous-darkest))))
@@ -1261,7 +1261,7 @@
    `(rg-error-face ((,class (:foreground ,wine :background unspecified))))
    `(rg-file-tag-face ((,class (:foreground ,grey :background unspecified :slant italic))))
    `(rg-filename-face ((,class (:foreground ,indigo :background unspecified))))
-   `(rg-info-face ((,class (:foreground ,indigo :background ,nil))))
+   `(rg-info-face ((,class (:foreground ,indigo :background unspecified))))
    `(rg-line-number-face ((,class (:inherit font-lock-comment-face))))
    ;; not seen yet
    `(rg-literal-face ((,class (:foreground ,background :background ,red))))
@@ -1429,7 +1429,7 @@
    `(web-mode-current-column-highlight-face ((,class (:background "#1b1b1b"))))
 
    ;;;; wgrep
-   `(wgrep-face ((,class (:foreground ,nil :background ,indigo-darkest))))
+   `(wgrep-face ((,class (:foreground unspecified :background ,indigo-darkest))))
    `(wgrep-done-face ((,class (:foreground ,mint :background unspecified))))
    `(wgrep-delete-face ((,class (:foreground ,wine :background unspecified))))
    `(wgrep-reject-face ((,class (:foreground ,wine :background ,wine-darkest))))
