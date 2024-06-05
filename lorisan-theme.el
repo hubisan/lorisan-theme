@@ -805,7 +805,7 @@
    `(helm-swoop-target-line-block-face ((,class (:background ,grey :foreground ,background))))
 
    ;;;; help
-   `(help-key-binding ((,class (:foreground ,mint-low :background nil))))
+   `(help-key-binding ((,class (:foreground ,mint-low :background unspecified))))
 
    ;;;; helpful
    `(helpful-heading ((,class (:foreground ,white :weight bold))))
