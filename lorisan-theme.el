@@ -992,6 +992,10 @@
    ;;;; lispy
    `(lispy-face-hint ((,class (:background ,darkest :foreground ,fulvous-light))))
 
+   ;;;; lordar-mode-line
+   `(lordar-mode-line-buffer-modified-status ((,class (:foreground ,wine :weight bold))))
+   `(lordar-mode-line-buffer-read-only-status ((,class (:foreground ,fulvous))))
+
    ;;;; lsp
    `(lsp-ui-doc-background ((,class (:background ,blue2-darkest))))
 
