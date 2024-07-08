@@ -1,4 +1,4 @@
-;;; lorisan-theme.el --- Dark theme
+;;; lorisan-theme.el --- Dark theme -*- lexical-binding: t -*-
 
 ;; Copyright 2015-2018 Daniel Hubmann
 
@@ -993,8 +993,13 @@
    `(lispy-face-hint ((,class (:background ,darkest :foreground ,fulvous-light))))
 
    ;;;; lordar-mode-line
-   `(lordar-mode-line-buffer-modified-status ((,class (:foreground ,wine :weight bold))))
-   `(lordar-mode-line-buffer-read-only-status ((,class (:foreground ,fulvous))))
+   `(lordar-mode-line-active ((,class (:inherit mode-line-inactive))))
+   `(lordar-mode-line-buffer-status-modified ((,class (:foreground ,wine :inherit lordar-mode-line-active))))
+   `(lordar-mode-line-buffer-status-read-only ((,class (:foreground ,fulvous :inherit lordar-mode-line-active))))
+   `(lordar-mode-line-vc-state-dirty ((,class (:foreground ,fulvous :inherit lordar-mode-line-active))))
+   `(lordar-mode-line-vc-state-error ((,class (:foreground ,wine :inherit lordar-mode-line-active))))
+   `(lordar-mode-line-winum ((,class (:foreground ,background :background ,wine-darker))))
+   `(lordar-mode-line-input-method ((,class (:background ,grey-darker :foreground ,background))))
 
    ;;;; lsp
    `(lsp-ui-doc-background ((,class (:background ,blue2-darkest))))
