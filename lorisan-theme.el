@@ -232,7 +232,7 @@
    `(trailing-whitespace ((,class (:background ,grey-darkest :underline (:color ,red-bright :style wave)))))
    `(hl-line ((,class (:background ,indigo-darkest))))
 
-   `(mode-line ((t (:foreground ,indigo-darker :background ,blue2-dark))))
+   `(mode-line ((t (:foreground ,grey :background ,grey-darkester))))
    `(mode-line-inactive ((t (:foreground ,grey :background ,grey-darkester :box nil :inherit (mode-line)))))
    `(mode-line-buffer-id ((t (:foreground ,cyan-bright))))
 
@@ -993,13 +993,17 @@
    `(lispy-face-hint ((,class (:background ,darkest :foreground ,fulvous-light))))
 
    ;;;; lordar-mode-line
+   `(lordar-mode-line ((,class (:inherit mode-line))))
    `(lordar-mode-line-active ((,class (:inherit mode-line-inactive))))
    `(lordar-mode-line-buffer-status-modified ((,class (:foreground ,wine :inherit lordar-mode-line-active))))
    `(lordar-mode-line-buffer-status-read-only ((,class (:foreground ,fulvous :inherit lordar-mode-line-active))))
    `(lordar-mode-line-vc-state-dirty ((,class (:foreground ,fulvous :inherit lordar-mode-line-active))))
    `(lordar-mode-line-vc-state-error ((,class (:foreground ,wine :inherit lordar-mode-line-active))))
-   `(lordar-mode-line-winum ((,class (:foreground ,background :background ,wine-darker))))
+   `(lordar-mode-line-winum ((,class (:background ,grey :foreground ,background))))
    `(lordar-mode-line-input-method ((,class (:background ,grey-darker :foreground ,background))))
+   `(lordar-mode-line-syntax-checking-error ((,class (:foreground ,wine))))
+   `(lordar-mode-line-syntax-checking-warning ((,class (:foreground ,fulvous))))
+   `(lordar-mode-line-syntax-checking-error ((,class (:foreground ,wine))))
 
    ;;;; lsp
    `(lsp-ui-doc-background ((,class (:background ,blue2-darkest))))
