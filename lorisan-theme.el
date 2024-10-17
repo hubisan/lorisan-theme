@@ -229,7 +229,7 @@
    `(lazy-highlight ((,class (:foreground ,indigo :background ,background :inverse-video t))))
    `(region ((,class (:background ,violet2-dark))))
    `(secondary-selection ((,class (:background ,indigo-darkest))))
-   `(trailing-whitespace ((,class (:background ,grey-darkest :underline (:color ,red-bright :style wave)))))
+   `(trailing-whitespace ((,class (:background ,grey-darkest :underline (:color ,red-bright :style dots)))))
    `(hl-line ((,class (:background ,indigo-darkest))))
 
    `(mode-line ((t (:foreground ,grey :background ,grey-darkester))))
@@ -644,9 +644,9 @@
    `(fill-column-indicator ((,class (:foreground ,grey-darkest))))
 
    ;;;; flycheck
-   `(flycheck-error ((,class (:underline (:style wave :color ,wine-darker)))))
-   `(flycheck-warning ((,class (:underline (:style wave :color ,amber-low)))))
-   `(flycheck-info ((,class (:underline (:style wave :color ,indigo-darker)))))
+   `(flycheck-error ((,class (:underline (:style dots :color ,wine-darker)))))
+   `(flycheck-warning ((,class (:underline (:style dots :color ,amber-low)))))
+   `(flycheck-info ((,class (:underline (:style dots :color ,indigo-darker)))))
    `(flycheck-fringe-error ((,class (:background unspecified :foreground ,wine-bright))))
    `(flycheck-fringe-warning ((,class (:background unspecified :foreground ,amber))))
    `(flycheck-fringe-info ((,class (:background unspecified :foreground ,indigo))))
@@ -664,13 +664,13 @@
    `(flycheck-posframe-error-face ((,class (:foreground ,red :background ,red-darkest))))
 
    ;;;; flymake
-   `(flymake-error ((,class (:underline (:style wave :color ,wine-darker)))))
-   `(flymake-warning  ((,class (:underline (:style wave :color ,amber-low)))))
-   `(flymake-note ((,class (:underline (:style wave :color ,indigo-darker)))))
+   `(flymake-error ((,class (:underline (:style dots :color ,wine-darker)))))
+   `(flymake-warning  ((,class (:underline (:style dots :color ,amber-low)))))
+   `(flymake-note ((,class (:underline (:style dots :color ,indigo-darker)))))
 
    ;;;; flyspell
-   `(flyspell-incorrect ((,class (:underline (:style wave :color ,wine-darker)))))
-   `(flyspell-duplicate ((,class (:underline (:style wave :color ,indigo-darker)))))
+   `(flyspell-incorrect ((,class (:underline (:style dots :color ,wine-darker)))))
+   `(flyspell-duplicate ((,class (:underline (:style dots :color ,indigo-darker)))))
 
    ;;;; git
    `(git-commit-comment-action ((,class (:foreground ,white))))
@@ -919,6 +919,9 @@
    `(jabber-rare-time-face ((,class (:foreground ,faint))))
    `(jabber-activity-face ((,class (:foreground ,violet))))
    `(jabber-activity-personal-face ((,class (:foreground ,cyan))))
+
+   ;;;; jinx
+   `(jinx-misspelled ((,class (:underline (:style dots :color ,amber-dark)))))
 
    ;;;; js2-mode
    `(js2-warning ((,class (:inherit flycheck-warning))))
@@ -1462,7 +1465,7 @@
    ;;;; wiki-page-intro
    `(wiki-page-intro-title ((,class (:foreground ,wine :weight bold))))
    `(wiki-page-intro-text ((,class (:foreground ,grey-lighter))))
-   `(wiki-page-intro-not-found ((,class (:foreground ,grey-lighter :underline (:style wave :color ,wine)))))
+   `(wiki-page-intro-not-found ((,class (:foreground ,grey-lighter :underline (:style dots :color ,wine)))))
    `(wiki-page-intro-error ((,class (:inherit error))))
 
    ;;;; yasnippet
