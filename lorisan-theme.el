@@ -996,12 +996,12 @@
    `(lispy-face-hint ((,class (:background ,darkest :foreground ,fulvous-light))))
 
    ;;;; lordar-mode-line
-   `(lordar-mode-line ((,class (:inherit mode-line))))
-   `(lordar-mode-line-active ((,class (:inherit mode-line-inactive))))
-   `(lordar-mode-line-buffer-status-modified ((,class (:foreground ,wine :inherit lordar-mode-line-active))))
-   `(lordar-mode-line-buffer-status-read-only ((,class (:foreground ,fulvous :inherit lordar-mode-line-active))))
-   `(lordar-mode-line-vc-state-dirty ((,class (:foreground ,fulvous :inherit lordar-mode-line-active))))
-   `(lordar-mode-line-vc-state-error ((,class (:foreground ,wine :inherit lordar-mode-line-active))))
+   `(lordar-mode-line ((,class (:inherit mode-line :background ,grey-darkest))))
+   `(lordar-mode-line-inactive ((,class (:inherit mode-line-inactive))))
+   `(lordar-mode-line-buffer-status-modified ((,class (:foreground ,wine :inherit lordar-mode-line))))
+   `(lordar-mode-line-buffer-status-read-only ((,class (:foreground ,fulvous :inherit lordar-mode-line))))
+   `(lordar-mode-line-vc-state-dirty ((,class (:foreground ,fulvous :inherit lordar-mode-line))))
+   `(lordar-mode-line-vc-state-error ((,class (:foreground ,wine :inherit lordar-mode-line))))
    `(lordar-mode-line-winum ((,class (:background ,grey :foreground ,background))))
    `(lordar-mode-line-input-method ((,class (:background ,grey-darker :foreground ,background))))
    `(lordar-mode-line-syntax-checking-error ((,class (:foreground ,wine))))
