@@ -998,15 +998,14 @@
    ;;;; lordar-mode-line
    `(lordar-mode-line ((,class (:inherit mode-line :background ,grey-darkest))))
    `(lordar-mode-line-inactive ((,class (:inherit mode-line-inactive))))
-   `(lordar-mode-line-buffer-status-modified ((,class (:foreground ,wine :inherit lordar-mode-line))))
-   `(lordar-mode-line-buffer-status-read-only ((,class (:foreground ,fulvous :inherit lordar-mode-line))))
-   `(lordar-mode-line-vc-state-dirty ((,class (:foreground ,fulvous :inherit lordar-mode-line))))
-   `(lordar-mode-line-vc-state-error ((,class (:foreground ,wine :inherit lordar-mode-line))))
+   `(lordar-mode-line-buffer-status-modified ((,class (:foreground ,wine))))
+   `(lordar-mode-line-buffer-status-read-only ((,class (:foreground ,fulvous))))
+   `(lordar-mode-line-vc-state-dirty ((,class (:foreground ,fulvous))))
+   `(lordar-mode-line-vc-state-error ((,class (:foreground ,wine))))
    `(lordar-mode-line-winum ((,class (:background ,grey :foreground ,background))))
    `(lordar-mode-line-input-method ((,class (:background ,grey-darker :foreground ,background))))
    `(lordar-mode-line-syntax-checking-error ((,class (:foreground ,wine))))
    `(lordar-mode-line-syntax-checking-warning ((,class (:foreground ,fulvous))))
-   `(lordar-mode-line-syntax-checking-error ((,class (:foreground ,wine))))
 
    ;;;; lsp
    `(lsp-ui-doc-background ((,class (:background ,blue2-darkest))))
@@ -1135,6 +1134,7 @@
    `(org-block ((,class (:foreground ,normal :background ,background1))))
    `(org-block-begin-line ((,class (:foreground ,indigo-darker- :background ,background1 :extend t))))
    `(org-block-end-line ((,class (:foreground ,indigo-darker- :background ,background1 :extend t))))
+   `(org-checkbox ((,class (:inherit default))))
    `(org-checkbox-statistics-done ((,class (:foreground ,indigo-darker-))))
    `(org-checkbox-statistics-todo ((,class (:foreground ,indigo-darker-))))
    `(org-code ((,class (:foreground ,pink-light))))
