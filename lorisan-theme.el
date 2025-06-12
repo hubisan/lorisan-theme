@@ -245,7 +245,8 @@
    `(fringe ((,class (:background ,background :foreground ,grey-darkest))))
    `(cursor ((,class (:background ,wine-bright))))
    `(border ((,class (:background ,alt-background :foreground ,grey-dark))))
-   `(vertical-border ((,class (:background ,alt-background :foreground ,grey-dark))))
+   `(vertical-border ((,class (:inherit border))))
+   `(child-frame-border ((,class (:inherit border))))
    `(widget-button ((,class (:underline t))))
    `(widget-field ((,class (:background ,alt-background :box (:line-width 1 :color ,grey)))))
 
@@ -335,6 +336,9 @@
    `(bmkp-desktop ((,class (:foreground ,coquelicot-light))))
    `(bmkp-url ((,class (:foreground ,turquoise-bright))))
    `(bmkp-local-directory ((,class (:foreground ,cyan))))
+
+   ;;;; clojure
+   `(clojure-test-failure-face ((,class (:background unspecified :inherit flymake-warnline))))
 
    ;;;; clojure
    `(clojure-test-failure-face ((,class (:background unspecified :inherit flymake-warnline))))
