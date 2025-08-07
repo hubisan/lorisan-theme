@@ -1434,14 +1434,14 @@
    `(vimish-fold-mouse-face ((,class (:background ,wine-dark))))
 
    ;;;; web-mode
-   `(web-mode-html-tag-face ((,class (:foreground ,wine))))
-   `(web-mode-html-tag-bracket-face ((,class (:foreground ,wine))))
-   `(web-mode-html-attr-name-face ((,class (:foreground ,cyan))))
-   `(web-mode-html-attr-value-face ((,class (:foreground ,indigo))))
+   `(web-mode-html-tag-face ((,class (:foreground ,mint))))
+   `(web-mode-html-tag-bracket-face ((,class (:foreground ,mint))))
+   `(web-mode-html-attr-name-face ((,class (:foreground ,indigo))))
+   `(web-mode-html-attr-value-face ((,class (:foreground ,fulvous-light))))
    `(web-mode-doctype-face ((,class (:inherit font-lock-builtin-face))))
    `(web-mode-block-delimiter-face ((,class (:foreground ,blue-bright))))
    `(web-mode-function-call-face ((,class (:foreground ,fulvous))))
-   `(web-mode-current-element-highlight-face ((,class (:background ,wine-dark))))
+   `(web-mode-current-element-highlight-face ((,class (:background ,mint-dark))))
    `(web-mode-current-column-highlight-face ((,class (:background "#1b1b1b"))))
 
    ;;;; wgrep
