@@ -1440,7 +1440,7 @@
    `(web-mode-html-attr-value-face ((,class (:foreground ,fulvous-light))))
    `(web-mode-doctype-face ((,class (:inherit font-lock-builtin-face))))
    `(web-mode-block-delimiter-face ((,class (:foreground ,blue-bright))))
-   `(web-mode-function-call-face ((,class (:foreground ,fulvous))))
+   `(web-mode-function-call-face ((,class (:inherit default))))
    `(web-mode-current-element-highlight-face ((,class (:background ,mint-dark))))
    `(web-mode-current-column-highlight-face ((,class (:background "#1b1b1b"))))
 
