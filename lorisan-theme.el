@@ -1006,6 +1006,8 @@
    `(lordar-mode-line-error ((,class (:foreground ,wine :inherit lordar-mode-line))))
    `(lordar-mode-line-winum ((,class (:background ,grey :foreground ,background))))
    `(lordar-mode-line-input-method ((,class (:background ,grey-darker :foreground ,background))))
+   `(lordar-mode-line-buffer-name ((,class (:inherit lordar-mode-line :foreground ,indigo :weight bold))))
+   `(lordar-mode-line-buffer-name-inactive ((,class (:inherit lordar-mode-line-inactive :foreground ,normal :weight bold))))
 
    ;;;; lsp
    `(lsp-ui-doc-background ((,class (:background ,blue2-darkest))))
