@@ -1079,6 +1079,8 @@
    `(markdown-gfm-checkbox-face ((,class (:foreground ,cerise))))
    `(markdown-footnote-face ((,class (:foreground ,coquelicot-light))))
 
+   `(markdown-indent-mode-hide-hash ((,class (:inherit markdown-header-face))))
+
    ;;;; mark-multiple
    `(mm/master-face ((,class (:inherit region :foreground unspecified :background unspecified))))
    `(mm/mirror-face ((,class (:inherit region :foreground unspecified :background unspecified))))
