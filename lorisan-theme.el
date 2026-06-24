@@ -695,6 +695,29 @@
    `(git-gutter-fr:added ((,class (:foreground ,mint-dark))))
    `(git-gutter-fr:deleted ((,class (:foreground ,wine-dark))))
 
+   `(ghostel-color-black ((,class (:foreground ,grey-darkest))))
+   `(ghostel-color-red ((,class (:foreground ,wine))))
+   `(ghostel-color-green ((,class (:foreground ,mint))))
+   `(ghostel-color-yellow ((,class (:foreground ,fulvous))))
+   `(ghostel-color-blue ((,class (:foreground ,indigo))))
+   `(ghostel-color-magenta ((,class (:foreground ,cerise))))
+   `(ghostel-color-cyan ((,class (:foreground ,cyan))))
+   `(ghostel-color-white ((,class (:foreground ,grey))))
+   `(ghostel-color-bright-black ((,class (:foreground ,grey-dark))))
+   `(ghostel-color-bright-red ((,class (:foreground ,wine-bright))))
+   `(ghostel-color-bright-green ((,class (:foreground ,mint-bright))))
+   `(ghostel-color-bright-yellow ((,class (:foreground ,fulvous-bright))))
+   `(ghostel-color-bright-blue ((,class (:foreground ,indigo-bright))))
+   `(ghostel-color-bright-magenta ((,class (:foreground ,cerise-bright))))
+   `(ghostel-color-bright-cyan ((,class (:foreground ,cyan-bright))))
+   `(ghostel-color-bright-white ((,class (:foreground ,white))))
+   `(ghostel-fake-cursor
+     ((,class (:box (:line-width (-1 . -1) :color ,wine-bright)))))
+   `(ghostel-fake-cursor-box
+     ((,class (:background ,wine-bright :foreground ,background))))
+   `(ghostel-default
+     ((,class (:foreground ,grey-lighter :background ,background))))
+
    ;;;; gnus
    `(gnus-cite-1 ((,class (:inherit outline-1 :foreground unspecified))))
    `(gnus-cite-2 ((,class (:inherit outline-2 :foreground unspecified))))
