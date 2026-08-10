@@ -241,6 +241,7 @@
    `(which-func ((,class (:foreground ,blue :background unspecified :weight bold))))
 
    `(header-line ((,class (:foreground ,magenta :background ,background))))
+   `(header-line-inactive ((,class (:foreground ,magenta :background ,background))))
    `(minibuffer-prompt ((,class (:foreground ,blue))))
    `(fringe ((,class (:background ,background :foreground ,grey-darkest))))
    `(cursor ((,class (:background ,wine-bright))))
